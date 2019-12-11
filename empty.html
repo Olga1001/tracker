@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-375, initial-scale=1, maximum-scale=1">
+    <!--	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<div class="empty">
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="header-user">
+                    <img src="img/user-img.svg" alt="user image" class="header-img">
+                    <div class="header-col">
+                        <p class="header-name">Easyprbot</p>
+                        <p class="header-item">@easyprbot</p>
+                    </div>
+                </div>
+                <button class="btn-white btn-back"><img src="img/arrow-select.svg" alt="arrow select" class="btn-back-arrow">Назад</button>
+                <nav>
+                    <ul class="header-menu">
+                        <li class="header-list">
+                            <p class="header-link">Отзывы<img src="img/arrow-down.svg" alt="arrow down" class="header-arrow"></p>
+                            <ul class="header-dropdown">
+                                <li class="header-dropdown-list">
+                                    <a href="#" class="header-dropdown-link">Все отзывы</a>
+                                    <a href="#" class="header-dropdown-link">Оставить отзыв</a>
+                                    <a href="#" class="header-dropdown-link">История моих отзывов</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-list">
+                            <a href="#" class="header-link">ВП на завтра</a>
+                        </li>
+                        <li class="header-list">
+                            <a href="#" class="header-link">Мой трекер</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="header-mob">
+                    <a href="#" class="header-mob-basket"><img src="img/basket.svg" alt="basket" class="header-mob-icon"></a>
+                    <div class="header-burger">
+                        <span class="header-burger-line header-burger-top"></span>
+                        <span class="header-burger-line header-burger-mid"></span>
+                        <span class="header-burger-line header-burger-bottom"></span>
+                    </div>
+                </div>
+                <button class="btn-blue btn-sing-in">Войти</button>
+                <div class="header-list">
+                    <button class="header-right-user active"><img src="img/avatar.svg" alt="" class="header-right-icon"></button>
+                    <ul class="header-dropdown">
+                        <li class="header-dropdown-list">
+                            <a href="#" class="header-dropdown-link">Настройки</a>
+                            <a href="#" class="header-dropdown-link">Справка</a>
+                            <a href="#" class="header-dropdown-link">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="popup popup-logregistr">
+    <div class="popup-window">
+        <div class="popup-attention">
+            <img src="img/attention.svg" alt="attention" class="popup-attention-img">
+            <p class="popup-attention-text">
+                Зарегистрируйтесь или войдите в аккаунт,
+                <span class="popup-attention-bold"> чтобы использовать трекер</span>
+            </p>
+        </div>
+        <div class="popup-container">
+            <div class="close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            <div class="popup-tabs">
+                <div class="popup-tab active">Вход</div>
+                <div class="popup-tab">Регистрация</div>
+            </div>
+            <ul class="popup-forms">
+                <li class="popup-forms-list hide active">
+                    <form class="form ">
+                        <div class="form-padding">
+                            <div class="form-field">
+                                <p class="form-name">Введите номер телефона</p>
+                                <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99" required>
+                            </div>
+                            <div class="form-field">
+                                <div class="form-flex">
+                                    <p class="form-name">Пароль </p><a href="#" class="form-blue form-forgot">Забыли пароль?</a>
+                                </div>
+                                <input type="password" class="form-input" required>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <button type="submit" class="btn-blue">Войти</button>
+                        </div>
+                    </form>
+                </li>
+                <li class="popup-forms-list hide">
+                    <form class="form form-checkin active">
+                        <div class="form-padding">
+                            <div class="form-field required">
+                                <p class="form-name">Введите ваш номер телефона. <br> Мы отправим на него код</p>
+                                <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99" required>
+                                <span class="form-span">Номер телефона не может содержать пробелов <span class="nowrap">и букв</span></span>
+                            </div>
+                            <div class="form-field required">
+                                <p class="form-name">Пароль</p>
+                                <input type="password" class="form-input" required>
+                                <span class="form-span">От 6 символов. Минимум по 1 букве верхнего <span class="nowrap">и нижнего</span> регистра</span>
+                            </div>
+                            <div class="form-field required">
+                                <p class="form-name">Подтвердите пароль</p>
+                                <input type="password" class="form-input" required>
+                                <span class="form-span form-mistake-passwords">Пароли не совпадают</span>
+                            </div>
+                            <div class="form-politics required">
+                                <div class="form-politics-flex">
+                                    <label class="form-label" >
+                                        <input type="checkbox" class="checkbox" required>
+                                        <span class="check"></span>
+                                    </label>
+                                    <p class="form-politics-text">
+                                        Я соглашаюсь с <a href="" class="form-politics-link">Политикой конфиденциальности</a> и
+                                        <a href="#" class="form-politics-link">Правилами пользования сайтом</a>
+                                    </p>
+                                </div>
+                                <span class="form-span form-mistake-check">Выберите чекбокс, чтобы продолжить</span>
+                            </div>
+
+                        </div>
+                        <div class="form-bottom">
+                            <button type="submit" class="btn-blue form-next-sms">Далее</button>
+                        </div>
+                    </form>
+                    <form class="form form-confirmation">
+                        <div class="form-padding">
+                            <div class="form-field ">
+                                <p class="form-name">Код из SMS</p>
+                                <p class="form-info">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</p>
+                                <input type="text" class="form-input" placeholder="Код" required>
+                                <a href="#" class="form-blue form-repeat">Отправить код повторно</a>
+                                <div class="form-repeat-block">
+                                    <p class="form-repeat-text">
+                                        Попытка № <span class="form-repeat-number">0</span><br>Запросить код повторно можно через <span class="form-repeat-count"></span> секунд
+                                    </p>
+                                    <div class="form-repeat-item">
+                                        <p class="form-repeat-link">Не приходит SMS</p>
+                                        <div class="tooltip">
+                                            <div class="tooltip-container">
+                                                <p class="tooltip-text">Возможные причины:</p>
+                                                <p class="tooltip-text">1. Вы не изменили номер мобильного телефона на сайте на новый и SMS было отправлено на старый номер.</p>
+                                                <p class="tooltip-text">2. Проблемы могут быть со стороны сотового оператора. Обратитесь в их службу поддержки.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-bottom">
+                            <div class="form-bottom-between">
+                                <button class="btn-white form-back mob-hide-768 ">Назад</button>
+                                <button type="submit" class="btn-blue form-next-rate">Далее</button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div class="popup popup-rate">
+    <div class="popup-window">
+        <div class="popup-rate-container">
+            <div class="popup-top">
+                <p class="popup-top-title">Выберите тариф</p>
+                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+            <div class="popup-rate-padding">
+                <p class="popup-rate-text">Чтобы использовать трекер выберите тариф и оплатите доступ.</p>
+                <p class="form-name">Тарифы</p>
+                <a href="#" class="popup-rate-price">
+				<span class="popup-rate-col">
+					<span class="form-name">1 месяц</span>
+                        <span class="popup-rate-sum">
+                            <span class="popup-rate-item">990 ₽</span>
+                            <span class="popup-rate-span"> / 33 ₽ в день</span>
+                        </span>
+                    </span>
+                    <span class="popup-rate-pay">
+					Оплатить
+				</span>
+                </a>
+                <a href="#" class="popup-rate-price">
+				<span class="popup-rate-col">
+					<span class="form-name">2 месяц</span>
+                        <span class="popup-rate-sum">
+                            <span class="popup-rate-item">1 560 ₽</span>
+                            <span class="popup-rate-span"> / 26 ₽ в день</span>
+                        </span>
+                    </span>
+                    <span class="popup-rate-pay">
+					Оплатить
+				</span>
+                </a>
+                <a href="#" class="popup-rate-price">
+				<span class="popup-rate-col">
+					<span class="form-name">3 месяц</span>
+                        <span class="popup-rate-sum">
+                            <span class="popup-rate-item">1 980 ₽</span>
+                            <span class="popup-rate-span"> / 22 ₽ в день</span>
+                        </span>
+                    </span>
+                    <span class="popup-rate-pay">
+					Оплатить
+				</span>
+                </a>
+                <div class="popup-rate-info">
+                    Цена в расчете за день указана за календарные дни.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup-forgot">
+    <div class="popup-window">
+        <div class="popup-container">
+            <div class="close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            <form class="form form-step-one active">
+                <div class="form-padding">
+                    <div class="popup-forgot-top">
+                        <h2 class="title-24px">Восстановление пароля</h2>
+                        <p class="popup-forgot-span">
+                            Шаг <span class="popup-forgot-step"> 1 </span> из 3
+                        </p>
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Введите ваш номер телефона.<br>Мы отправим на него код</p>
+                        <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99" required>
+                        <span class="form-span">Номер телефона не может содержать пробелов <span class="nowrap">и букв</span></span>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div class="form-bottom-between">
+                        <button class="btn-white form-back-login">Назад</button>
+                        <button type="submit" class="btn-blue form-next-two">Далее</button>
+                    </div>
+                </div>
+            </form>
+            <form class="form form-step-two">
+                <div class="form-padding">
+                    <div class="popup-forgot-top">
+                        <h4 class="title-24px">Восстановление пароля</h4>
+                        <p class="popup-forgot-span">
+                            Шаг <span class="popup-forgot-step"> 2 </span> из 3
+                        </p>
+                    </div>
+
+                    <div class="form-field ">
+                        <p class="form-name">Код из SMS</p>
+                        <p class="form-info">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</p>
+                        <input type="text" class="form-input" placeholder="Код" required="">
+                        <a href="#" class="form-blue form-repeat">Отправить код повторно</a>
+                        <div class="form-repeat-block">
+                            <p class="form-repeat-text">
+                                Попытка № <span class="form-repeat-number">0</span><br>Запросить код повторно можно через <span class="form-repeat-count"></span> секунд
+                            </p>
+                            <div class="form-repeat-item">
+                                <p class="form-repeat-link">Не приходит SMS</p>
+                                <div class="tooltip">
+                                    <div class="tooltip-container">
+                                        <p class="tooltip-text">Возможные причины:</p>
+                                        <p class="tooltip-text">1. Вы не изменили номер мобильного телефона на сайте на новый и SMS было отправлено на старый номер.</p>
+                                        <p class="tooltip-text">2. Проблемы могут быть со стороны сотового оператора. Обратитесь в их службу поддержки.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div class="form-bottom-between">
+                        <button class="btn-white form-back-one">Назад</button>
+                        <button type="submit" class="btn-blue form-next-tree">Далее</button>
+                    </div>
+                </div>
+            </form>
+            <form class="form form-step-tree">
+                <div class="form-padding">
+                    <div class="popup-forgot-top">
+                        <h4 class="title-24px">Восстановление пароля</h4>
+                        <p class="popup-forgot-span">
+                            Шаг <span class="popup-forgot-step"> 3 </span> из 3
+                        </p>
+                    </div>
+                    <div class="form-field ">
+                        <p class="form-name">Введите новый пароль</p>
+                        <input type="password" class="form-input" required>
+                        <span class="form-span">От 6 символов. Минимум по 1 букве верхнего <span class="nowrap">и нижнего</span> регистра </span>
+                    </div>
+                    <div class="form-field ">
+                        <p class="form-name">Подтвердите пароль</p>
+                        <input type="password" class="form-input" required>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div class="form-bottom-between">
+                        <button class="btn-white form-back-two">Назад</button>
+                        <button type="submit" class="btn-blue">Сохранить</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<div class="popup popup-calculate">
+    <div class="popup-window">
+        <div class="popup-calculate-container">
+            <div class="popup-top popup-top-mob">
+                <p class="popup-top-title">Калькулятор подписчиков</p>
+            </div>
+            <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
+            <div class="popup-row-half">
+                <div class="popup-calculate-half">
+                    <form class="popup-calculate-active">
+                        <h2 class="title-24px mob-hide-768">Калькулятор подписчиков</h2>
+                        <div class="form-field">
+                            <p class="form-name">Заполнить тестовые данные</p>
+                            <div class="popup-calculate-flex">
+                                <label class="popup-calculate-label">
+                                    <input type="radio" class="checkbox" name="data">
+                                    <span class="popup-calculate-number">1</span>
+                                </label>
+                                <label class="popup-calculate-label">
+                                    <input type="radio" class="checkbox" name="data">
+                                    <span class="popup-calculate-number">2</span>
+                                </label>
+                                <label class="popup-calculate-label">
+                                    <input type="radio" class="checkbox" name="data">
+                                    <span class="popup-calculate-number">3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="form-item">
+                                <div class="form-item">
+                                    <p class="form-name">Сколько нужно добавить подписчиков </p>
+                                    <div class="popup-question">?
+                                        <div class="tooltip">
+                                            <div class="tooltip-container">
+                                                <p class="tooltip-text">Введите количество подписчиков, которое вы хотите добавить на свой аккаунт</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="text" class="form-input" placeholder="Например, 10000"  required="">
+                        </div>
+                        <div class="form-field">
+                            <div class="form-item">
+                                <p class="form-name">За сколько дней </p>
+                                <div class="popup-question">?
+                                    <div class="tooltip">
+                                        <div class="tooltip-container">
+                                            <p class="tooltip-text">Введите количество дней, за которое вы хотите получить подписчиков</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="text" class="form-input" placeholder="Например, 30" required="" onkeyup="checkParams()">
+                        </div>
+                        <div class="form-field">
+                            <div class="form-item">
+                                <p class="form-name">Ваша средняя цена за подписчика </p>
+                                <div class="popup-question">?
+                                    <div class="tooltip">
+                                        <div class="tooltip-container">
+                                            <p class="tooltip-text">Какой процент подписчиков отписывается от вашего аккаунта после рекламы на вас или гива</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-calculate-row">
+                                <input type="text" class="form-input popup-calculate-input" placeholder="Например, 5" required="">
+                                <select class="popup-calculate-select">
+                                    <option value="₽">₽</option>
+                                    <option value="₽">$</option>
+                                    <option value="₽">₴</option>
+                                    <option value="₽">₸</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="form-item">
+                                <p class="form-name">Процент отписок после рекламы</p>
+                                <div class="popup-question">?
+                                    <div class="tooltip">
+                                        <div class="tooltip-container">
+                                            <p class="tooltip-text">Какой процент подписчиков отписывается от вашего аккаунта после рекламы на вас или гива</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="text" class="form-input form-input-little" placeholder="Например, 15" required="">
+                        </div>
+                        <div class="form-field">
+                            <p class="form-name">Конверсия из охватов в подписчика, %</p>
+                            <p class="popup-gray">необязательное поле</p>
+                            <div class="popup-calculate-row">
+                                <input type="text" class="form-input form-input-little" placeholder="Например, 5">
+                                <a href="#" class="blue-text next-conversion">Посчитайте <br> за меня</a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-orange btn-gray next-calculate-result" disabled>Показать результат</button>
+                    </form>
+                </div>
+                <div class="popup-calculate-half">
+                    <div class="popup-calculate-item popup-calculate-one active">
+                        <div class="bg-yellow">
+                            <div class="popup-calculate-space">
+                                <h2 class="title-24px">Справка</h2>
+                                <a href="#" class="blue-text popup-calculate-link form-next-calculate_two">Больше не показывать</a>
+                            </div>
+                            <p class="form-info">Калькулятор подписчиков поможет поставить цель и рассчить следующие показатели*:</p>
+                            <ul class="popup-calculate-ul">
+                                <li class="popup-calculate-li">1. Бюджет</li>
+                                <li class="popup-calculate-li">2. Какое количество охватов нужно заказать всего</li>
+                                <li class="popup-calculate-li">3. Какое количество охватов нужно заказать на каждый день</li>
+                                <li class="popup-calculate-li">4. Какое количество охватов необходимо покупать на каждую 1 000 ₽</li>
+                                <li class="popup-calculate-li">5. Бюджет на рекламу на каждый день</li>
+                            </ul>
+                            <a href="#" class="blue-text popup-calculate-link next-calculate-example">Показать пример результатов расчетов</a>
+                            <p class="popup-gray">*Расчеты приблизительны</p>
+                        </div>
+                    </div>
+                    <div class="popup-calculate-item popup-calculate-clear">
+                        <h2 class="title-24px mob-hide-768">Результаты расчетов</h2>
+                        <p class="form-info">Чтобы увидеть результаты расчетов, заполните поля слева и нажмите кнопку показать результат.</p>
+                        <a href="#" class="blue-text next-calculate-example">Показать пример результатов расчетов</a>
+                    </div>
+                    <div class="popup-calculate-item popup-calculate-example ">
+                        <h2 class="title-20px mob-hide-768">Пример результатов расчетов</h2>
+                        <p class="form-info">Моя цель — вырасти на 10 000 подписчиков <span class="nowrap">за 60 дней</span></p>
+                        <ul class="list">
+                            <li class="list-item"><span class="list-disc"></span>при средней цене за подписчика <span class="nowrap">не более 3,5 ₽,</span></li>
+                            <li class="list-item"><span class="list-disc"></span>при отписках <span class="nowrap">не более 5 %,</span></li>
+                            <li class="list-item"><span class="list-disc"></span>при конверсии из охватов в подписчика <span class="nowrap">не менее 7%</span></li>
+                        </ul>
+                        <div class="">
+                            <div class="popup-example">
+                                <p class="popup-example-name">Бюджет</p>
+                                <p class="popup-example-price">36 750 ₽</p>
+                            </div>
+                            <div class="popup-example">
+                                <p class="popup-example-name">Всего нужно <br> заказать охватов</p>
+                                <p class="popup-example-price">147 887</p>
+                            </div>
+                            <div class="popup-example">
+                                <p class="popup-example-name">Нужно заказать охватов <br> на каждый день</p>
+                                <p class="popup-example-price">2 465</p>
+                            </div>
+                            <div class="popup-example">
+                                <p class="popup-example-name">За каждую 1000 ₽ нужно <br> покупать не менее</p>
+                                <p class="popup-example-price">
+                                    4 024
+                                    <span class="gray">охватов</span>
+                                </p>
+                            </div>
+                            <div class="popup-example">
+                                <p class="popup-example-name">Бюджет на рекламу<br>на каждый день</p>
+                                <p class="popup-example-price">613 ₽</p>
+                            </div>
+                        </div>
+                        <button class="popup-example-back blue-text">Назад</button>
+                    </div>
+                    <div class="popup-calculate-item popup-calculate-result ">
+                        <h2 class="title-20px mob-hide-768">Результаты расчетов</h2>
+                        <p class="form-info">Моя цель — вырасти на 10 000 подписчиков <span class="nowrap">за 60 дней</span></p>
+                        <ul class="list">
+                            <li class="list-item"><span class="list-disc"></span>при средней цене за подписчика <span class="nowrap">не более 3,5 ₽,</span></li>
+                            <li class="list-item"><span class="list-disc"></span>при отписках <span class="nowrap">не более 5 %,</span></li>
+                        </ul>
+                        <div class="">
+                            <div class="popup-example">
+                                <p class="popup-example-name">Бюджет</p>
+                                <p class="popup-example-price">36 750 ₽</p>
+                            </div>
+                            <div class="popup-example">
+                                <p class="popup-example-name">Всего нужно <br> заказать охватов</p>
+                                <p class="popup-example-price">147 887</p>
+                            </div>
+                            <div class="popup-example">
+                                <p class="popup-example-name">Нужно заказать охватов <br> на каждый день</p>
+                                <p class="popup-example-price"><span class="gray blue-text">нужно заполнить<br>поле конверсия</span></p>
+
+                            </div>
+                            <div class="popup-example">
+                                <p class="popup-example-name">За каждую 1000 ₽ нужно <br> покупать не менее</p>
+                                <p class="popup-example-price"><span class="gray">нужно заполнить <br>поле конверсия</span></p>
+                            </div>
+                            <div class="popup-example">
+                                <p class="popup-example-name">Бюджет на рекламу<br>на каждый день</p>
+                                <p class="popup-example-price"><span class="gray">нужно заполнить <br>поле конверсия</span></p>
+                            </div>
+                        </div>
+                        <button class="popup-calculate-copy btn-white">Скопировать текст</button>
+                        <p class="popup-calculate-gray gray">Расчеты приблизительны</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="popup popup-conversion">
+    <div class="popup-window">
+        <div class="popup-conversion-container">
+            <div class="popup-top">
+                <p class="popup-top-title">Расчет конверсии</p>
+                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+            <div class="popup-row-half">
+                <div class="popup-conversion-row">
+                    <form class="popup-conversion-form">
+                        <div class="form-field">
+                            <p class="form-name">Приход подписчиков одним числом</p>
+                            <input type="text" class="form-input" placeholder="Например, 1500"  required="">
+                        </div>
+                        <div class="form-field">
+                            <p class="form-name">Охват рекламы одним числом</p>
+                            <input type="text" class="form-input" placeholder="Например, 63558"  required="">
+                        </div>
+                        <div class="popup-conversion-info">
+                            <p class="popup-info-text">Для более точных показателей советуем вам самостоятельно проанализировать 5-10 последних реклам и вывести средний процент конверсии.</p>
+                        </div>
+                        <button type="submit" class="btn-orange">Рассчитать и подставить результат</button>
+                    </form>
+
+                    <div class="popup-conversion-text">
+                        <div class="blue-text popup-conversion-item">Что такое конверсия</div>
+                        <div class="popup-conversion-drop">
+                            <p class="form-info">Конверсия — это отношение количества пришедших подписчиков к охваченным рекламой у блогера.</p>
+                            <p class="form-info">Например, вы купили рекламу в сторис 15 секунд у блогера и на вас с нее подписалось 1000 подписчиков при охвате этой истории в 50000 подписчиков. Тогда конверсия будет равна: (1000/50000)*100% = 2%</p>
+                            <p class="form-info">Если историй с отметками вашего аккаунта в рекламе было несколько, то разделите приход подписчиков на среднее от охватов историй с отметками.</p>
+                            <p class="form-info">Например, было 4 истории (60 секунд), из них 2 подводки (88000 и 85000 охвата) и 2 ваших макета с отметками (77000 и 73000 охвата). Вы суммируете охваты историй с отметками и делите их на количество историй с отметками (77000 + 73000)/2 = 75000. Предположим, что приход подписчиков составил 2500, тогда конверсия = (2500/75000)*100% = 3,3%</p>
+                            <p class="form-info">Для удобства расчетов можете воспользоваться формой слева. Значение конверсии сразу подставится в основную форму.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="popup popup-review">
+    <div class="popup-window">
+        <div class="popup-review-container">
+            <div class="popup-top">
+                <p class="popup-top-title">Мой отзыв</p>
+                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+            <div class="popup-review-info">
+                <div class="popup-review-row">
+                    <p class="popup-review-gray gray">Моя оценка</p>
+                    <p class="form-info">5 <img src="img/star.svg" alt="star" class="star"></p>
+                </div>
+                <div class="popup-review-row">
+                    <p class="popup-review-gray gray">Формат рекламы</p>
+                    <p class="form-info">Сторис</p>
+                </div>
+                <div class="popup-review-row">
+                    <p class="popup-review-gray gray">Текст отзыва</p>
+                    <p class="popup-review-item">
+                        Я <a href="https://www.instagram.com/mariannaorlova" class="blue-text">https://www.instagram.com/mariannaorlova</a>
+                        У меня брала рекламу
+                        <a href="https://www.instagram.com/neotpuskaiteplo" class="blue-text">https://www.instagram.com/neotpuskaiteplo</a>
+                        Выше можно найти от девушки негативный отзыв <br>
+                        Девушка общалась с менеджером, очень бурно переживая, что ее блог НЕ зашел. Мой менеджер отвечала вежливо, корректно, не пропадала, не гасилась. Д...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup-delete">
+    <div class="popup-window">
+        <div class="popup-review-container">
+            <div class="popup-top">
+                <p class="popup-top-title">Удалить блогера</p>
+                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+            <div class="popup-delete-block">
+                <p class="form-info">Вы хотите удалить блогера <a href="#" class="blue-text blogger-item">neotpuskaiteplo</a>. Чтобы продолжить удаление нажмите одну из кнопок ниже.</p>
+                <div class="popup-delete-row">
+                    <button class="blue-text">Удалить навсегда</button>
+                    <button class="btn-blue delete-list">Удалить из моего списка</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup-info">
+    <div class="popup-window">
+        <div class="popup-info-container">
+            <div class="popup-top">
+                <p class="popup-top-title">Информация и отзывы на блогера neotpuskaiteplo</p>
+                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+            <div class="popup-info-block">
+                <div class="popup-info-overflow">
+                    <div class="popup-info-table">
+                        <p class="popup-info-title">Статистика из отзывов</p>
+                        <div class="popup-info-row">
+                            <ul class="bloggers-menu">
+                                <li class="bloggers-my-list">Цена за подписчика</li>
+                                <li class="bloggers-my-list">Пришло подписчиков</li>
+                                <li class="bloggers-my-list">Цены из отзывов</li>
+                                <li class="bloggers-my-list">Всего отзывов</li>
+                                <li class="bloggers-my-list">Средняя оценка</li>
+                            </ul>
+                            <ul class="bloggers-content">
+                                <li class="bloggers-my-content">1,5 — 3 ₽</li>
+                                <li class="bloggers-my-content">400 — 1 800</li>
+                                <li class="bloggers-my-content">300 — 1 500 ₽</li>
+                                <li class="bloggers-my-content">999</li>
+                                <li class="bloggers-my-content">8,4 <img src="img/star.svg" alt="star" class="star"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="popup-info-flex">
+                        <div class="popup-card">
+                            <div class="popup-card-date">18.05.19</div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за подп.</p>
+                                    <p class="popup-card-item">1,2 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Приход</p>
+                                    <p class="popup-card-item">44 000 подп.</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за рекламу</p>
+                                    <p class="popup-card-item">545 000 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Оценка</p>
+                                    <p class="popup-card-item"><span class="popup-card-span">5 <img src="img/star.svg" alt="star" class="star"></span></p>
+                                </div>
+                            </div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Заказчик</p>
+                                    <a href="#" class="popup-card-item blue-text">neotpuskaiteplo</a>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Формат рекламы</p>
+                                    <p class="popup-card-item ">Сторис</p>
+                                </div>
+                            </div>
+                            <div class="popup-review-row">
+                                <p class="popup-review-gray gray">Текст отзыва</p>
+                                <p class="popup-card-text">
+                                    Я <br> <a href="https://www.instagram.com/mariannaorlova"><span class="blue-text">https://www.instagram.com/mariannaorlova</span></a><br>
+                                    У меня брала рекламу <br>
+                                    <a href="https://www.instagram.com/neotpuskaiteplo" ><span class="blue-text">https://www.instagram.com/neotpuskaiteplo</span></a><br>
+                                    Выше можно найти от девушки негативный отзыв <br>
+                                    Девушка общалась с менеджером, очень бурно переживая, что ее блог НЕ зашел. Мой менеджер отвечала вежливо, корректно, не пропадала, не гасилась. Д...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-card">
+                            <div class="popup-card-date">18.05.19</div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за подп.</p>
+                                    <p class="popup-card-item">1,2 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Приход</p>
+                                    <p class="popup-card-item">44 000 подп.</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за рекламу</p>
+                                    <p class="popup-card-item">545 000 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Оценка</p>
+                                    <p class="popup-card-item"><span class="popup-card-span">5 <img src="img/star.svg" alt="star" class="star"></span></p>
+                                </div>
+                            </div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Заказчик</p>
+                                    <a href="#" class="popup-card-item blue-text">neotpuskaitin</a>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Формат рекламы</p>
+                                    <p class="popup-card-item ">Сторис</p>
+                                </div>
+                            </div>
+                            <div class="popup-review-row">
+                                <p class="popup-review-gray gray">Текст отзыва</p>
+                                <p class="popup-card-text">
+                                    Я <br><a href="https://www.instagram.com/mariannaorlova"><span class="blue-text">https://www.instagram.com/mariannaorlova</span></a><br><br>
+                                    Написала мне в мае <br>
+                                    <a href="https://www.instagram.com/neotpuskaiteplo" ><span class="blue-text">https://www.instagram.com/neotpuskaiteplo</span></a><br><br>
+                                    с предложением о ВП: <br>Я пиарю аккаунт<br><a href="https://instagram.com/dasha" ><span class="blue-text">https://instagram.com/dasha</span></a>
+                                    <br>
+                                    Меня пиарят с аккаунта <br><a href="https://instagram.com/dashabotanika" ><span class="blue-text">https://instagram.com/dashabotanika</span></a><br> <br>
+                                    Заявленные охваты у них были 13 к <br>У меня на тот момент 3-3,5
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-card">
+                            <div class="popup-card-date">18.05.19</div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за подп.</p>
+                                    <p class="popup-card-item">1,2 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Приход</p>
+                                    <p class="popup-card-item">44 000 подп.</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за рекламу</p>
+                                    <p class="popup-card-item">545 000 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Оценка</p>
+                                    <p class="popup-card-item"><span class="popup-card-span">5 <img src="img/star.svg" alt="star" class="star"></span></p>
+                                </div>
+                            </div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Заказчик</p>
+                                    <a href="#" class="popup-card-item blue-text">neotpuskaiteplo</a>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Формат рекламы</p>
+                                    <p class="popup-card-item ">Сторис</p>
+                                </div>
+                            </div>
+                            <div class="popup-review-row">
+                                <p class="popup-review-gray gray">Текст отзыва</p>
+                                <p class="popup-card-text">
+                                    Я <br><a href="https://www.instagram.com/mariannaorlova"><span class="blue-text">https://www.instagram.com/mariannaorlova</span></a><br>
+                                    У меня брала рекламу <br>
+                                    <a href="https://www.instagram.com/neotpuskaiteplo" ><span class="blue-text">https://www.instagram.com/neotpuskaiteplo</span></a><br>
+                                    Выше можно найти от девушки негативный отзыв <br>
+                                    Девушка общалась с менеджером, очень бурно переживая, что ее блог НЕ зашел. Мой менеджер отвечала вежливо, корректно, не пропадала, не гасилась. Д...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-card">
+                            <div class="popup-card-date">18.05.19</div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Реклама окупилась</p>
+                                    <p class="popup-card-item">Да</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Оценка</p>
+                                    <p class="popup-card-item"><span class="popup-card-span">5 <img src="img/star.svg" alt="star" class="star"></span></p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Кто рекламировал</p>
+                                    <a href="#" class="popup-card-item blue-text">egordemkinin</a>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Товар или услуга</p>
+                                    <p class="popup-card-item">Одежда</p>
+                                </div>
+                            </div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за рекламу</p>
+                                    <p class="popup-card-item ">300 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Приход</p>
+                                    <p class="popup-card-item ">400 подп.</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за подписчика</p>
+                                    <p class="popup-card-item "> 3,3 ₽</p>
+                                </div>
+                            </div>
+                            <div class="popup-review-row">
+                                <p class="popup-review-gray gray">Текст отзыва</p>
+                                <p class="popup-card-text">
+                                    Я <br><a href="https://www.instagram.com/mariannaorlova"><span class="blue-text">https://www.instagram.com/mariannaorlova</span></a><br><br>
+                                    Написала мне в мае <br>
+
+                                    <a href="https://www.instagram.com/neotpuskaiteplo" ><span class="blue-text">https://www.instagram.com/neotpuskaiteplo</span></a><br><br>
+                                    с предложением о ВП: <br>Я пиарю аккаунт<br>
+                                    Меня пиарят с аккаунта <a href="https://instagram.com/dashabotanika" ><span class="blue-text">https://instagram.com/dashabotanika</span></a> <br>Заявленные охваты у них были 13 к <br>У меня на тот момент 3-3,5
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-card">
+                            <div class="popup-card-date">18.05.19</div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за подп.</p>
+                                    <p class="popup-card-item">1,2 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Приход</p>
+                                    <p class="popup-card-item">44 000 подп.</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за рекламу</p>
+                                    <p class="popup-card-item">545 000 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Оценка</p>
+                                    <p class="popup-card-item"><span class="popup-card-span">5 <img src="img/star.svg" alt="star" class="star"></span></p>
+                                </div>
+                            </div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Заказчик</p>
+                                    <a href="#" class="popup-card-item blue-text">neotpuskaiteplo</a>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Формат рекламы</p>
+                                    <p class="popup-card-item ">Сторис</p>
+                                </div>
+                            </div>
+                            <div class="popup-review-row">
+                                <p class="popup-review-gray gray">Текст отзыва</p>
+                                <p class="popup-card-text">
+                                    Я <br> <a href="https://www.instagram.com/mariannaorlova"><span class="blue-text">https://www.instagram.com/mariannaorlova</span></a><br>
+                                    У меня брала рекламу <br>
+                                    <a href="https://www.instagram.com/neotpuskaiteplo" ><span class="blue-text">https://www.instagram.com/neotpuskaiteplo</span></a><br>
+                                    Выше можно найти от девушки негативный отзыв <br>
+                                    Девушка общалась с менеджером, очень бурно переживая, что ее блог НЕ зашел. Мой менеджер отвечала вежливо, корректно, не пропадала, не гасилась. Д...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-card">
+                            <div class="popup-card-date">18.05.19</div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за подп.</p>
+                                    <p class="popup-card-item">1,2 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Приход</p>
+                                    <p class="popup-card-item">44 000 подп.</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за рекламу</p>
+                                    <p class="popup-card-item">545 000 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Оценка</p>
+                                    <p class="popup-card-item"><span class="popup-card-span">5 <img src="img/star.svg" alt="star" class="star"></span></p>
+                                </div>
+                            </div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Заказчик</p>
+                                    <a href="#" class="popup-card-item blue-text">neotpuskaitin</a>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Формат рекламы</p>
+                                    <p class="popup-card-item ">Сторис</p>
+                                </div>
+                            </div>
+                            <div class="popup-review-row">
+                                <p class="popup-review-gray gray">Текст отзыва</p>
+                                <p class="popup-card-text">
+                                    Я <br><a href="https://www.instagram.com/mariannaorlova"><span class="blue-text">https://www.instagram.com/mariannaorlova</span></a><br><br>
+                                    Написала мне в мае <br>
+                                    <a href="https://www.instagram.com/neotpuskaiteplo" ><span class="blue-text">https://www.instagram.com/neotpuskaiteplo</span></a><br><br>
+                                    с предложением о ВП: <br>Я пиарю аккаунт<br><a href="https://instagram.com/dasha" ><span class="blue-text">https://instagram.com/dasha</span></a>
+                                    <br>
+                                    Меня пиарят с аккаунта <br><a href="https://instagram.com/dashabotanika" ><span class="blue-text">https://instagram.com/dashabotanika</span></a><br> <br>
+                                    Заявленные охваты у них были 13 к <br>У меня на тот момент 3-3,5
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-card">
+                            <div class="popup-card-date">18.05.19</div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за подп.</p>
+                                    <p class="popup-card-item">1,2 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Приход</p>
+                                    <p class="popup-card-item">44 000 подп.</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за рекламу</p>
+                                    <p class="popup-card-item">545 000 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Оценка</p>
+                                    <p class="popup-card-item"><span class="popup-card-span">5 <img src="img/star.svg" alt="star" class="star"></span></p>
+                                </div>
+                            </div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Заказчик</p>
+                                    <a href="#" class="popup-card-item blue-text">neotpuskaiteplo</a>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Формат рекламы</p>
+                                    <p class="popup-card-item ">Сторис</p>
+                                </div>
+                            </div>
+                            <div class="popup-review-row">
+                                <p class="popup-review-gray gray">Текст отзыва</p>
+                                <p class="popup-card-text">
+                                    Я <br><a href="https://www.instagram.com/mariannaorlova"><span class="blue-text">https://www.instagram.com/mariannaorlova</span></a><br>
+                                    У меня брала рекламу <br>
+                                    <a href="https://www.instagram.com/neotpuskaiteplo" ><span class="blue-text">https://www.instagram.com/neotpuskaiteplo</span></a><br>
+                                    Выше можно найти от девушки негативный отзыв <br>
+                                    Девушка общалась с менеджером, очень бурно переживая, что ее блог НЕ зашел. Мой менеджер отвечала вежливо, корректно, не пропадала, не гасилась. Д...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-card">
+                            <div class="popup-card-date">18.05.19</div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Реклама окупилась</p>
+                                    <p class="popup-card-item">Да</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Оценка</p>
+                                    <p class="popup-card-item"><span class="popup-card-span">5 <img src="img/star.svg" alt="star" class="star"></span></p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Кто рекламировал</p>
+                                    <a href="#" class="popup-card-item blue-text">egordemkinin</a>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Товар или услуга</p>
+                                    <p class="popup-card-item">Одежда</p>
+                                </div>
+                            </div>
+                            <div class="popup-card-col">
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за рекламу</p>
+                                    <p class="popup-card-item ">300 ₽</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Приход</p>
+                                    <p class="popup-card-item ">400 подп.</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Цена за подписчика</p>
+                                    <p class="popup-card-item "> 3,3 ₽</p>
+                                </div>
+                            </div>
+                            <div class="popup-review-row">
+                                <p class="popup-review-gray gray">Текст отзыва</p>
+                                <p class="popup-card-text">
+                                    Я <br><a href="https://www.instagram.com/mariannaorlova"><span class="blue-text">https://www.instagram.com/mariannaorlova</span></a><br><br>
+                                    Написала мне в мае <br>
+
+                                    <a href="https://www.instagram.com/neotpuskaiteplo" ><span class="blue-text">https://www.instagram.com/neotpuskaiteplo</span></a><br><br>
+                                    с предложением о ВП: <br>Я пиарю аккаунт<br>
+                                    Меня пиарят с аккаунта <a href="https://instagram.com/dashabotanika" ><span class="blue-text">https://instagram.com/dashabotanika</span></a> <br>Заявленные охваты у них были 13 к <br>У меня на тот момент 3-3,5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-white">Показать ещё</button>
+                    <div class="pagination">
+                        <a href="#" class="pagination-btn disabled" >Назад
+                            <svg class="pagination-btn-arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 1L1 6.5L6.5 12" stroke="#B4BDC1" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <div class="pagination-row">
+                            <a href="#" class="pagination-number active">1</a>
+                            <a href="#" class="pagination-number ">2</a>
+                            <a href="#" class="pagination-number">3</a>
+                            <a href="#" class="pagination-number">4</a>
+                        </div>
+                        <a href="#" class="pagination-btn  ">Вперёд
+                            <svg class="pagination-btn-arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 12L6 6.5L0.500001 1" stroke="#6A7B83" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="popup popup-edit-info">
+    <div class="popup-window">
+        <div class="popup-filling-container">
+            <div class="popup-top">
+                <p class="popup-top-title">Изменить информацию</p>
+                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+            <form class="popup-filling-form">
+                <div class="popup-filling-half">
+                    <div class="form-field">
+                        <p class="form-name">Брали рекламу у блогера</p>
+                        <input type="text" class="form-input" placeholder="Введите ник" value="kreida" required="">
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Мой аккаунт</p>
+                        <input type="text" class="form-input datepicker" placeholder="Введите ник" value="reira_reira" required="">
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Дата рекламы</p>
+                        <input type="text" class="form-input datepicker" placeholder="ДД.ММ.ГГ." value="03.12.2019 Ср" required="">
+                    </div>
+                    <div class="popup-filling-flex">
+                        <div class="form-field">
+                            <p class="form-name">Цена за рекламу в ₽</p>
+                            <input type="text" class="form-input" required="" value="99 999" >
+                        </div>
+                        <div class="popup-filling-checkboxes">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="check-text">ВП</span>
+                            </label>
+                            <label class="label">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="check-text">Бартер</span>
+                            </label>
+                            <label class="label">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="form-item ">
+                                    <span class="check-text " >С доплатой</span>
+                                    <span class="popup-question">?
+                                        <span class="tooltip">
+                                            <span class="tooltip-container">
+                                                <span class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Формат рекламы</p>
+                        <select>
+                            <option value="" style="display: none; color: #B4BDC1;">Выберите из списка</option>
+                            <option value="Сторис 15c">Сторис 15c</option>
+                            <option value="Сторис 30c">Сторис 30c</option>
+                            <option value="Сторис 45c">Сторис 45c</option>
+                            <option value="Сторис 60c">Сторис 60c</option>
+                            <option value="Сторис 75c">Сторис 75c</option>
+                            <option value="Сторис 90c">Сторис 90c</option>
+                            <option value="Фото-пост" selected>Фото-пост</option>
+                            <option value="Видео-пост">Видео-пост</option>
+                            <option value="Сторис+пост">Сторис+пост</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="popup-filling-half">
+                    <div class="">
+                        <div class="form-field">
+                            <p class="form-name">Приход подписчиков</p>
+                            <input type="text" class="form-input" value="12 000" required="">
+                        </div>
+                        <div class="form-field">
+                            <p class="form-name">Фактический охват</p>
+                            <input type="text" class="form-input " value="11 500" required="">
+                        </div>
+                        <div class="form-field">
+                            <p class="form-name">Переходов по рекламе</p>
+                            <input type="text" class="form-input" required="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="popup-filling-btns">
+                            <button class="btn-white">Отмена</button>
+                            <button type="submit" class="btn-orange">Сохранить и закрыть</button>
+                        </div>
+                        <a href="#" class="blue-text">Сохранить и заполнить данные для другого заказчика</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="popup popup-edit ">
+    <div class="popup-window">
+        <div class="popup-filling-container">
+            <div class="popup-top">
+                <p class="popup-top-title">Изменить информацию</p>
+                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+            <form class="popup-filling-form">
+                <div class="popup-filling-half">
+                    <div class="form-field">
+                        <p class="form-name">Ник блогера</p>
+                        <input type="text" class="form-input" placeholder="Введите ник" value="kreida" required="">
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Дата рекламы</p>
+                        <input type="text" class="form-input datepicker" placeholder="ДД.ММ.ГГ." value="03.12.2019 Ср" required="">
+                    </div>
+                    <div class="popup-filling-flex">
+                        <div class="form-field">
+                            <p class="form-name">Цена за рекламу в ₽</p>
+                            <input type="text" class="form-input" required="" value="15 500" >
+                        </div>
+                        <div class="popup-filling-checkboxes">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="check-text">ВП</span>
+                            </label>
+                            <label class="label">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="check-text">Бартер</span>
+                            </label>
+                            <label class="label">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="form-item ">
+                                    <span class="check-text " >С доплатой</span>
+                                    <span class="popup-question">?
+                                        <span class="tooltip">
+                                            <span class="tooltip-container">
+                                                <span class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Формат рекламы</p>
+                        <select>
+                            <option value="" style="display: none; color: #B4BDC1;">Выберите из списка</option>
+                            <option value="Сторис 15c">Сторис 15c</option>
+                            <option value="Сторис 30c">Сторис 30c</option>
+                            <option value="Сторис 45c">Сторис 45c</option>
+                            <option value="Сторис 60c">Сторис 60c</option>
+                            <option value="Сторис 75c">Сторис 75c</option>
+                            <option value="Сторис 90c">Сторис 90c</option>
+                            <option value="Фото-пост">Фото-пост</option>
+                            <option value="Видео-пост">Видео-пост</option>
+                            <option value="Сторис+пост">Сторис+пост</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="popup-filling-half">
+                    <div class="">
+                        <div class="form-field">
+                            <p class="form-name">Приход подписчиков</p>
+                            <input type="text" class="form-input" value="12 000" required="">
+                        </div>
+                        <div class="form-field">
+                            <p class="form-name">Фактический охват</p>
+                            <input type="text" class="form-input " value="11 500" required="">
+                        </div>
+                        <div class="form-field">
+                            <p class="form-name">Переходов по рекламе</p>
+                            <input type="text" class="form-input" required="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="popup-filling-btns">
+                            <button class="btn-white">Отмена</button>
+                            <button type="submit" class="btn-blue">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <section class="second">
+        <div class="container">
+            <div class="second-top">
+                <div class="second-left">
+                    <h2 class="title-24px">Мой трекер</h2>
+                    <ul class="tabs">
+                        <li class="tabs-list active">
+                            <svg height="36" viewBox="0 0 116 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H106.109L116 18L106.109 36H0L10 18L0 0Z" fill="white"/>
+                            </svg>
+                            <p class="tabs-text">Поиск блогеров</p>
+                        </li>
+                        <li class="tabs-list">
+                            <svg height="36" viewBox="0 0 116 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H106.109L116 18L106.109 36H0L10 18L0 0Z" fill="white"/>
+                            </svg>
+                            <p class="tabs-text">Мой список</p>
+                            <div class="tabs-list-count">9999</div>
+                        </li>
+                        <li class="tabs-list">
+                            <svg height="36" viewBox="0 0 116 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H106.109L116 18L106.109 36H0L10 18L0 0Z" fill="white"/>
+                            </svg>
+                            <p class="tabs-text">Моя история</p>
+                        </li>
+                    </ul>
+                    <button class="btn-calculate"><img src="img/calculate.svg" alt="calculate" class="btn-calculate-img">Калькулятор подписчиков</button>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="second-block active">
+                <div class="container">
+                    <div class="bloggers">
+                        <div class="bloggers-top">
+                            <div class="bloggers-top-left">
+                                <h2 class="title-24px">Поиск блогеров</h2>
+                            </div>
+                        </div>
+                        <div class="empty-content">
+                            <p class="empty-text">Нет доступных для поиска блогеров.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-block">
+                <div class="container">
+                    <div class="bloggers">
+                        <div class="bloggers-top">
+                            <div class="bloggers-top-left">
+                                <h2 class="title-24px">Мой список <span class="title-24px mob-hide"> блогеров</span></h2>
+                                <button class="btn-white">Добавить блогера</button>
+                            </div>
+                        </div>
+                        <div class="empty-content">
+                            <p class="empty-text">В вашем списке пока нет блогеров. Для добавления блогеров вы можете воспользоваться вкладкой
+                                <span class="nowrap"> «<a href="" class="blue-text">Поиск блогеров</a>» </span> или нажать на соответстующую кнопку выше.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-block ">
+                <div class="container">
+                    <div class="bloggers bloggers-menu-story">
+                        <div class="bloggers-top">
+                            <div class="bloggers-top-left">
+                                <h2 class="title-24px">Моя история <span class="title-24px mob-hide"> отзывов</span></h2>
+                                <button class="btn-white">Оставить отзыв</button>
+                            </div>
+                        </div>
+                        <div class="empty-content">
+                            <p class="empty-text">Пока ваша история отзывов пуста. Оставьте отзыв, чтобы начать историю 😉</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <a href="#" class="footer-link">Написать в техподдержку</a>
+        <a href="#" class="footer-link">Пользовательское соглашение</a>
+    </div>
+</footer>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/bodyScrollLock.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
