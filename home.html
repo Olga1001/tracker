@@ -1067,7 +1067,7 @@
                     </div>
                     <div class="popup-filling-flex">
                         <div class="form-field">
-                            <p class="form-name">Цена за рекламу в ₽</p>
+                            <p class="form-name nowrap">Цена за рекламу в ₽</p>
                             <input type="text" class="form-input" required="" value="99 999" >
                         </div>
                         <div class="popup-filling-checkboxes">
@@ -1099,8 +1099,8 @@
                     </div>
                     <div class="form-field">
                         <p class="form-name">Формат рекламы</p>
-                        <select>
-                            <option value="" style="display: none; color: #B4BDC1;">Выберите из списка</option>
+                        <select required>
+                            <option value="" disabled>Выберите из списка</option>
                             <option value="Сторис 15c">Сторис 15c</option>
                             <option value="Сторис 30c">Сторис 30c</option>
                             <option value="Сторис 45c">Сторис 45c</option>
@@ -1159,7 +1159,7 @@
                     </div>
                     <div class="popup-filling-flex">
                         <div class="form-field">
-                            <p class="form-name">Цена за рекламу в ₽</p>
+                            <p class="form-name nowrap">Цена за рекламу в ₽</p>
                             <input type="text" class="form-input" required="" value="15 500" >
                         </div>
                         <div class="popup-filling-checkboxes">
@@ -1191,8 +1191,8 @@
                     </div>
                     <div class="form-field">
                         <p class="form-name">Формат рекламы</p>
-                        <select>
-                            <option value="" style="display: none; color: #B4BDC1;">Выберите из списка</option>
+                        <select required>
+                            <option value="" selected disabled>Выберите из списка</option>
                             <option value="Сторис 15c">Сторис 15c</option>
                             <option value="Сторис 30c">Сторис 30c</option>
                             <option value="Сторис 45c">Сторис 45c</option>
@@ -1231,6 +1231,8 @@
         </div>
     </div>
 </div>
+
+
 
 		<section class="first">
 			<div class="container">
@@ -1315,7 +1317,7 @@
 									<input type="text" class="search-input" placeholder="Введите ник блогера">
 								</div>
 								<div class="search-field">
-									<p class="search-name">Цена за подписчика в ₽</p>
+									<p class="search-name nowrap">Цена за подписчика в ₽</p>
 									<div class="search-field-flex">
 										<input type="text" class="search-input-two" placeholder="от 1">
 										<input type="text" class="search-input-two" placeholder="до 50">
@@ -1898,8 +1900,8 @@
 							<div class="search-col">
 								<div class="search-field">
 									<p class="search-name">Формат рекламы</p>
-									<select class="search-select">
-										<option value="" disabled="" selected="">Выберите из списка</option>
+									<select class="search-select" required>
+										<option value="" disabled selected>Выберите из списка</option>
 										<option value="Сторис 15c">Сторис 15c</option>
 										<option value="Сторис 30c">Сторис 30c</option>
 										<option value="Сторис 45c">Сторис 45c</option>
@@ -2345,14 +2347,14 @@
 							</div>
 							<div class="search-col">
 								<div class="search-field">
-									<p class="search-name">Цена за подписчика в ₽</p>
+									<p class="search-name nowrap">Цена за подписчика в ₽</p>
 									<div class="search-field-flex">
 										<input type="text" class="search-input-two" placeholder="от 500">
 										<input type="text" class="search-input-two" placeholder="до 999 999">
 									</div>
 								</div>
 								<div class="search-field">
-									<p class="search-name">Цена рекламы в ₽</p>
+									<p class="search-name nowrap">Цена рекламы в ₽</p>
 									<div class="search-field-flex">
 										<input type="text" class="search-input-two" placeholder="от 300">
 										<input type="text" class="search-input-two" placeholder="до 999 999">

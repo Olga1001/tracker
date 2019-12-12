@@ -168,24 +168,28 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
-    //calculate
-    $(".btn-calculate").click(function (e) {
-        $(".popup-calculate").addClass('active');
-        $(".popup-calculate-item").removeClass('active');
-        $(".popup-calculate-one").addClass('active');
-        $(".btn-back, .footer").addClass('active');
-        $(".header-user").addClass('hide');
-        $(".popup-calculate-active").show();
-        $(".popup-calculate .popup-top-title").text("Калькулятор подписчиков");
-        $.scrollLock(true);
-    });
 
     $(".next-calculate-example").click(function (e) {
         e.preventDefault();
         $(".popup-calculate-item").removeClass('active');
         $(".popup-calculate-two, .popup-calculate-example").addClass('active');
     });
+
+    //calculate
+    $(".btn-calculate").click(function (e) {
+        $(".popup-calculate").addClass('active');
+        $(".popup-calculate-item").removeClass('active');
+        $(".popup-calculate-one").addClass('active');
+        $(".popup-calculate-active").show();
+        $(".popup-calculate .popup-top-title").text("Калькулятор подписчиков");
+        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".btn-back, .footer").addClass('active');
+            $(".header-user").addClass('hide');
+        }
+    });
     if (window.matchMedia("(max-width: 768px)").matches) {
+
         $(".next-calculate-example").click(function (e) {
             e.preventDefault();
             $(".popup-calculate .popup-top-title").text("Пример результатов расчетов");
@@ -283,7 +287,7 @@ $(document).ready(function () {
         $(".footer, .btn-back").addClass('active');
         $(".header-user").addClass('hide');
         let blogger = $(this).closest(".bloggers-card").find(".blogger").text(),
-            list = $(this).closest(".bloggers-card");
+            list = $(this).closest(".bloggers-card, .bloggers-content");
         $(".blogger-item").text(blogger);
         $(".delete-list").click(function () {
             list.remove();
@@ -314,9 +318,11 @@ $(document).ready(function () {
         e.preventDefault();
         $(".popup").removeClass('active');
         $(".popup-filling").addClass('active');
-        $(".header-user").addClass('hide');
-        $(".footer, .btn-back").addClass('active');
         $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".header-user").addClass('hide');
+            $(".footer, .btn-back").addClass('active');
+        }
     });
     $(".main .add-blogger, .main .show-filling-edit").click(function (e) {
         e.preventDefault();
@@ -367,8 +373,10 @@ $(document).ready(function () {
         e.preventDefault();
         $(".popup").removeClass('active');
         $(".popup-feedback").addClass('active');
-        $(".btn-back, .footer").addClass('active');
-        $(".header-user").addClass('hide');
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".btn-back, .footer").addClass('active');
+            $(".header-user").addClass('hide');
+        }
         $.scrollLock(true);
     });
     $(".main .show-feedback").click(function (e) {
