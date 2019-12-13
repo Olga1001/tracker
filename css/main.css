@@ -3137,6 +3137,10 @@ option {
     margin-right: 10px; } }
 
 @media only screen and (max-width: 993px) {
+  .ui-datepicker .ui-datepicker-header, .ui-datepicker table {
+    border-color: #192229; }
+  .ui-datepicker:after, .ui-datepicker:before {
+    content: none; }
   .bloggers {
     min-height: calc(100vh - 316px); }
   body {

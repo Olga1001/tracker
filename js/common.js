@@ -453,27 +453,6 @@ $(document).ready(function () {
         $.scrollLock(false);
     });
 
-    let input = document.querySelectorAll('.form-input');
-    $(".checkbox1").click(function () {
-        let arr = [1000, 30, 5, 15, 5];
-        for (let i = 0; i < arr.length; i++){
-            console.log(arr[i]);
-            input.values(i)
-        }
-    });
-    $(".checkbox2").click(function () {
-        let arr = [1002, 31, 6, 16, 6];
-        for (let i = 0; i < arr.length; i++){
-            console.log(arr[i]);
-        }
-    });
-    $(".checkbox3").click(function () {
-        let arr = [1003, 32, 7, 17, 7];
-        for (let i = 0; i < arr.length; i++){
-            console.log(arr[i]);
-        }
-    });
-
     $(".add-list").click(function (e) {
         e.preventDefault();
         $(this).closest(".bloggers-card").find(".bloggers-add").addClass('active');
@@ -496,6 +475,10 @@ $(document).ready(function () {
         dateFormat: 'dd.mm.yy D',
         minDate: new Date($('#hiddendelivdate').val()),
         dayNamesShort: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"], // For formatting
+    });
+
+    $("div, form").scroll(function() {
+        $( ".datepicker" ).datepicker('hide');
     });
 
 });
