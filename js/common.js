@@ -23,7 +23,7 @@ $(document).ready(function () {
         $(".popup-attention, .first-tracker").removeClass('active');
 
         $(".header-user").addClass('hide');
-        $(".btn-back, .footer").addClass('active');
+        $(".btn-back").addClass('active');
         $(".menu, .menu-col").removeClass("active");
         $.scrollLock(true);
     });
@@ -184,7 +184,7 @@ $(document).ready(function () {
         $(".popup-calculate .popup-top-title").text("Калькулятор подписчиков");
         $.scrollLock(true);
         if (window.matchMedia("(max-width: 768px)").matches) {
-            $(".btn-back, .footer").addClass('active');
+            $(".btn-back").addClass('active');
             $(".header-user").addClass('hide');
         }
     });
@@ -253,6 +253,12 @@ $(document).ready(function () {
         $(this).addClass('active').siblings().removeClass('active');
         let index = $(this).index();
         $(".second-block").eq(index).addClass('active').siblings().removeClass('active');
+        if ($(".tabs-list").eq(1).hasClass('active')){
+            $(".cabinet .tabs-list-count").removeClass('active');
+        } else {
+            $(".cabinet .tabs-list-count").addClass('active');
+        }
+
     });
 
     //show popup review delete
@@ -265,7 +271,7 @@ $(document).ready(function () {
     $(".show-info-blogger").click(function (e) {
         e.preventDefault();
         $(".popup-info").addClass('active');
-        $(".btn-back, .footer").addClass('active');
+        $(".btn-back").addClass('active');
         $(".header-user").addClass('hide');
         $.scrollLock(true);
     });
@@ -274,7 +280,7 @@ $(document).ready(function () {
         $(".popup-info-review").addClass('active');
         $(".popup-logregistr").addClass('active');
         $(".popup-attention").addClass('active');
-        $(".btn-back, .footer").addClass('active');
+        $(".btn-back").addClass('active');
         $(".header-user").addClass('hide');
         $.scrollLock(true);
     });
@@ -284,7 +290,7 @@ $(document).ready(function () {
         e.preventDefault();
         $.scrollLock(true);
         $(".popup-delete").addClass('active');
-        $(".footer, .btn-back").addClass('active');
+        $(".btn-back").addClass('active');
         $(".header-user").addClass('hide');
         let blogger = $(this).closest(".bloggers-card").find(".blogger").text(),
             list = $(this).closest(".bloggers-card, .bloggers-content");
@@ -292,16 +298,10 @@ $(document).ready(function () {
         $(".delete-list").click(function () {
             list.remove();
             $(".popup").removeClass('active');
-            $(".footer, .btn-back").removeClass('active');
+            $(".btn-back").removeClass('active');
             $(".header-user").removeClass('hide');
             $.scrollLock(false);
         });
-    });
-
-    $(".datepicker").datepicker({
-        dateFormat: 'dd.mm.yy D',
-        minDate: new Date($('#hiddendelivdate').val()),
-        dayNamesShort: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"], // For formatting
     });
 
     $(".cabinet .second-block:nth-child(2) .bloggers-my-edit, .show-filling-edit").click(function (e) {
@@ -309,7 +309,7 @@ $(document).ready(function () {
         $(".popup").removeClass('active');
         $(".popup-filling-edit").addClass('active');
         $(".header-user").addClass('hide');
-        $(".footer, .btn-back").addClass('active');
+        $(".btn-back").addClass('active');
         $.scrollLock(true);
     });
 
@@ -321,7 +321,7 @@ $(document).ready(function () {
         $.scrollLock(true);
         if (window.matchMedia("(max-width: 768px)").matches) {
             $(".header-user").addClass('hide');
-            $(".footer, .btn-back").addClass('active');
+            $(".btn-back").addClass('active');
         }
     });
     $(".main .add-blogger, .main .show-filling-edit").click(function (e) {
@@ -336,7 +336,7 @@ $(document).ready(function () {
         $(".popup").removeClass('active');
         $(".popup-edit-info").addClass('active');
         $(".header-user").addClass('hide');
-        $(".footer, .btn-back").addClass('active');
+        $(".btn-back").addClass('active');
         $.scrollLock(true);
     });
 
@@ -352,6 +352,7 @@ $(document).ready(function () {
 
     //drop-down list: Customer account topic in Leave a comment on the blogger
     $(".popup-drop-item").click(function () {
+        $(this).toggleClass('active');
         $(".popup-drop-list").slideToggle(300);
         $(this).find(".popup-drop-arrow").toggleClass('active');
     });
@@ -359,7 +360,8 @@ $(document).ready(function () {
     $(".popup-white-text").click(function () {
         $(".popup-white-drop").slideToggle(300);
     });
-    $(".next-feedback-two").click(function () {
+    $(".next-feedback-two").click(function (e) {
+        e.preventDefault();
         $(".popup").removeClass('active');
         $(".popup-feedback-two").addClass('active');
         $.scrollLock(true);
@@ -374,7 +376,7 @@ $(document).ready(function () {
         $(".popup").removeClass('active');
         $(".popup-feedback").addClass('active');
         if (window.matchMedia("(max-width: 768px)").matches) {
-            $(".btn-back, .footer").addClass('active');
+            $(".btn-back").addClass('active');
             $(".header-user").addClass('hide');
         }
         $.scrollLock(true);
@@ -393,17 +395,25 @@ $(document).ready(function () {
     // mobile
 
     //filter
-    $(".bloggers-filter-btn").click(function (e) {
+    $(".cabinet .bloggers-filter-btn").click(function (e) {
         e.preventDefault();
         $(".header-user").addClass('hide-main');
-        $(".footer, .btn-back").addClass('active-main');
+        $(".btn-back").addClass('active-main');
         $(this).closest(".second-block ").find(".search").addClass('active');
+        $.scrollLock(true);
+    });
+    $(".main .bloggers-filter-btn, .main .bloggers-bottom-btn").click(function (e) {
+        e.preventDefault();
+        $(".popup-logregistr").addClass('active');
+        $(".popup-attention").addClass('active');
+        $(".header-user").addClass('hide');
+        $(".btn-back").addClass('active');
         $.scrollLock(true);
     });
     $(".btn-back").click(function (e) {
         e.preventDefault();
         $(".header-user").removeClass('hide').removeClass('hide-main');
-        $(".search, .footer, .btn-back, .popup, .first-tracker").removeClass('active').removeClass('active-main');
+        $(".search, .btn-back, .popup, .first-tracker").removeClass('active').removeClass('active-main');
         $(".popup-calculate-copy").text("Скопировать текст");
         $.scrollLock(false);
     });
@@ -430,7 +440,7 @@ $(document).ready(function () {
     });
     $(".first-link").click(function () {
         $(".first-tracker").addClass("active");
-        $(".footer, .btn-back").addClass("active-main");
+        $(".btn-back").addClass("active-main");
         $(".header-user").addClass("hide-main");
         $.scrollLock(true);
     });
@@ -441,6 +451,51 @@ $(document).ready(function () {
     $(".menu-close").click(function () {
         $(".menu, .menu-col").removeClass("active");
         $.scrollLock(false);
+    });
+
+    let input = document.querySelectorAll('.form-input');
+    $(".checkbox1").click(function () {
+        let arr = [1000, 30, 5, 15, 5];
+        for (let i = 0; i < arr.length; i++){
+            console.log(arr[i]);
+            input.values(i)
+        }
+    });
+    $(".checkbox2").click(function () {
+        let arr = [1002, 31, 6, 16, 6];
+        for (let i = 0; i < arr.length; i++){
+            console.log(arr[i]);
+        }
+    });
+    $(".checkbox3").click(function () {
+        let arr = [1003, 32, 7, 17, 7];
+        for (let i = 0; i < arr.length; i++){
+            console.log(arr[i]);
+        }
+    });
+
+    $(".add-list").click(function (e) {
+        e.preventDefault();
+        $(this).closest(".bloggers-card").find(".bloggers-add").addClass('active');
+    });
+    $(".hide-mouth").click(function (e) {
+        e.preventDefault();
+        $(this).closest(".bloggers-card").find(".bloggers-lurk").addClass('active');
+    });
+    $(".delete-forever").click(function (e) {
+        e.preventDefault();
+        $(this).closest(".bloggers-card").find(".bloggers-delete").addClass('active');
+    });
+    $(".cancel-action").click(function (e) {
+        e.preventDefault();
+        $(".bloggers-bottom-item").removeClass('active');
+    });
+
+    //date
+    $(".datepicker").datepicker({
+        dateFormat: 'dd.mm.yy D',
+        minDate: new Date($('#hiddendelivdate').val()),
+        dayNamesShort: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"], // For formatting
     });
 
 });

@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=375, initial-scale=1, maximum-scale=1">
 <!--	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">-->
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
@@ -115,100 +116,105 @@
                 <div class="popup-tab">Регистрация</div>
             </div>
             <ul class="popup-forms">
-                <li class="popup-forms-list hide active">
-                    <form class="form ">
-                        <div class="form-padding">
-                            <div class="form-field">
-                                <p class="form-name">Введите номер телефона</p>
-                                <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99" required>
-                            </div>
-                            <div class="form-field">
-                                <div class="form-flex">
-                                    <p class="form-name">Пароль </p><a href="#" class="form-blue form-forgot">Забыли пароль?</a>
+                    <li class="popup-forms-list hide active">
+                        <form class="form ">
+                            <div class="form-padding">
+                                <div class="form-field">
+                                    <p class="form-name">Введите номер телефона</p>
+                                    <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99" required>
                                 </div>
-                                <input type="password" class="form-input" required>
-                            </div>
-                        </div>
-                        <div class="form-bottom">
-                            <button type="submit" class="btn-blue">Войти</button>
-                        </div>
-                    </form>
-                </li>
-                <li class="popup-forms-list hide">
-                    <form class="form form-checkin active">
-                        <div class="form-padding">
-                            <div class="form-field required">
-                                <p class="form-name">Введите ваш номер телефона. <br> Мы отправим на него код</p>
-                                <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99" required>
-                                <span class="form-span">Номер телефона не может содержать пробелов <span class="nowrap">и букв</span></span>
-                            </div>
-                            <div class="form-field required">
-                                <p class="form-name">Пароль</p>
-                                <input type="password" class="form-input" required>
-                                <span class="form-span">От 6 символов. Минимум по 1 букве верхнего <span class="nowrap">и нижнего</span> регистра</span>
-                            </div>
-                            <div class="form-field required">
-                                <p class="form-name">Подтвердите пароль</p>
-                                <input type="password" class="form-input" required>
-                                <span class="form-span form-mistake-passwords">Пароли не совпадают</span>
-                            </div>
-                            <div class="form-politics required">
-                                <div class="form-politics-flex">
-                                    <label class="form-label" >
-                                        <input type="checkbox" class="checkbox" required>
-                                        <span class="check"></span>
-                                    </label>
-                                    <p class="form-politics-text">
-                                        Я соглашаюсь с <a href="" class="form-politics-link">Политикой конфиденциальности</a> и
-                                        <a href="#" class="form-politics-link">Правилами пользования сайтом</a>
-                                    </p>
+                                <div class="form-field">
+                                    <div class="form-flex">
+                                        <p class="form-name">Пароль </p><a href="#" class="form-blue form-forgot">Забыли пароль?</a>
+                                    </div>
+                                    <input type="password" class="form-input" required>
                                 </div>
-                                <span class="form-span form-mistake-check">Выберите чекбокс, чтобы продолжить</span>
                             </div>
+                            <div class="form-bottom">
+                                <button type="submit" class="btn-blue">Войти</button>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="popup-forms-list hide">
+                        <form class="form form-checkin active">
+                            <div class="form-padding">
+                                <div class="form-field required">
+                                    <p class="form-name">Введите ваш номер телефона. <br> Мы отправим на него код</p>
+                                    <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99" required>
+                                    <span class="form-span">Номер телефона не может содержать пробелов <span class="nowrap">и букв</span></span>
+                                </div>
+                                <div class="form-field required">
+                                    <p class="form-name">Пароль</p>
+                                    <input type="password" class="form-input" required>
+                                    <span class="form-span">От 6 символов. Минимум по 1 букве верхнего <span class="nowrap">и нижнего</span> регистра</span>
+                                </div>
+                                <div class="form-field required">
+                                    <p class="form-name">Подтвердите пароль</p>
+                                    <input type="password" class="form-input" required>
+                                    <span class="form-span form-mistake-passwords">Пароли не совпадают</span>
+                                </div>
+                                <div class="form-politics required">
+                                    <div class="form-politics-flex">
+                                        <label class="form-label" >
+                                            <input type="checkbox" class="checkbox" required>
+                                            <span class="check"></span>
+                                        </label>
+                                        <p class="form-politics-text">
+                                            Я соглашаюсь с <a href="" class="form-politics-link">Политикой конфиденциальности</a> и
+                                            <a href="#" class="form-politics-link">Правилами пользования сайтом</a>
+                                        </p>
+                                    </div>
+                                    <span class="form-span form-mistake-check">Выберите чекбокс, чтобы продолжить</span>
+                                </div>
 
-                        </div>
-                        <div class="form-bottom">
-                            <button type="submit" class="btn-blue form-next-sms">Далее</button>
-                        </div>
-                    </form>
-                    <form class="form form-confirmation">
-                        <div class="form-padding">
-                            <div class="form-field ">
-                                <p class="form-name">Код из SMS</p>
-                                <p class="form-info">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</p>
-                                <input type="text" class="form-input" placeholder="Код" required>
-                                <a href="#" class="form-blue form-repeat">Отправить код повторно</a>
-                                <div class="form-repeat-block">
-                                    <p class="form-repeat-text">
-                                        Попытка № <span class="form-repeat-number">0</span><br>Запросить код повторно можно через <span class="form-repeat-count"></span> секунд
-                                    </p>
-                                    <div class="form-repeat-item">
-                                        <p class="form-repeat-link">Не приходит SMS</p>
-                                        <div class="tooltip">
-                                            <div class="tooltip-container">
-                                                <p class="tooltip-text">Возможные причины:</p>
-                                                <p class="tooltip-text">1. Вы не изменили номер мобильного телефона на сайте на новый и SMS было отправлено на старый номер.</p>
-                                                <p class="tooltip-text">2. Проблемы могут быть со стороны сотового оператора. Обратитесь в их службу поддержки.</p>
+                            </div>
+                            <div class="form-bottom">
+                                <button type="submit" class="btn-blue form-next-sms">Далее</button>
+                            </div>
+                        </form>
+                        <form class="form form-confirmation">
+                            <div class="form-padding">
+                                <div class="form-field ">
+                                    <p class="form-name">Код из SMS</p>
+                                    <p class="form-info">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</p>
+                                    <input type="text" class="form-input" placeholder="Код" required>
+                                    <a href="#" class="form-blue form-repeat">Отправить код повторно</a>
+                                    <div class="form-repeat-block">
+                                        <p class="form-repeat-text">
+                                            Попытка № <span class="form-repeat-number">0</span><br>Запросить код повторно можно через <span class="form-repeat-count"></span> секунд
+                                        </p>
+                                        <div class="form-repeat-item">
+                                            <p class="form-repeat-link">Не приходит SMS</p>
+                                            <div class="tooltip">
+                                                <div class="tooltip-container">
+                                                    <p class="tooltip-text">Возможные причины:</p>
+                                                    <p class="tooltip-text">1. Вы не изменили номер мобильного телефона на сайте на новый и SMS было отправлено на старый номер.</p>
+                                                    <p class="tooltip-text">2. Проблемы могут быть со стороны сотового оператора. Обратитесь в их службу поддержки.</p>
 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-
-                        </div>
-                        <div class="form-bottom">
-                            <div class="form-bottom-between">
-                                <button class="btn-white form-back mob-hide-768 ">Назад</button>
-                                <button type="submit" class="btn-blue form-next-rate">Далее</button>
+                            <div class="form-bottom">
+                                <div class="form-bottom-between">
+                                    <button class="btn-white form-back mob-hide-768 ">Назад</button>
+                                    <button type="submit" class="btn-blue form-next-rate">Далее</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </li>
+                        </form>
+                    </li>
 
-            </ul>
-
+                </ul>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="footer-link">Написать в техподдержку</a>
+                <a href="#" class="footer-link">Пользовательское соглашение</a>
+            </div>
+        </footer>
     </div>
 </div>
 <div class="popup popup-rate">
@@ -355,6 +361,12 @@
             </form>
 
         </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="footer-link">Написать в техподдержку</a>
+                <a href="#" class="footer-link">Пользовательское соглашение</a>
+            </div>
+        </footer>
     </div>
 </div>
 <div class="popup popup-calculate">
@@ -372,15 +384,15 @@
                             <p class="form-name">Заполнить тестовые данные</p>
                             <div class="popup-calculate-flex">
                                 <label class="popup-calculate-label">
-                                    <input type="radio" class="checkbox" name="data">
+                                    <input type="radio" class="checkbox checkbox1" name="data">
                                     <span class="popup-calculate-number">1</span>
                                 </label>
                                 <label class="popup-calculate-label">
-                                    <input type="radio" class="checkbox" name="data">
+                                    <input type="radio" class="checkbox checkbox2" name="data">
                                     <span class="popup-calculate-number">2</span>
                                 </label>
                                 <label class="popup-calculate-label">
-                                    <input type="radio" class="checkbox" name="data">
+                                    <input type="radio" class="checkbox checkbox3" name="data">
                                     <span class="popup-calculate-number">3</span>
                                 </label>
                             </div>
@@ -426,8 +438,8 @@
                             </div>
                             <div class="popup-calculate-row">
                                 <input type="text" class="form-input popup-calculate-input" placeholder="Например, 5" required="">
-                                <select class="popup-calculate-select">
-                                    <option value="₽">₽</option>
+                                <select class="popup-calculate-select" required>
+                                    <option value="₽" selected>₽</option>
                                     <option value="₽">$</option>
                                     <option value="₽">₴</option>
                                     <option value="₽">₸</option>
@@ -553,8 +565,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="footer-link">Написать в техподдержку</a>
+                <a href="#" class="footer-link">Пользовательское соглашение</a>
+            </div>
+        </footer>
     </div>
 </div>
 <div class="popup popup-conversion">
@@ -565,38 +582,42 @@
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
             <div class="popup-row-half">
-                <div class="popup-conversion-row">
-                    <form class="popup-conversion-form">
-                        <div class="form-field">
-                            <p class="form-name">Приход подписчиков одним числом</p>
-                            <input type="text" class="form-input" placeholder="Например, 1500"  required="">
-                        </div>
-                        <div class="form-field">
-                            <p class="form-name">Охват рекламы одним числом</p>
-                            <input type="text" class="form-input" placeholder="Например, 63558"  required="">
-                        </div>
-                        <div class="popup-conversion-info">
-                            <p class="popup-info-text">Для более точных показателей советуем вам самостоятельно проанализировать 5-10 последних реклам и вывести средний процент конверсии.</p>
-                        </div>
-                        <button type="submit" class="btn-orange">Рассчитать и подставить результат</button>
-                    </form>
+                    <div class="popup-conversion-row">
+                        <form class="popup-conversion-form">
+                            <div class="form-field">
+                                <p class="form-name">Приход подписчиков одним числом</p>
+                                <input type="text" class="form-input" placeholder="Например, 1500"  required="">
+                            </div>
+                            <div class="form-field">
+                                <p class="form-name">Охват рекламы одним числом</p>
+                                <input type="text" class="form-input" placeholder="Например, 63558"  required="">
+                            </div>
+                            <div class="popup-conversion-info">
+                                <p class="popup-info-text">Для более точных показателей советуем вам самостоятельно проанализировать 5-10 последних реклам и вывести средний процент конверсии.</p>
+                            </div>
+                            <button type="submit" class="btn-orange">Рассчитать и подставить результат</button>
+                        </form>
 
-                    <div class="popup-conversion-text">
-                        <div class="blue-text popup-conversion-item">Что такое конверсия</div>
-                        <div class="popup-conversion-drop">
-                            <p class="form-info">Конверсия — это отношение количества пришедших подписчиков к охваченным рекламой у блогера.</p>
-                            <p class="form-info">Например, вы купили рекламу в сторис 15 секунд у блогера и на вас с нее подписалось 1000 подписчиков при охвате этой истории в 50000 подписчиков. Тогда конверсия будет равна: (1000/50000)*100% = 2%</p>
-                            <p class="form-info">Если историй с отметками вашего аккаунта в рекламе было несколько, то разделите приход подписчиков на среднее от охватов историй с отметками.</p>
-                            <p class="form-info">Например, было 4 истории (60 секунд), из них 2 подводки (88000 и 85000 охвата) и 2 ваших макета с отметками (77000 и 73000 охвата). Вы суммируете охваты историй с отметками и делите их на количество историй с отметками (77000 + 73000)/2 = 75000. Предположим, что приход подписчиков составил 2500, тогда конверсия = (2500/75000)*100% = 3,3%</p>
-                            <p class="form-info">Для удобства расчетов можете воспользоваться формой слева. Значение конверсии сразу подставится в основную форму.</p>
+                        <div class="popup-conversion-text">
+                            <div class="blue-text popup-conversion-item">Что такое конверсия</div>
+                            <div class="popup-conversion-drop">
+                                <p class="form-info">Конверсия — это отношение количества пришедших подписчиков к охваченным рекламой у блогера.</p>
+                                <p class="form-info">Например, вы купили рекламу в сторис 15 секунд у блогера и на вас с нее подписалось 1000 подписчиков при охвате этой истории в 50000 подписчиков. Тогда конверсия будет равна: (1000/50000)*100% = 2%</p>
+                                <p class="form-info">Если историй с отметками вашего аккаунта в рекламе было несколько, то разделите приход подписчиков на среднее от охватов историй с отметками.</p>
+                                <p class="form-info">Например, было 4 истории (60 секунд), из них 2 подводки (88000 и 85000 охвата) и 2 ваших макета с отметками (77000 и 73000 охвата). Вы суммируете охваты историй с отметками и делите их на количество историй с отметками (77000 + 73000)/2 = 75000. Предположим, что приход подписчиков составил 2500, тогда конверсия = (2500/75000)*100% = 3,3%</p>
+                                <p class="form-info">Для удобства расчетов можете воспользоваться формой слева. Значение конверсии сразу подставится в основную форму.</p>
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
         </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="footer-link">Написать в техподдержку</a>
+                <a href="#" class="footer-link">Пользовательское соглашение</a>
+            </div>
+        </footer>
     </div>
 </div>
 <div class="popup popup-review">
@@ -624,23 +645,6 @@
                         Выше можно найти от девушки негативный отзыв <br>
                         Девушка общалась с менеджером, очень бурно переживая, что ее блог НЕ зашел. Мой менеджер отвечала вежливо, корректно, не пропадала, не гасилась. Д...
                     </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="popup popup-delete">
-    <div class="popup-window">
-        <div class="popup-review-container">
-            <div class="popup-top">
-                <p class="popup-top-title">Удалить блогера</p>
-                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
-            </div>
-            <div class="popup-delete-block">
-                <p class="form-info">Вы хотите удалить блогера <a href="#" class="blue-text blogger-item">neotpuskaiteplo</a>. Чтобы продолжить удаление нажмите одну из кнопок ниже.</p>
-                <div class="popup-delete-row">
-                    <button class="blue-text">Удалить навсегда</button>
-                    <button class="btn-blue delete-list">Удалить из моего списка</button>
                 </div>
             </div>
         </div>
@@ -1037,9 +1041,16 @@
                             </svg>
                         </a>
                     </div>
+                    <footer class="footer">
+                        <div class="container">
+                            <a href="#" class="footer-link">Написать в техподдержку</a>
+                            <a href="#" class="footer-link">Пользовательское соглашение</a>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
+
     </div>
 
 </div>
@@ -1051,40 +1062,41 @@
                 <p class="popup-top-title">Изменить информацию</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
-            <form class="popup-filling-form">
-                <div class="popup-filling-half">
-                    <div class="form-field">
-                        <p class="form-name">Брали рекламу у блогера</p>
-                        <input type="text" class="form-input" placeholder="Введите ник" value="kreida" required="">
-                    </div>
-                    <div class="form-field">
-                        <p class="form-name">Мой аккаунт</p>
-                        <input type="text" class="form-input datepicker" placeholder="Введите ник" value="reira_reira" required="">
-                    </div>
-                    <div class="form-field">
-                        <p class="form-name">Дата рекламы</p>
-                        <input type="text" class="form-input datepicker" placeholder="ДД.ММ.ГГ." value="03.12.2019 Ср" required="">
-                    </div>
-                    <div class="popup-filling-flex">
+            <div class="popup-window-container">
+                <form class="popup-filling-form">
+                    <div class="popup-filling-half">
                         <div class="form-field">
-                            <p class="form-name nowrap">Цена за рекламу в ₽</p>
-                            <input type="text" class="form-input" required="" value="99 999" >
+                            <p class="form-name">Брали рекламу у блогера</p>
+                            <input type="text" class="form-input" placeholder="Введите ник" value="kreida">
                         </div>
-                        <div class="popup-filling-checkboxes">
-                            <label class="label">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="check-text">ВП</span>
-                            </label>
-                            <label class="label">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="check-text">Бартер</span>
-                            </label>
-                            <label class="label">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="form-item ">
+                        <div class="form-field">
+                            <p class="form-name">Мой аккаунт</p>
+                            <input type="text" class="form-input" placeholder="Введите ник" value="reira_reira">
+                        </div>
+                        <div class="form-field ">
+                            <p class="form-name">Дата рекламы</p>
+                            <input type="text" class="form-input datepicker" placeholder="ДД.ММ.ГГ." value="03.12.2019 Ср">
+                        </div>
+                        <div class="popup-filling-flex">
+                            <div class="form-field">
+                                <p class="form-name nowrap">Цена за рекламу в ₽</p>
+                                <input type="text" class="form-input" value="99 999" >
+                            </div>
+                            <div class="popup-filling-checkboxes">
+                                <label class="label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">ВП</span>
+                                </label>
+                                <label class="label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Бартер</span>
+                                </label>
+                                <label class="label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="form-item ">
                                     <span class="check-text " >С доплатой</span>
                                     <span class="popup-question">?
                                         <span class="tooltip">
@@ -1094,50 +1106,57 @@
                                         </span>
                                     </span>
                                 </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-field">
-                        <p class="form-name">Формат рекламы</p>
-                        <select required>
-                            <option value="" disabled>Выберите из списка</option>
-                            <option value="Сторис 15c">Сторис 15c</option>
-                            <option value="Сторис 30c">Сторис 30c</option>
-                            <option value="Сторис 45c">Сторис 45c</option>
-                            <option value="Сторис 60c">Сторис 60c</option>
-                            <option value="Сторис 75c">Сторис 75c</option>
-                            <option value="Сторис 90c">Сторис 90c</option>
-                            <option value="Фото-пост" selected>Фото-пост</option>
-                            <option value="Видео-пост">Видео-пост</option>
-                            <option value="Сторис+пост">Сторис+пост</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="popup-filling-half">
-                    <div class="">
-                        <div class="form-field">
-                            <p class="form-name">Приход подписчиков</p>
-                            <input type="text" class="form-input" value="12 000" required="">
+                                </label>
+                            </div>
                         </div>
                         <div class="form-field">
-                            <p class="form-name">Фактический охват</p>
-                            <input type="text" class="form-input " value="11 500" required="">
-                        </div>
-                        <div class="form-field">
-                            <p class="form-name">Переходов по рекламе</p>
-                            <input type="text" class="form-input" required="">
+                            <p class="form-name">Формат рекламы</p>
+                            <select required>
+                                <option value="" disabled>Выберите из списка</option>
+                                <option value="Сторис 15c">Сторис 15c</option>
+                                <option value="Сторис 30c">Сторис 30c</option>
+                                <option value="Сторис 45c">Сторис 45c</option>
+                                <option value="Сторис 60c">Сторис 60c</option>
+                                <option value="Сторис 75c">Сторис 75c</option>
+                                <option value="Сторис 90c">Сторис 90c</option>
+                                <option value="Фото-пост" selected>Фото-пост</option>
+                                <option value="Видео-пост">Видео-пост</option>
+                                <option value="Сторис+пост">Сторис+пост</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="popup-filling-btns">
-                            <button class="btn-white">Отмена</button>
-                            <button type="submit" class="btn-orange">Сохранить и закрыть</button>
+                    <div class="popup-filling-half">
+                        <div class="">
+                            <div class="form-field">
+                                <p class="form-name">Приход подписчиков</p>
+                                <input type="text" class="form-input" value="12 000" required="">
+                            </div>
+                            <div class="form-field">
+                                <p class="form-name">Фактический охват</p>
+                                <input type="text" class="form-input " value="11 500" required="">
+                            </div>
+                            <div class="form-field">
+                                <p class="form-name">Переходов по рекламе</p>
+                                <input type="text" class="form-input" required="">
+                            </div>
                         </div>
-                        <a href="#" class="blue-text">Сохранить и заполнить данные для другого заказчика</a>
+                        <div class="">
+                            <div class="popup-filling-btns">
+                                <button class="btn-white">Отмена</button>
+                                <button type="submit" class="btn-orange">Сохранить и закрыть</button>
+                            </div>
+                            <a href="#" class="blue-text">Сохранить и заполнить данные для другого заказчика</a>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="footer-link">Написать в техподдержку</a>
+                <a href="#" class="footer-link">Пользовательское соглашение</a>
+            </div>
+        </footer>
     </div>
 </div>
 <div class="popup popup-edit ">
@@ -1147,36 +1166,37 @@
                 <p class="popup-top-title">Изменить информацию</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
-            <form class="popup-filling-form">
-                <div class="popup-filling-half">
-                    <div class="form-field">
-                        <p class="form-name">Ник блогера</p>
-                        <input type="text" class="form-input" placeholder="Введите ник" value="kreida" required="">
-                    </div>
-                    <div class="form-field">
-                        <p class="form-name">Дата рекламы</p>
-                        <input type="text" class="form-input datepicker" placeholder="ДД.ММ.ГГ." value="03.12.2019 Ср" required="">
-                    </div>
-                    <div class="popup-filling-flex">
+            <div class="popup-window-container">
+                <form class="popup-filling-form">
+                    <div class="popup-filling-half">
                         <div class="form-field">
-                            <p class="form-name nowrap">Цена за рекламу в ₽</p>
-                            <input type="text" class="form-input" required="" value="15 500" >
+                            <p class="form-name">Ник блогера</p>
+                            <input type="text" class="form-input" placeholder="Введите ник" value="kreida">
                         </div>
-                        <div class="popup-filling-checkboxes">
-                            <label class="label">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="check-text">ВП</span>
-                            </label>
-                            <label class="label">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="check-text">Бартер</span>
-                            </label>
-                            <label class="label">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="form-item ">
+                        <div class="form-field ">
+                            <p class="form-name">Дата рекламы</p>
+                            <input type="text" class="form-input datepicker" placeholder="ДД.ММ.ГГ." value="03.12.2019 Ср">
+                        </div>
+                        <div class="popup-filling-flex">
+                            <div class="form-field">
+                                <p class="form-name nowrap">Цена за рекламу в ₽</p>
+                                <input type="text" class="form-input" value="15 500" >
+                            </div>
+                            <div class="popup-filling-checkboxes">
+                                <label class="label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">ВП</span>
+                                </label>
+                                <label class="label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Бартер</span>
+                                </label>
+                                <label class="label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="form-item ">
                                     <span class="check-text " >С доплатой</span>
                                     <span class="popup-question">?
                                         <span class="tooltip">
@@ -1186,49 +1206,57 @@
                                         </span>
                                     </span>
                                 </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-field">
-                        <p class="form-name">Формат рекламы</p>
-                        <select required>
-                            <option value="" selected disabled>Выберите из списка</option>
-                            <option value="Сторис 15c">Сторис 15c</option>
-                            <option value="Сторис 30c">Сторис 30c</option>
-                            <option value="Сторис 45c">Сторис 45c</option>
-                            <option value="Сторис 60c">Сторис 60c</option>
-                            <option value="Сторис 75c">Сторис 75c</option>
-                            <option value="Сторис 90c">Сторис 90c</option>
-                            <option value="Фото-пост">Фото-пост</option>
-                            <option value="Видео-пост">Видео-пост</option>
-                            <option value="Сторис+пост">Сторис+пост</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="popup-filling-half">
-                    <div class="">
-                        <div class="form-field">
-                            <p class="form-name">Приход подписчиков</p>
-                            <input type="text" class="form-input" value="12 000" required="">
+                                </label>
+                            </div>
                         </div>
                         <div class="form-field">
-                            <p class="form-name">Фактический охват</p>
-                            <input type="text" class="form-input " value="11 500" required="">
-                        </div>
-                        <div class="form-field">
-                            <p class="form-name">Переходов по рекламе</p>
-                            <input type="text" class="form-input" required="">
+                            <p class="form-name">Формат рекламы</p>
+                            <select required>
+                                <option value="" selected disabled>Выберите из списка</option>
+                                <option value="Сторис 15c">Сторис 15c</option>
+                                <option value="Сторис 30c">Сторис 30c</option>
+                                <option value="Сторис 45c">Сторис 45c</option>
+                                <option value="Сторис 60c">Сторис 60c</option>
+                                <option value="Сторис 75c">Сторис 75c</option>
+                                <option value="Сторис 90c">Сторис 90c</option>
+                                <option value="Фото-пост">Фото-пост</option>
+                                <option value="Видео-пост">Видео-пост</option>
+                                <option value="Сторис+пост">Сторис+пост</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="popup-filling-btns">
-                            <button class="btn-white">Отмена</button>
-                            <button type="submit" class="btn-blue">Сохранить</button>
+                    <div class="popup-filling-half">
+                        <div class="">
+                            <div class="form-field">
+                                <p class="form-name">Приход подписчиков</p>
+                                <input type="text" class="form-input" value="12 000" required="">
+                            </div>
+                            <div class="form-field">
+                                <p class="form-name">Фактический охват</p>
+                                <input type="text" class="form-input " value="11 500" required="">
+                            </div>
+                            <div class="form-field">
+                                <p class="form-name">Переходов по рекламе</p>
+                                <input type="text" class="form-input" required="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="popup-filling-btns">
+                                <button class="btn-white">Отмена</button>
+                                <button type="submit" class="btn-blue">Сохранить</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+
+            </div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="footer-link">Написать в техподдержку</a>
+                <a href="#" class="footer-link">Пользовательское соглашение</a>
+            </div>
+        </footer>
     </div>
 </div>
 
@@ -1364,8 +1392,9 @@
 								<div class="search-field">
 									<p class="search-name">Отзывы за период</p>
 
-									<select class="search-select">
-										<option value="1 месяц">1 месяц</option>
+									<select class="search-select" required>
+										<option value="" disabled>Выберите из списка</option>
+										<option value="1 месяц" selected>1 месяц</option>
 										<option value="2 месяц">2 месяц</option>
 										<option value="3 месяц">3 месяц</option>
 									</select>
@@ -1386,18 +1415,24 @@
 									</div>
 								</div>
 							</div>
-							<div class="search-col">
+							<div class="search-col last-child">
 								<button class="btn-orange">Найти</button>
 								<button class="btn-white">Сбросить</button>
 							</div>
 						</div>
+						<footer class="footer">
+    <div class="container">
+        <a href="#" class="footer-link">Написать в техподдержку</a>
+        <a href="#" class="footer-link">Пользовательское соглашение</a>
+    </div>
+</footer>
 					</div>
 					<div class="bloggers">
 						<div class="bloggers-top">
 							<div class="bloggers-top-left">
 								<h2 class="title-24px">Поиск блогеров</h2>
 								<p class="gray">В таблице показаны блогеры с отзывами за последний месяц</p>
-								<button class="bloggers-filter-btn">Фильтры <span class="circle"></span></button>
+								<button class="bloggers-filter-btn">Фильтры</button>
 							</div>
 							<button class="blue-text">Скачать отчет .xls</button>
 						</div>
@@ -1915,8 +1950,9 @@
 								</div>
 								<div class="search-field">
 									<p class="search-name">Статус заказа</p>
-									<select class="search-select">
-										<option value="Запросить">Запросить</option>
+									<select class="search-select" required>
+										<option value="" disabled>Выберите из списка</option>
+										<option value="Запросить" selected>Запросить</option>
 										<option value="Ожидаем ответ">Ожидаем ответ</option>
 										<option value="Не отвечает">Не отвечает</option>
 										<option value="Переговоры">Переговоры</option>
@@ -1944,8 +1980,9 @@
 							<div class="search-col">
 								<div class="search-field">
 									<p class="search-name">Период отзывов</p>
-									<select class="search-select">
-										<option value="1 месяц">1 месяц</option>
+									<select class="search-select" required>
+										<option value="" disabled>Выберите из списка</option>
+										<option value="1 месяц" selected>1 месяц</option>
 										<option value="2 месяц">2 месяц</option>
 										<option value="3 месяц">3 месяц</option>
 									</select>
@@ -1958,11 +1995,17 @@
 									</div>
 								</div>
 							</div>
-							<div class="search-col">
+							<div class="search-col last-child">
 								<button class="btn-orange">Найти</button>
 								<button class="btn-white">Сбросить</button>
 							</div>
 						</div>
+						<footer class="footer">
+    <div class="container">
+        <a href="#" class="footer-link">Написать в техподдержку</a>
+        <a href="#" class="footer-link">Пользовательское соглашение</a>
+    </div>
+</footer>
 					</div>
 					<div class="bloggers">
 						<div class="bloggers-top">
@@ -1970,7 +2013,7 @@
 								<h2 class="title-24px">Мой список <span class="title-24px mob-hide"> блогеров</span></h2>
 								<div class="bloggers-top-flex">
 									<button class="btn-white add-blogger">Добавить блогера</button>
-									<button class="bloggers-filter-btn">Фильтры <span class="circle"></span></button>
+									<button class="bloggers-filter-btn">Фильтры</button>
 								</div>
 								<p class="gray">Сумма охватов: 999 999, Стоимость рекламы: 999 999 ₽ + 2 ВП + 2 Бартера</p>
 							</div>
@@ -2134,9 +2177,9 @@
 							<ul class="bloggers-content">
 								<li class="bloggers-my-content"><a href="#" class="bloggers-my-link">08.07.19 <span class="bloggers-normal"> пн</span></a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="#" class="bloggers-my-link blue-text blogger">neotpuskaiteplo</a><p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">100 500 </a><p class="bloggers-my-edit">изм.</p></li>
+								<li class="bloggers-my-content clear"><a href="" class="bloggers-my-link"></a><p class="bloggers-my-edit">Изменить</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">999 999 ₽</a><p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">Сторис 15c</a><p class="bloggers-my-edit">Изменить</p></li>
+								<li class="bloggers-my-content"><a href="" class="bloggers-my-link ">Сторис 15c</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">reira_reira</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link nowrap">Сделать мак...</a><p class="bloggers-my-edit">изм.</p>
 									<div class="tooltip">
@@ -2146,7 +2189,8 @@
 									</div>
 								</li>
 								<li class="bloggers-my-content">
-									<select class="bloggers-select">
+									<select class="bloggers-select" required>
+										<option value="" disabled>Выберите из списка</option>
 										<option value="Оставить отзыв">Оставить отзыв</option>
 										<option value="Запросить">Запросить</option>
 										<option value="Ожидаем ответа">Ожидаем ответа</option>
@@ -2174,7 +2218,7 @@
 								<li class="bloggers-my-content"><a href="#" class="bloggers-my-link blue-text blogger">neotpuskaiteplo</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">100 500 </a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">999 999 ₽</a><p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">Сторис 15c</a><p class="bloggers-my-edit">Изменить</p></li>
+								<li class="bloggers-my-content clear"><a href="" class="bloggers-my-link "></a><p class="bloggers-my-edit">Изменить</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">reira_reira</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link nowrap">Сделать мак...</a><p class="bloggers-my-edit">изм.</p>
 									<div class="tooltip">
@@ -2184,7 +2228,8 @@
 									</div>
 								</li>
 								<li class="bloggers-my-content">
-									<select class="bloggers-select">
+									<select class="bloggers-select" required>
+										<option value="" disabled>Выберите из списка</option>
 										<option value="Оставить отзыв">Оставить отзыв</option>
 										<option value="Запросить">Запросить</option>
 										<option value="Ожидаем ответа">Ожидаем ответа</option>
@@ -2212,8 +2257,8 @@
 								<li class="bloggers-my-content"><a href="#" class="bloggers-my-link blue-text blogger">neotpuskaiteplo</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">100 500 </a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">999 999 ₽</a><p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">Сторис 15c</a><p class="bloggers-my-edit">Изменить</p></li>
-								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">reira_reira</a><p class="bloggers-my-edit">изм.</p></li>
+								<li class="bloggers-my-content"><a href="" class="bloggers-my-link ">Сторис 15c</a><p class="bloggers-my-edit">изм.</p></li>
+								<li class="bloggers-my-content clear"><a href="" class="bloggers-my-link"></a><p class="bloggers-my-edit">Изменить</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link nowrap">Сделать мак...</a><p class="bloggers-my-edit">изм.</p>
 									<div class="tooltip">
 										<div class="tooltip-container">
@@ -2222,7 +2267,8 @@
 									</div>
 								</li>
 								<li class="bloggers-my-content">
-									<select class="bloggers-select">
+									<select class="bloggers-select" required>
+										<option value="" disabled>Выберите из списка</option>
 										<option value="Оставить отзыв">Оставить отзыв</option>
 										<option value="Запросить">Запросить</option>
 										<option value="Ожидаем ответа">Ожидаем ответа</option>
@@ -2250,18 +2296,13 @@
 								<li class="bloggers-my-content"><a href="#" class="bloggers-my-link blue-text blogger">neotpuskaiteplo</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">100 500 </a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">999 999 ₽</a><p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">Сторис 15c</a><p class="bloggers-my-edit">Изменить</p></li>
+								<li class="bloggers-my-content"><a href="" class="bloggers-my-link ">Сторис 15c</a><p class="bloggers-my-edit"></p></li>
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">reira_reira</a><p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content"><a href="" class="bloggers-my-link nowrap">Сделать мак...</a><p class="bloggers-my-edit">изм.</p>
-									<div class="tooltip">
-										<div class="tooltip-container">
-											<p class="tooltip-text">Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности требуют определения и уточнения дальнейших направлений развития. Разнообразный и богатый опыт консультация с широким активом требуют от нас анализа системы обучения кадров.</p>
-										</div>
-									</div>
-								</li>
+								<li class="bloggers-my-content clear"><a href="" class="bloggers-my-link nowrap"></a><p class="bloggers-my-edit">Изменить</p></li>
 								<li class="bloggers-my-content">
-									<select class="bloggers-select">
-										<option value="Оставить отзыв">Оставить отзыв</option>
+									<select class="bloggers-select" required>
+										<option value="" disabled>Выберите из списка</option>
+										<option value="Оставить отзыв" >Оставить отзыв</option>
 										<option value="Запросить">Запросить</option>
 										<option value="Ожидаем ответа">Ожидаем ответа</option>
 										<option value="Не отвечает">Не отвечает</option>
@@ -2331,8 +2372,9 @@
 							<div class="search-col">
 								<div class="search-field">
 									<p class="search-name">Период отзывов</p>
-									<select class="search-select">
-										<option value="1 месяц">1 месяц</option>
+									<select class="search-select" required>
+										<option value="" disabled>Выберите из списка</option>
+										<option value="1 месяц" selected>1 месяц</option>
 										<option value="2 месяц">2 месяц</option>
 										<option value="3 месяц">3 месяц</option>
 									</select>
@@ -2377,11 +2419,17 @@
 									</div>
 								</div>
 							</div>
-							<div class="search-col">
+							<div class="search-col last-child">
 								<button class="btn-orange">Найти</button>
 								<button class="btn-white">Сбросить</button>
 							</div>
 						</div>
+						<footer class="footer">
+    <div class="container">
+        <a href="#" class="footer-link">Написать в техподдержку</a>
+        <a href="#" class="footer-link">Пользовательское соглашение</a>
+    </div>
+</footer>
 					</div>
 					<div class="bloggers bloggers-menu-story">
 						<div class="bloggers-top">
@@ -2389,7 +2437,7 @@
 								<h2 class="title-24px">Моя история <span class="title-24px mob-hide"> отзывов</span></h2>
 								<div class="bloggers-top-flex">
 									<button class="btn-white show-feedback">Оставить отзыв</button>
-									<button class="bloggers-filter-btn">Фильтры <span class="circle"></span></button>
+									<button class="bloggers-filter-btn">Фильтры</button>
 								</div>
 							</div>
 							<button class="blue-text">Скачать отчет .xls</button>
@@ -2778,7 +2826,7 @@
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">98 000</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content">15,8%</li>
 								<li class="bloggers-my-content">15 000<p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">Изменить</p></li>
+								<li class="bloggers-my-content"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content show-review flex-center">
 									<a href="" class="">
 										<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2798,7 +2846,7 @@
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">98 000</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content">15,8%</li>
 								<li class="bloggers-my-content">15 000<p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">Изменить</p></li>
+								<li class="bloggers-my-content"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content show-review flex-center">
 									<a href="" class="">
 										<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2818,7 +2866,7 @@
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">98 000</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content">15,8%</li>
 								<li class="bloggers-my-content">15 000<p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">Изменить</p></li>
+								<li class="bloggers-my-content"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content show-review flex-center">
 									<a href="" class="">
 										<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2838,7 +2886,7 @@
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">98 000</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content">15,8%</li>
 								<li class="bloggers-my-content">15 000<p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">Изменить</p></li>
+								<li class="bloggers-my-content clear"><a href="" class="bloggers-my-link"></a><p class="bloggers-my-edit">Изменить</p></li>
 								<li class="bloggers-my-content show-review flex-center">
 									<a href="" class="">
 										<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2858,7 +2906,7 @@
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">98 000</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content">15,8%</li>
 								<li class="bloggers-my-content">15 000<p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">Изменить</p></li>
+								<li class="bloggers-my-content"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content show-review flex-center">
 									<a href="" class="">
 										<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2878,7 +2926,7 @@
 								<li class="bloggers-my-content"><a href="" class="bloggers-my-link">98 000</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content">15,8%</li>
 								<li class="bloggers-my-content">15 000<p class="bloggers-my-edit">изм.</p></li>
-								<li class="bloggers-my-content bloggers-my-content_edit"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">Изменить</p></li>
+								<li class="bloggers-my-content"><a href="" class="bloggers-my-link ">69,3%</a><p class="bloggers-my-edit">изм.</p></li>
 								<li class="bloggers-my-content show-review flex-center">
 									<a href="" class="">
 										<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
