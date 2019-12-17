@@ -14,8 +14,7 @@
 </head>
 
 <body>
-	<div class="main">
-		<!-- header.html -->
+	<!-- header.html -->
 <header class="header">
 	<div class="header-container">
 		<div class="header-left">
@@ -26,7 +25,7 @@
 					<p class="header-item">@easyprbot</p>
 				</div>
 			</div>
-			<button class="btn-white btn-back"><img src="img/arrow-select.svg" alt="arrow" class="btn-back-arrow">Назад</button>
+			<a href="#" class="btn-white btn-back"><img src="img/arrow-select.svg" alt="arrow" class="btn-back-arrow">Назад</a>
 			<nav>
 				<ul class="header-menu">
 					<li class="header-list">
@@ -73,6 +72,8 @@
 </header>
 
 
+
+	<div class="main">
 
 		<div class="menu">
     <div class="menu-close">
@@ -121,13 +122,13 @@
                             <div class="form-padding">
                                 <div class="form-field">
                                     <p class="form-name">Введите номер телефона</p>
-                                    <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99" required>
+                                    <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99">
                                 </div>
                                 <div class="form-field">
                                     <div class="form-flex">
                                         <p class="form-name">Пароль </p><a href="#" class="form-blue form-forgot">Забыли пароль?</a>
                                     </div>
-                                    <input type="password" class="form-input" required>
+                                    <input type="password" class="form-input">
                                 </div>
                             </div>
                             <div class="form-bottom">
@@ -140,23 +141,23 @@
                             <div class="form-padding">
                                 <div class="form-field required">
                                     <p class="form-name">Введите ваш номер телефона. <br> Мы отправим на него код</p>
-                                    <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99" required>
+                                    <input type="text" class="form-input" placeholder="В формате, +7 (999) 999-99-99">
                                     <span class="form-span">Номер телефона не может содержать пробелов <span class="nowrap">и букв</span></span>
                                 </div>
                                 <div class="form-field required">
                                     <p class="form-name">Пароль</p>
-                                    <input type="password" class="form-input" required>
+                                    <input type="password" class="form-input">
                                     <span class="form-span">От 6 символов. Минимум по 1 букве верхнего <span class="nowrap">и нижнего</span> регистра</span>
                                 </div>
                                 <div class="form-field required">
                                     <p class="form-name">Подтвердите пароль</p>
-                                    <input type="password" class="form-input" required>
+                                    <input type="password" class="form-input">
                                     <span class="form-span form-mistake-passwords">Пароли не совпадают</span>
                                 </div>
                                 <div class="form-politics required">
                                     <div class="form-politics-flex">
                                         <label class="form-label" >
-                                            <input type="checkbox" class="checkbox" required>
+                                            <input type="checkbox" class="checkbox">
                                             <span class="check"></span>
                                         </label>
                                         <p class="form-politics-text">
@@ -177,7 +178,7 @@
                                 <div class="form-field ">
                                     <p class="form-name">Код из SMS</p>
                                     <p class="form-info">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</p>
-                                    <input type="text" class="form-input" placeholder="Код" required>
+                                    <input type="text" class="form-input" placeholder="Код">
                                     <a href="#" class="form-blue form-repeat">Отправить код повторно</a>
                                     <div class="form-repeat-block">
                                         <p class="form-repeat-text">
@@ -196,7 +197,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="form-bottom">
                                 <div class="form-bottom-between">
@@ -220,7 +220,7 @@
 <div class="popup popup-rate">
     <div class="popup-window">
         <div class="popup-rate-container">
-            <div class="popup-top">
+            <div class="popup-top mob-hide-768">
                 <p class="popup-top-title">Выберите тариф</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -268,6 +268,12 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="footer-link">Написать в техподдержку</a>
+                <a href="#" class="footer-link">Пользовательское соглашение</a>
+            </div>
+        </footer>
     </div>
 </div>
 <div class="popup popup-forgot">
@@ -369,12 +375,14 @@
         </footer>
     </div>
 </div>
+
+<div class="popup-top popup-top-mob">
+    <p class="popup-top-title">Калькулятор подписчиков</p>
+</div>
+
 <div class="popup popup-calculate">
     <div class="popup-window">
         <div class="popup-calculate-container">
-            <div class="popup-top popup-top-mob">
-                <p class="popup-top-title">Калькулятор подписчиков</p>
-            </div>
             <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
             <div class="popup-row-half">
                 <div class="popup-calculate-half">
@@ -410,7 +418,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="text" class="form-input" placeholder="Например, 10000"  required="">
+                            <input type="text" class="form-input" placeholder="Например, 10000">
                         </div>
                         <div class="form-field">
                             <div class="form-item">
@@ -423,7 +431,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="text" class="form-input" placeholder="Например, 30" required="" onkeyup="checkParams()">
+                            <input type="text" class="form-input" placeholder="Например, 30">
                         </div>
                         <div class="form-field">
                             <div class="form-item">
@@ -437,7 +445,7 @@
                                 </div>
                             </div>
                             <div class="popup-calculate-row">
-                                <input type="text" class="form-input popup-calculate-input" placeholder="Например, 5" required="">
+                                <input type="text" class="form-input popup-calculate-input" placeholder="Например, 5">
                                 <select class="popup-calculate-select" required>
                                     <option value="₽" selected>₽</option>
                                     <option value="₽">$</option>
@@ -457,8 +465,7 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <input type="text" class="form-input form-input-little" placeholder="Например, 15" required="">
+                            <input type="text" class="form-input form-input-little" placeholder="Например, 15">
                         </div>
                         <div class="form-field">
                             <p class="form-name">Конверсия из охватов в подписчика, %</p>
@@ -577,8 +584,8 @@
 <div class="popup popup-conversion">
     <div class="popup-window">
         <div class="popup-conversion-container">
-            <div class="popup-top">
-                <p class="popup-top-title">Расчет конверсии</p>
+            <div class="popup-top mob-hide-768">
+                <p class="popup-top-title ">Расчет конверсии</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
             <div class="popup-row-half">
@@ -586,11 +593,11 @@
                         <form class="popup-conversion-form">
                             <div class="form-field">
                                 <p class="form-name">Приход подписчиков одним числом</p>
-                                <input type="text" class="form-input" placeholder="Например, 1500"  required="">
+                                <input type="text" class="form-input" placeholder="Например, 1500">
                             </div>
                             <div class="form-field">
                                 <p class="form-name">Охват рекламы одним числом</p>
-                                <input type="text" class="form-input" placeholder="Например, 63558"  required="">
+                                <input type="text" class="form-input" placeholder="Например, 63558">
                             </div>
                             <div class="popup-conversion-info">
                                 <p class="popup-info-text">Для более точных показателей советуем вам самостоятельно проанализировать 5-10 последних реклам и вывести средний процент конверсии.</p>
@@ -1093,20 +1100,20 @@
                                     <span class="check"></span>
                                     <span class="check-text">Бартер</span>
                                 </label>
-                                <label class="label">
-                                    <input type="checkbox" class="checkbox">
-                                    <span class="check"></span>
-                                    <span class="form-item ">
-                                    <span class="check-text " >С доплатой</span>
-                                    <span class="popup-question">?
-                                        <span class="tooltip">
-                                            <span class="tooltip-container">
-                                                <span class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                                </label>
+                                <div class="form-item">
+                                    <label class="label">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="check"></span>
+                                        <span class="check-text " >С доплатой</span>
+                                    </label>
+                                    <div class="popup-question">?
+                                        <div class="tooltip">
+                                            <div class="tooltip-container">
+                                                <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-field">
@@ -1193,20 +1200,20 @@
                                     <span class="check"></span>
                                     <span class="check-text">Бартер</span>
                                 </label>
-                                <label class="label">
-                                    <input type="checkbox" class="checkbox">
-                                    <span class="check"></span>
-                                    <span class="form-item ">
-                                    <span class="check-text " >С доплатой</span>
-                                    <span class="popup-question">?
-                                        <span class="tooltip">
-                                            <span class="tooltip-container">
-                                                <span class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                                </label>
+                                <div class="form-item">
+                                    <label class="label">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="check"></span>
+                                        <span class="check-text " >С доплатой</span>
+                                    </label>
+                                    <div class="popup-question">?
+                                        <div class="tooltip">
+                                            <div class="tooltip-container">
+                                                <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-field">
@@ -1420,12 +1427,6 @@
 								<button class="btn-white">Сбросить</button>
 							</div>
 						</div>
-						<footer class="footer">
-    <div class="container">
-        <a href="#" class="footer-link">Написать в техподдержку</a>
-        <a href="#" class="footer-link">Пользовательское соглашение</a>
-    </div>
-</footer>
 					</div>
 					<div class="bloggers">
 						<div class="bloggers-top">
@@ -1446,7 +1447,7 @@
 							<li class="bloggers-menu-list">Окупаемость рекламы</li>
 							<li class="bloggers-menu-list">Средняя оценка</li>
 							<li class="bloggers-menu-list">В мой список</li>
-							<li class="bloggers-menu-list">Скрыть на месяц</li>
+							<li class="bloggers-menu-list">Скрыть <br>на месяц</li>
 							<li class="bloggers-menu-list">Удалить навсегда</li>
 						</ul>
 						<div class="bloggers-flex">
@@ -1887,9 +1888,7 @@
 								</div>
 							</div>
 						</div>
-
-
-						<button class="bloggers-btn">Показать ещё</button>
+						<a href="#" class="bloggers-btn">Показать ещё</a>
 						<div class="pagination">
 							<a href="#" class="pagination-btn disabled" >Назад
 								<svg class="pagination-btn-arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2000,12 +1999,6 @@
 								<button class="btn-white">Сбросить</button>
 							</div>
 						</div>
-						<footer class="footer">
-    <div class="container">
-        <a href="#" class="footer-link">Написать в техподдержку</a>
-        <a href="#" class="footer-link">Пользовательское соглашение</a>
-    </div>
-</footer>
 					</div>
 					<div class="bloggers">
 						<div class="bloggers-top">
@@ -2325,8 +2318,7 @@
 								</li>
 							</ul>
 						</div>
-
-						<button class="bloggers-btn">Показать ещё</button>
+						<a href="#" class="bloggers-btn">Показать ещё</a>
 						<div class="pagination">
 							<a href="#" class="pagination-btn disabled" >Назад
 								<svg class="pagination-btn-arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2424,12 +2416,6 @@
 								<button class="btn-white">Сбросить</button>
 							</div>
 						</div>
-						<footer class="footer">
-    <div class="container">
-        <a href="#" class="footer-link">Написать в техподдержку</a>
-        <a href="#" class="footer-link">Пользовательское соглашение</a>
-    </div>
-</footer>
 					</div>
 					<div class="bloggers bloggers-menu-story">
 						<div class="bloggers-top">
@@ -2936,8 +2922,7 @@
 								</li>
 							</ul>
 						</div>
-
-						<button class="bloggers-btn">Показать ещё</button>
+						<a href="#" class="bloggers-btn">Показать ещё</a>
 						<div class="pagination">
 							<a href="#" class="pagination-btn disabled" >Назад
 								<svg class="pagination-btn-arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">

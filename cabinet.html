@@ -14,67 +14,73 @@
 </head>
 
 <body>
-<div class="cabinet">
-    <header class="header">
-        <div class="header-container">
-            <div class="header-left">
-                <div class="header-user">
-                    <img src="img/user-img.svg" alt="user image" class="header-img">
-                    <div class="header-col">
-                        <p class="header-name">Easyprbot</p>
-                        <p class="header-item">@easyprbot</p>
-                    </div>
+<header class="header">
+    <div class="header-container">
+        <div class="header-left">
+            <div class="header-user">
+                <img src="img/user-img.svg" alt="user image" class="header-img">
+                <div class="header-col">
+                    <p class="header-name">Easyprbot</p>
+                    <p class="header-item">@easyprbot</p>
                 </div>
-                <button class="btn-white btn-back"><img src="img/arrow-select.svg" alt="arrow select" class="btn-back-arrow">Назад</button>
-                <nav>
-                    <ul class="header-menu">
-                        <li class="header-list">
-                            <p class="header-link">Отзывы<img src="img/arrow-down.svg" alt="arrow down" class="header-arrow"></p>
-                            <ul class="header-dropdown">
-                                <li class="header-dropdown-list">
-                                    <a href="#" class="header-dropdown-link">Все отзывы</a>
-                                    <a href="#" class="header-dropdown-link">Оставить отзыв</a>
-                                    <a href="#" class="header-dropdown-link">История моих отзывов</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header-list">
-                            <a href="#" class="header-link">ВП на завтра</a>
-                        </li>
-                        <li class="header-list">
-                            <a href="#" class="header-link">Мой трекер</a>
-                        </li>
-
-                    </ul>
-                </nav>
             </div>
-            <div class="header-right">
-                <div class="header-mob">
-                    <a href="#" class="header-mob-basket"><img src="img/basket.svg" alt="basket" class="header-mob-icon"></a>
-                    <div class="header-burger">
-                        <span class="header-burger-line header-burger-top"></span>
-                        <span class="header-burger-line header-burger-mid"></span>
-                        <span class="header-burger-line header-burger-bottom"></span>
-                    </div>
+            <a href="#" class="btn-white btn-back"><img src="img/arrow-select.svg" alt="arrow select" class="btn-back-arrow">Назад</a>
+            <nav>
+                <ul class="header-menu">
+                    <li class="header-list">
+                        <p class="header-link">Отзывы<img src="img/arrow-down.svg" alt="arrow down" class="header-arrow"></p>
+                        <ul class="header-dropdown">
+                            <li class="header-dropdown-list">
+                                <a href="#" class="header-dropdown-link">Все отзывы</a>
+                                <a href="#" class="header-dropdown-link">Оставить отзыв</a>
+                                <a href="#" class="header-dropdown-link">История моих отзывов</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-list">
+                        <a href="#" class="header-link">ВП на завтра</a>
+                    </li>
+                    <li class="header-list">
+                        <a href="#" class="header-link">Мой трекер</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="header-mob">
+                <a href="#" class="header-mob-basket"><img src="img/basket.svg" alt="basket" class="header-mob-icon"></a>
+                <div class="header-burger">
+                    <span class="header-burger-line header-burger-top"></span>
+                    <span class="header-burger-line header-burger-mid"></span>
+                    <span class="header-burger-line header-burger-bottom"></span>
                 </div>
-                <button class="btn-blue btn-sing-in">Войти</button>
-                <div class="header-list">
-                    <button class="header-right-user active"><img src="img/avatar.svg" alt="" class="header-right-icon"></button>
-                    <ul class="header-dropdown">
-                        <li class="header-dropdown-list">
-                            <a href="#" class="header-dropdown-link">Настройки</a>
-                            <a href="#" class="header-dropdown-link">Справка</a>
-                            <a href="#" class="header-dropdown-link">Выйти</a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <button class="btn-blue btn-sing-in">Войти</button>
+            <div class="header-list">
+                <button class="header-right-user active"><img src="img/avatar.svg" alt="" class="header-right-icon"></button>
+                <ul class="header-dropdown">
+                    <li class="header-dropdown-list">
+                        <a href="#" class="header-dropdown-link">Настройки</a>
+                        <a href="#" class="header-dropdown-link">Справка</a>
+                        <a href="#" class="header-dropdown-link">Выйти</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
-    <div class="popup popup-rate ">
+    </div>
+</header>
+<div class="cabinet">
+    <div class="popup-top popup-top-mob">
+    <p class="popup-top-title">Калькулятор подписчиков</p>
+    <p class="popup-feedback-span gray">Шаг 1 из 2</p>
+</div>
+
+
+<div class="popup popup-rate">
     <div class="popup-window">
         <div class="popup-rate-container">
-            <div class="popup-top">
+            <div class="popup-top mob-hide-768">
                 <p class="popup-top-title">Выберите тариф</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -122,6 +128,65 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="popup popup-rate-extend">
+    <div class="popup-window">
+        <div class="popup-rate-container">
+            <div class="popup-top mob-hide-768">
+                <p class="popup-top-title">Продлите доступ к трекеру</p>
+                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+            <div class="popup-rate-padding">
+                <p class="popup-rate-text">Доступ к трекеру истек 23.09.2019. Чтобы использовать все возможности трекера, продлите доступ.</p>
+                <p class="form-name">Тарифы</p>
+                <a href="#" class="popup-rate-price">
+                    <span class="popup-rate-col">
+                        <span class="form-name">1 месяц</span>
+                        <span class="popup-rate-sum">
+                            <span class="popup-rate-item">990 ₽</span>
+                            <span class="popup-rate-span"> / 33 ₽ в день</span>
+                        </span>
+                    </span>
+                    <span class="popup-rate-pay">
+					Оплатить
+				</span>
+                </a>
+                <a href="#" class="popup-rate-price">
+                    <span class="popup-rate-col">
+                        <span class="form-name">2 месяц</span>
+                        <span class="popup-rate-sum">
+                            <span class="popup-rate-item">1 560 ₽</span>
+                            <span class="popup-rate-span"> / 26 ₽ в день</span>
+                        </span>
+                    </span>
+                    <span class="popup-rate-pay">
+					Оплатить
+				</span>
+                </a>
+                <a href="#" class="popup-rate-price">
+                    <span class="popup-rate-col">
+                        <span class="form-name">3 месяц</span>
+                        <span class="popup-rate-sum">
+                            <span class="popup-rate-item">1 980 ₽</span>
+                            <span class="popup-rate-span"> / 22 ₽ в день</span>
+                        </span>
+                    </span>
+                    <span class="popup-rate-pay">
+					Оплатить
+				</span>
+                </a>
+                <div class="popup-rate-info">
+                    Цена в расчете за день указана за календарные дни.
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="footer-link">Написать в техподдержку</a>
+                <a href="#" class="footer-link">Пользовательское соглашение</a>
+            </div>
+        </footer>
     </div>
 </div>
 <div class="popup popup-forgot">
@@ -222,13 +287,10 @@
         </footer>
     </div>
 </div>
+
 <div class="popup popup-calculate">
     <div class="popup-window">
         <div class="popup-calculate-container">
-            <div class="popup-top popup-top-mob">
-                <p class="popup-top-title">Калькулятор подписчиков</p>
-            </div>
-
             <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
             <div class="popup-row-half">
                 <div class="popup-calculate-half">
@@ -275,12 +337,15 @@
                             </div>
                             <div class="popup-calculate-row">
                                 <input type="text" class="form-input popup-calculate-input" placeholder="Например, 5" required="">
-                                <select class="popup-calculate-select" required>
-                                    <option value="₽" selected>₽</option>
-                                    <option value="₽">$</option>
-                                    <option value="₽">₴</option>
-                                    <option value="₽">₸</option>
-                                </select>
+                                <div class="popup-calculate-select">
+                                    <select class="" required>
+                                        <option value="₽" selected>₽</option>
+                                        <option value="₽">$</option>
+                                        <option value="₽">₴</option>
+                                        <option value="₽">₸</option>
+                                    </select>
+                                </div>
+
                             </div>
                         </div>
                         <div class="form-field">
@@ -412,7 +477,6 @@
             </div>
         </footer>
     </div>
-
 </div>
 <div class="popup popup-review ">
     <div class="popup-window">
@@ -467,42 +531,42 @@
         </footer>
     </div>
 </div>
-<div class="popup popup-conversion ">
+<div class="popup popup-conversion">
     <div class="popup-window">
         <div class="popup-conversion-container">
-            <div class="popup-top">
-                <p class="popup-top-title">Расчет конверсии</p>
+            <div class="popup-top mob-hide-768">
+                <p class="popup-top-title ">Расчет конверсии</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
             <div class="popup-row-half">
-                    <div class="popup-conversion-row">
-                        <form class="popup-conversion-form">
-                            <div class="form-field">
-                                <p class="form-name">Приход подписчиков одним числом</p>
-                                <input type="text" class="form-input" placeholder="Например, 1500"  required="">
-                            </div>
-                            <div class="form-field">
-                                <p class="form-name">Охват рекламы одним числом</p>
-                                <input type="text" class="form-input" placeholder="Например, 63558"  required="">
-                            </div>
-                            <div class="popup-conversion-info">
-                                <p class="popup-info-text">Для более точных показателей советуем вам самостоятельно проанализировать 5-10 последних реклам и вывести средний процент конверсии.</p>
-                            </div>
-                            <button type="submit" class="btn-orange">Рассчитать и подставить результат</button>
-                        </form>
-                        <div class="popup-conversion-text">
-                            <div class="blue-text popup-conversion-item">Что такое конверсия</div>
-                            <div class="popup-conversion-drop">
-                                <p class="form-info">Конверсия — это отношение количества пришедших подписчиков к охваченным рекламой у блогера.</p>
-                                <p class="form-info">Например, вы купили рекламу в сторис 15 секунд у блогера и на вас с нее подписалось 1000 подписчиков при охвате этой истории в 50000 подписчиков. Тогда конверсия будет равна: (1000/50000)*100% = 2%</p>
-                                <p class="form-info">Если историй с отметками вашего аккаунта в рекламе было несколько, то разделите приход подписчиков на среднее от охватов историй с отметками.</p>
-                                <p class="form-info">Например, было 4 истории (60 секунд), из них 2 подводки (88000 и 85000 охвата) и 2 ваших макета с отметками (77000 и 73000 охвата). Вы суммируете охваты историй с отметками и делите их на количество историй с отметками (77000 + 73000)/2 = 75000. Предположим, что приход подписчиков составил 2500, тогда конверсия = (2500/75000)*100% = 3,3%</p>
-                                <p class="form-info">Для удобства расчетов можете воспользоваться формой слева. Значение конверсии сразу подставится в основную форму.</p>
+                <div class="popup-conversion-row">
+                    <form class="popup-conversion-form">
+                        <div class="form-field">
+                            <p class="form-name">Приход подписчиков одним числом</p>
+                            <input type="text" class="form-input" placeholder="Например, 1500" >
+                        </div>
+                        <div class="form-field">
+                            <p class="form-name">Охват рекламы одним числом</p>
+                            <input type="text" class="form-input" placeholder="Например, 63558">
+                        </div>
+                        <div class="popup-conversion-info">
+                            <p class="popup-info-text">Для более точных показателей советуем вам самостоятельно проанализировать 5-10 последних реклам и вывести средний процент конверсии.</p>
+                        </div>
+                        <button type="submit" class="btn-orange">Рассчитать и подставить результат</button>
+                    </form>
+                    <div class="popup-conversion-text">
+                        <div class="blue-text popup-conversion-item">Что такое конверсия</div>
+                        <div class="popup-conversion-drop">
+                            <p class="form-info">Конверсия — это отношение количества пришедших подписчиков к охваченным рекламой у блогера.</p>
+                            <p class="form-info">Например, вы купили рекламу в сторис 15 секунд у блогера и на вас с нее подписалось 1000 подписчиков при охвате этой истории в 50000 подписчиков. Тогда конверсия будет равна: (1000/50000)*100% = 2%</p>
+                            <p class="form-info">Если историй с отметками вашего аккаунта в рекламе было несколько, то разделите приход подписчиков на среднее от охватов историй с отметками.</p>
+                            <p class="form-info">Например, было 4 истории (60 секунд), из них 2 подводки (88000 и 85000 охвата) и 2 ваших макета с отметками (77000 и 73000 охвата). Вы суммируете охваты историй с отметками и делите их на количество историй с отметками (77000 + 73000)/2 = 75000. Предположим, что приход подписчиков составил 2500, тогда конверсия = (2500/75000)*100% = 3,3%</p>
+                            <p class="form-info">Для удобства расчетов можете воспользоваться формой слева. Значение конверсии сразу подставится в основную форму.</p>
 
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
         <footer class="footer">
             <div class="container">
@@ -511,7 +575,6 @@
             </div>
         </footer>
     </div>
-
 </div>
 
 <div class="popup popup-info ">
@@ -912,12 +975,9 @@
                         </div>
                     </footer>
                 </div>
-
             </div>
         </div>
-
     </div>
-
 </div>
 <div class="popup popup-info-review ">
     <div class="popup-window">
@@ -1298,7 +1358,6 @@
                         </div>
                     </footer>
                 </div>
-
             </div>
         </div>
 
@@ -1306,10 +1365,10 @@
 
 </div>
 
-<div class="popup popup-filling-edit ">
+<div class="popup popup-filling-edit">
     <div class="popup-window">
         <div class="popup-filling-container">
-            <div class="popup-top">
+            <div class="popup-top mob-hide-768">
                 <p class="popup-top-title">Изменить информацию</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -1348,20 +1407,20 @@
                                     <span class="check"></span>
                                     <span class="check-text">Бартер</span>
                                 </label>
-                                <label class="label">
-                                    <input type="checkbox" class="checkbox" checked>
-                                    <span class="check"></span>
-                                    <span class="form-item ">
-                                    <span class="check-text " >С доплатой</span>
-                                    <span class="popup-question">?
-                                        <span class="tooltip">
-                                            <span class="tooltip-container">
-                                                <span class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                                </label>
+                                <div class="form-item">
+                                    <label class="label">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <span class="check"></span>
+                                        <span class="check-text " >С доплатой</span>
+                                    </label>
+                                    <div class="popup-question">?
+                                        <div class="tooltip">
+                                            <div class="tooltip-container">
+                                                <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1421,7 +1480,7 @@
 <div class="popup popup-filling  ">
     <div class="popup-window">
         <div class="popup-filling-container">
-            <div class="popup-top">
+            <div class="popup-top mob-hide-768">
                 <p class="popup-top-title">Заполнить информацию</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -1460,20 +1519,20 @@
                                     <span class="check"></span>
                                     <span class="check-text">Бартер</span>
                                 </label>
-                                <label class="label disabled">
-                                    <input type="checkbox" class="checkbox" disabled>
-                                    <span class="check"></span>
-                                    <span class="form-item ">
-                                    <span class="check-text " >С доплатой</span>
-                                    <span class="popup-question">?
-                                        <span class="tooltip">
-                                            <span class="tooltip-container">
-                                                <span class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                                </label>
+                                <div class="form-item">
+                                    <label class="label disabled">
+                                        <input type="checkbox" class="checkbox" disabled>
+                                        <span class="check"></span>
+                                        <span class="check-text " >С доплатой</span>
+                                    </label>
+                                    <div class="popup-question">?
+                                        <div class="tooltip">
+                                            <div class="tooltip-container">
+                                                <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1531,10 +1590,10 @@
     </div>
 </div>
 
-<div class="popup popup-edit-info ">
+<div class="popup popup-edit-info">
     <div class="popup-window">
         <div class="popup-filling-container">
-            <div class="popup-top">
+            <div class="popup-top mob-hide-768">
                 <p class="popup-top-title">Изменить информацию</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -1556,7 +1615,7 @@
                         <div class="popup-filling-flex">
                             <div class="form-field">
                                 <p class="form-name nowrap">Цена за рекламу в ₽</p>
-                                <input type="text" class="form-input" required="" value="99 999" >
+                                <input type="text" class="form-input" value="99 999" >
                             </div>
                             <div class="popup-filling-checkboxes">
                                 <label class="label">
@@ -1569,20 +1628,21 @@
                                     <span class="check"></span>
                                     <span class="check-text">Бартер</span>
                                 </label>
-                                <label class="label">
-                                    <input type="checkbox" class="checkbox" checked>
-                                    <span class="check"></span>
-                                    <span class="form-item ">
-                                    <span class="check-text " >С доплатой</span>
-                                    <span class="popup-question">?
-                                        <span class="tooltip">
-                                            <span class="tooltip-container">
-                                                <span class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                                </label>
+                                <div class="form-item">
+                                    <label class="label">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <span class="check"></span>
+                                        <span class="check-text " >С доплатой</span>
+                                    </label>
+                                    <div class="popup-question">?
+                                        <div class="tooltip">
+                                            <div class="tooltip-container">
+                                                <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <div class="form-field">
@@ -1613,7 +1673,7 @@
                             </div>
                             <div class="form-field">
                                 <p class="form-name">Переходов по рекламе</p>
-                                <input type="text" class="form-input" required="">
+                                <input type="text" class="form-input">
                             </div>
                         </div>
                         <div class="">
@@ -1639,7 +1699,7 @@
 <div class="popup popup-edit ">
     <div class="popup-window">
         <div class="popup-filling-container">
-            <div class="popup-top">
+            <div class="popup-top ">
                 <p class="popup-top-title">Изменить информацию</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -1670,20 +1730,20 @@
                                     <span class="check"></span>
                                     <span class="check-text">Бартер</span>
                                 </label>
-                                <label class="label">
-                                    <input type="checkbox" class="checkbox">
-                                    <span class="check"></span>
-                                    <span class="form-item ">
-                                    <span class="check-text " >С доплатой</span>
-                                    <span class="popup-question">?
-                                        <span class="tooltip">
-                                            <span class="tooltip-container">
-                                                <span class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                                </label>
+                                <div class="form-item">
+                                    <label class="label">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="check"></span>
+                                        <span class="check-text " >С доплатой</span>
+                                    </label>
+                                    <div class="popup-question">?
+                                        <div class="tooltip">
+                                            <div class="tooltip-container">
+                                                <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-field">
@@ -1714,7 +1774,7 @@
                             </div>
                             <div class="form-field">
                                 <p class="form-name">Переходов по рекламе</p>
-                                <input type="text" class="form-input" required="">
+                                <input type="text" class="form-input">
                             </div>
                         </div>
                         <div class="">
@@ -1737,14 +1797,9 @@
     </div>
 </div>
 
-<div class="popup popup-feedback ">
+<div class="popup popup-feedback">
     <div class="popup-window">
         <form class="popup-feedback-container">
-            <div class="popup-top popup-top-mob">
-                <p class="popup-top-title">Оставить отзыв на блогера
-                    <span class="popup-feedback-span gray">Шаг 1 из 2</span>
-                </p>
-            </div>
             <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             <div class="popup-window-container">
                 <div class="popup-feedback-overflow">
@@ -1800,20 +1855,20 @@
                                     <span class="check"></span>
                                     <span class="check-text">Бартер</span>
                                 </label>
-                                <label class="label">
-                                    <input type="checkbox" class="checkbox" checked>
-                                    <span class="check"></span>
-                                    <span class="form-item ">
-                                <span class="check-text " >С доплатой</span>
-                                <span class="popup-question">?
-                                    <span class="tooltip">
-                                        <span class="tooltip-container">
-                                            <span class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </span>
-                                </label>
+                                <div class="form-item">
+                                    <label class="label">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <span class="check"></span>
+                                        <span class="check-text " >С доплатой</span>
+                                    </label>
+                                    <div class="popup-question">?
+                                        <div class="tooltip">
+                                            <div class="tooltip-container">
+                                                <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-field">
@@ -1838,14 +1893,9 @@
         </footer>
     </div>
 </div>
-<div class="popup popup-feedback-two ">
+<div class="popup popup-feedback-two">
     <div class="popup-window">
         <form class="popup-filling-container">
-            <div class="popup-top popup-top-mob">
-                <p class="popup-top-title">Оставить отзыв на блогера
-                    <span class="popup-feedback-span gray">Шаг 2 из 2</span>
-                </p>
-            </div>
             <div class="popup-window-container">
                 <div class="popup-feedback-overflow">
                     <div class="popup-feedback-padding">
@@ -1880,83 +1930,83 @@
                                 <div class="form-field">
                                     <p class="form-name">Тема аккаунта заказчика</p>
                                     <ul class="popup-drop">
-                                        <li class="popup-drop-item"><p class="gray">Выберите из списка</p><img src="img/arrow-select.svg"  alt="arrow select" class="popup-drop-arrow"></li>
+                                        <li class="popup-drop-item"><input type="text" placeholder="Выберите из списка" class="popup-drop-input"><img src="img/arrow-select.svg"  alt="arrow select" class="popup-drop-arrow"></li>
                                         <li class="popup-drop-list">
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Бизнес">
                                                 <span class="check"></span>
                                                 <span class="check-text">Бизнес</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Бьюти">
                                                 <span class="check"></span>
                                                 <span class="check-text">Бьюти</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Дом, интерьер и ремонт">
                                                 <span class="check"></span>
                                                 <span class="check-text">Дом, интерьер и ремонт</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Жизнь заграницей">
                                                 <span class="check"></span>
                                                 <span class="check-text">Жизнь заграницей</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="ЗОЖ">
                                                 <span class="check"></span>
                                                 <span class="check-text">ЗОЖ</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Здоровье">
                                                 <span class="check"></span>
                                                 <span class="check-text">Здоровье</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Изучение языков">
                                                 <span class="check"></span>
                                                 <span class="check-text">Изучение языков</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Книги">
                                                 <span class="check"></span>
                                                 <span class="check-text">Книги</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Лайфстайл">
                                                 <span class="check"></span>
                                                 <span class="check-text">Лайфстайл</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Лайфхаки">
                                                 <span class="check"></span>
                                                 <span class="check-text">Лайфхаки</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Мамы">
                                                 <span class="check"></span>
                                                 <span class="check-text">Мамы</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Мода, стиль и шоппинг">
                                                 <span class="check"></span>
                                                 <span class="check-text">Мода, стиль и шоппинг</span>
                                             </label><label class="label">
-                                            <input type="checkbox" class="checkbox">
+                                            <input type="checkbox" class="checkbox" value="Мотивация">
                                             <span class="check"></span>
                                             <span class="check-text">Мотивация</span>
                                         </label><label class="label">
-                                            <input type="checkbox" class="checkbox">
+                                            <input type="checkbox" class="checkbox" value="Наука">
                                             <span class="check"></span>
                                             <span class="check-text">Наука</span>
                                         </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Нет отзывов">
                                                 <span class="check"></span>
                                                 <span class="check-text">Нет отзывов</span>
                                             </label>
                                             <label class="label">
-                                                <input type="checkbox" class="checkbox">
+                                                <input type="checkbox" class="checkbox" value="Обработка фото">
                                                 <span class="check"></span>
                                                 <span class="check-text">Обработка фото</span>
                                             </label>
@@ -2043,7 +2093,7 @@
             <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
             <img src="img/payment-check.svg" alt="sent" class="popup-icon">
             <h2 class="popup-sent-title">Отзыв отправлен на модерацию</h2>
-            <button class="btn-white">Оставить ещё один отзыв</button>
+            <a href="#" class="btn-white">Оставить ещё один отзыв</a>
             <a href="#" class="blue-text">В мой список блогеров</a>
             <a href="#" class="blue-text">Моя история отзывов</a>
         </div>
@@ -2081,7 +2131,7 @@
             <div class="bg-popup-left">
                 <div class="bg-popup-col">
                     <p class="bg-popup-text">Доступ к трекеру истек 23.09.19</p>
-                    <a href="#" class="blue-text">Нажмите, чтобы возобновить</a>
+                    <a href="#" class="blue-text next-rate-extend">Нажмите, чтобы возобновить</a>
                 </div>
             </div>
             <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
@@ -2093,7 +2143,7 @@
         <div class="bg-popup-row">
             <div class="bg-popup-left">
                 <div class="bg-popup-col">
-                    <a href="#" class="blue-text bg-popup-title">Продлите доступ к трекеру</a>
+                    <a href="#" class="blue-text bg-popup-title next-rate-extend">Продлите доступ к трекеру</a>
                     <p class="gray">Воспользуйтесь скидкой до 23.09.19</p>
                 </div>
             </div>
@@ -2154,7 +2204,6 @@
 
     </div>
 </div>
-
     <section class="second">
             <div class="container">
                 <div class="second-top">
@@ -2204,85 +2253,87 @@
                                     <button class="btn-orange">Найти</button>
                                 </div>
                             </div>
-                            <div class="search-overflow">
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Блогер</p>
-                                        <input type="text" class="search-input" placeholder="Введите ник блогера">
-                                    </div>
-                                    <div class="search-field">
-                                        <p class="search-name nowrap">Цена за подписчика в ₽</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 1">
-                                            <input type="text" class="search-input-two" placeholder="до 50">
+                            <div class="search-item">
+                                <div class="search-overflow">
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Блогер</p>
+                                            <input type="text" class="search-input" placeholder="Введите ник блогера">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Пришло подписчиков</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 500">
-                                            <input type="text" class="search-input-two" placeholder="до 999 999">
-                                        </div>
-                                    </div>
-                                    <div class="search-field">
-                                        <p class="search-name nowrap">Цены из отзывов в ₽</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 300">
-                                            <input type="text" class="search-input-two" placeholder="до 999 999">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Всего отзывов</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 1">
-                                            <input type="text" class="search-input-two" placeholder="до 999">
-                                        </div>
-                                    </div>
-                                    <div class="search-field">
-                                        <p class="search-name">Средняя оценка от 5 <img src="img/star.svg" alt="star" class="star"></p>
-                                        <div class="search-range-col">
-                                            <div class="search-range range"></div>
-                                            <div class="search-range-row">
-                                                <div class="search-range-item">1</div>
-                                                <div class="search-range-item">5</div>
-                                                <div class="search-range-item">10</div>
+                                        <div class="search-field">
+                                            <p class="search-name nowrap">Цена за подписчика в ₽</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 1">
+                                                <input type="text" class="search-input-two" placeholder="до 50">
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Отзывы за период</p>
-                                        <select class="search-select" required>
-                                            <option value="" disabled>Выберите из списка</option>
-                                            <option value="1 месяц" selected>1 месяц</option>
-                                            <option value="2 месяц">2 месяц</option>
-                                            <option value="3 месяц">3 месяц</option>
-                                        </select>
-                                    </div>
-                                    <div class="search-field">
-                                        <p class="search-name">Показать отзывы от</p>
-                                        <div class="search-field-flex">
-                                            <label class="label">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="check"></span>
-                                                <span class="check-text">Блогеров</span>
-                                            </label>
-                                            <label class="label">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="check"></span>
-                                                <span class="check-text">Коммерции</span>
-                                            </label>
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Пришло подписчиков</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 500">
+                                                <input type="text" class="search-input-two" placeholder="до 999 999">
+                                            </div>
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name nowrap">Цены из отзывов в ₽</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 300">
+                                                <input type="text" class="search-input-two" placeholder="до 999 999">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="search-col last-child">
-                                    <button class="btn-orange">Найти</button>
-                                    <button class="btn-white">Сбросить</button>
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Всего отзывов</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 1">
+                                                <input type="text" class="search-input-two" placeholder="до 999">
+                                            </div>
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name">Средняя оценка от 5 <img src="img/star.svg" alt="star" class="star"></p>
+                                            <div class="search-range-col">
+                                                <div class="search-range range"></div>
+                                                <div class="search-range-row">
+                                                    <div class="search-range-item">1</div>
+                                                    <div class="search-range-item">5</div>
+                                                    <div class="search-range-item">10</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Отзывы за период</p>
+                                            <select class="search-select" required>
+                                                <option value="" disabled>Выберите из списка</option>
+                                                <option value="1 месяц" selected>1 месяц</option>
+                                                <option value="2 месяц">2 месяц</option>
+                                                <option value="3 месяц">3 месяц</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name">Показать отзывы от</p>
+                                            <div class="search-field-flex">
+                                                <label class="label">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check"></span>
+                                                    <span class="check-text">Блогеров</span>
+                                                </label>
+                                                <label class="label">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check"></span>
+                                                    <span class="check-text">Коммерции</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-col last-child">
+                                        <button class="btn-orange">Найти</button>
+                                        <button class="btn-white">Сбросить</button>
+                                    </div>
                                 </div>
                                 <footer class="footer">
     <div class="container">
@@ -2291,7 +2342,6 @@
     </div>
 </footer>
                             </div>
-
                         </div>
                         <div class="bloggers">
                             <div class="bloggers-top">
@@ -2313,14 +2363,14 @@
                                 <li class="bloggers-menu-list">Окупаемость рекламы</li>
                                 <li class="bloggers-menu-list">Средняя оценка</li>
                                 <li class="bloggers-menu-list">В мой список</li>
-                                <li class="bloggers-menu-list">Скрыть на месяц</li>
+                                <li class="bloggers-menu-list">Скрыть <br>на месяц</li>
                                 <li class="bloggers-menu-list">Удалить навсегда</li>
                             </ul>
                             <div class="bloggers-flex">
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2328,7 +2378,7 @@
                                             <div class="bloggers-name-right">  <p class="nowrap">888 из 999 <br><span class="bloggers-name-span"> (коммерция)</span></p> </div>
 
                                         </li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-name-right"> <div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></div></li>
 
                                         <li class="bloggers-content-list bloggers-hide flex-center">
                                             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2348,7 +2398,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -2358,7 +2408,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2367,7 +2417,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -2383,7 +2433,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2391,7 +2441,69 @@
                                             <div class="bloggers-name-right">  <p class="nowrap">888 из 999 <br><span class="bloggers-name-span"> (коммерция)</span></p> </div>
 
                                         </li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-name-right"><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></div></li>
+                                        <li class="bloggers-content-list bloggers-hide flex-center">
+                                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6L4.88861 11L12.6664 1" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </li>
+                                        <li class="bloggers-content-list bloggers-hide flex-center">
+                                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="" stroke="#FFC804"/>
+                                            </svg>
+                                        </li>
+                                        <li class="bloggers-content-list bloggers-hide flex-center">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L11 11M11 1L1 11" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div class="bloggers-bottom">
+                                        <div class="bloggers-add bloggers-bottom-item">
+                                            <a href="#" class="cancel-action">Отменить</a>
+                                            <div class="bloggers-info">
+                                                <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
+                                                </svg>
+                                                <p class="bloggers-text"> Блогер добавлен в </p>
+                                                <a href="#" class="blue-text">ваш список</a>
+                                            </div>
+                                        </div>
+                                        <div class="bloggers-delete bloggers-bottom-item">
+                                            <a href="#" class="cancel-action">Отменить</a>
+                                            <div class="bloggers-info">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <p class="bloggers-text">Блогер удален</p>
+                                            </div>
+                                        </div>
+                                        <div class="bloggers-lurk bloggers-bottom-item">
+                                            <a href="#" class="cancel-action">Отменить</a>
+                                            <div class="bloggers-info">
+                                                <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
+                                                </svg>
+                                                <p class="bloggers-text">Блогер скрыт на месяц</p>
+                                            </div>
+                                        </div>
+                                        <button class="bloggers-bottom-btn add-list">В мой список</button>
+                                        <button class="bloggers-bottom-btn hide-mouth">Скрыть на месяц</button>
+                                        <button class="bloggers-bottom-btn delete-forever">Удалить навсегда</button>
+                                    </div>
+                                </div>
+                                <div class="bloggers-card">
+                                    <ul class="bloggers-content">
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
+                                        <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Окупаемость рекламы</p>
+                                            <div class="bloggers-name-right">  <p class="nowrap">888 из 999 <br><span class="bloggers-name-span"> (коммерция)</span></p> </div>
+
+                                        </li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-name-right"><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></div></li>
 
                                         <li class="bloggers-content-list bloggers-hide flex-center">
                                             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2411,7 +2523,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -2421,7 +2533,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2430,7 +2542,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -2446,7 +2558,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2454,7 +2566,7 @@
                                             <div class="bloggers-name-right">  <p class="nowrap">888 из 999 <br><span class="bloggers-name-span"> (коммерция)</span></p> </div>
 
                                         </li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-name-right"><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></div></li>
 
                                         <li class="bloggers-content-list bloggers-hide flex-center">
                                             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2474,7 +2586,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -2484,7 +2596,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2493,7 +2605,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -2509,7 +2621,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2517,7 +2629,7 @@
                                             <div class="bloggers-name-right">  <p class="nowrap">888 из 999 <br><span class="bloggers-name-span"> (коммерция)</span></p> </div>
 
                                         </li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-name-right"><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></div></li>
 
                                         <li class="bloggers-content-list bloggers-hide flex-center">
                                             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2537,7 +2649,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -2547,7 +2659,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2556,7 +2668,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -2572,7 +2684,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2580,70 +2692,7 @@
                                             <div class="bloggers-name-right">  <p class="nowrap">888 из 999 <br><span class="bloggers-name-span"> (коммерция)</span></p> </div>
 
                                         </li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></li>
-
-                                        <li class="bloggers-content-list bloggers-hide flex-center">
-                                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 6L4.88861 11L12.6664 1" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </li>
-                                        <li class="bloggers-content-list bloggers-hide flex-center">
-                                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="" stroke="#FFC804"/>
-                                            </svg>
-                                        </li>
-                                        <li class="bloggers-content-list bloggers-hide flex-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 1L11 11M11 1L1 11" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </li>
-                                    </ul>
-                                    <div class="bloggers-bottom">
-                                        <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
-                                            <div class="bloggers-info">
-                                                <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
-                                                </svg>
-                                                <p class="bloggers-text"> Блогер добавлен в </p>
-                                                <a href="#" class="blue-text">ваш список</a>
-                                            </div>
-                                        </div>
-                                        <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
-                                            <div class="bloggers-info">
-                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <p class="bloggers-text">Блогер удален</p>
-                                            </div>
-                                        </div>
-                                        <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
-                                            <div class="bloggers-info">
-                                                <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
-                                                </svg>
-                                                <p class="bloggers-text">Блогер скрыт на месяц</p>
-                                            </div>
-                                        </div>
-                                        <button class="bloggers-bottom-btn add-list">В мой список</button>
-                                        <button class="bloggers-bottom-btn hide-mouth">Скрыть на месяц</button>
-                                        <button class="bloggers-bottom-btn delete-forever">Удалить навсегда</button>
-                                    </div>
-                                </div>
-                                <div class="bloggers-card">
-                                    <ul class="bloggers-content">
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
-                                        <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Окупаемость рекламы</p>
-                                            <div class="bloggers-name-right">  <p class="nowrap">888 из 999 <br><span class="bloggers-name-span"> (коммерция)</span></p> </div>
-
-                                        </li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-name-right"><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></div></li>
 
                                         <li class="bloggers-content-list bloggers-hide flex-center">
                                             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2663,7 +2712,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -2673,7 +2722,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2682,7 +2731,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -2714,7 +2763,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2722,7 +2771,7 @@
                                             <div class="bloggers-name-right">  <p class="nowrap">888 из 999 <br><span class="bloggers-name-span"> (коммерция)</span></p> </div>
 
                                         </li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Средняя оценка</p><div class="bloggers-name-right"><div class="bloggers-content-link">8,4 <img src="img/star.svg" alt="star" class="star"></div></div></li>
 
                                         <li class="bloggers-content-list bloggers-hide flex-center">
                                             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2742,7 +2791,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -2752,7 +2801,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2761,7 +2810,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -2777,7 +2826,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2805,7 +2854,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -2815,7 +2864,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2824,7 +2873,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -2840,7 +2889,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2868,7 +2917,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -2878,7 +2927,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2887,7 +2936,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -2903,7 +2952,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2931,7 +2980,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -2941,7 +2990,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2950,7 +2999,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -2966,7 +3015,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -2994,7 +3043,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -3004,7 +3053,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -3013,7 +3062,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -3029,7 +3078,7 @@
                                 <div class="bloggers-card">
                                     <ul class="bloggers-content">
                                         <li class="bloggers-content-list"><p class="bloggers-name">Блогер</p><div class="bloggers-name-right"><a href="#" class="blue-text">neotpuskaiteplo</a></div></li>
-                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подписчика</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
+                                        <li class="bloggers-content-list"><p class="bloggers-name">Прошлые цены за подп.</p><div class="bloggers-name-right">1,5 — 3 ₽</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Пришло подписчиков</p><div class="bloggers-name-right">400 — 1 800</div></li>
                                         <li class="bloggers-content-list"><p class="bloggers-name">Цены из отзывов</p><div class="bloggers-name-right">300 — 1 500 ₽</div></li>
                                         <li class="bloggers-content-list show-info-review"><p class="bloggers-name">Всего отзывов</p><div class="bloggers-name-right"><a href="#" class="blue-text">999 <p class="gray">показать</p></a> </div></li>
@@ -3057,7 +3106,7 @@
                                     </ul>
                                     <div class="bloggers-bottom">
                                         <div class="bloggers-add bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="18" height="18" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 0C8.05934 0 0 8.05901 0 18C0 27.941 8.05934 36 18 36C27.9418 36 36 27.941 36 18C36 8.05901 27.9414 0 18 0ZM14.6981 27.2463L6.77229 19.3208L9.41399 16.6791L14.6981 21.9628L26.586 10.0746L29.2277 12.7163L14.6981 27.2463Z" fill="#6AC259"/>
@@ -3067,7 +3116,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-delete bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -3076,7 +3125,7 @@
                                             </div>
                                         </div>
                                         <div class="bloggers-lurk bloggers-bottom-item">
-                                            <button class="cancel-action">Отменить</button>
+                                            <a href="#" class="cancel-action">Отменить</a>
                                             <div class="bloggers-info">
                                                 <svg width="15" height="18" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.2197 11.6731L14.2195 11.673C14.1828 11.6358 14.1429 11.5963 14.1004 11.5543C13.7912 11.2489 13.3429 10.8059 12.9721 10.0985C12.5477 9.28892 12.2352 8.1629 12.2352 6.5C12.2352 4.34384 10.6311 2.57951 8.39524 2.14194L7.99126 2.06289V1.65125V1C7.99126 0.751349 7.76832 0.5 7.43044 0.5C7.09256 0.5 6.86961 0.751349 6.86961 1V1.65125V2.06289L6.46564 2.14194C4.22973 2.57951 2.62565 4.34384 2.62565 6.5C2.62565 8.1629 2.31319 9.28892 1.88881 10.0985C1.51796 10.8059 1.06964 11.2489 0.760525 11.5543C0.718 11.5963 0.678105 11.6357 0.641412 11.6729L14.2197 11.6731ZM14.2197 11.6731C14.3252 11.7798 14.3616 11.8932 14.3609 11.9965L14.3609 11.9968M14.2197 11.6731L14.3609 11.9968M14.3609 11.9968C14.3593 12.236 14.1538 12.5 13.7961 12.5H1.06483C0.707375 12.5 0.501743 12.2362 0.500011 11.9965M14.3609 11.9968L0.500011 11.9965M0.50001 11.9964C0.499295 11.8934 0.535544 11.7801 0.641336 11.6729L0.50001 11.9964ZM0.50001 11.9964C0.50001 11.9965 0.50001 11.9965 0.500011 11.9965M0.50001 11.9964L0.500011 11.9965M1.85067 11.1864L1.19546 12H2.24009H12.6208H13.6657L13.0102 11.1863C12.3816 10.4061 11.6525 9.07524 11.6437 6.5452C11.6448 6.53243 11.6456 6.51715 11.6456 6.5C11.6456 4.26304 9.73004 2.5 7.43044 2.5C5.13084 2.5 3.21523 4.26304 3.21523 6.5C3.21523 6.51715 3.21607 6.53243 3.21715 6.5452C3.2084 9.0749 2.4793 10.4058 1.85067 11.1864ZM11.6378 6.59171L11.6383 6.58866C11.6379 6.591 11.6376 6.59289 11.6378 6.59171ZM8.95899 14.5C8.73945 15.071 8.15421 15.5 7.43044 15.5C6.70667 15.5 6.12143 15.071 5.90189 14.5H8.95899ZM14.8609 12C14.8625 11.7641 14.7743 11.5228 14.5752 11.3216L1.06483 13H13.7961C14.4303 13 14.8575 12.5125 14.8609 12Z" fill="#FADB67" stroke="#FADB67"/>
@@ -3091,7 +3140,7 @@
                                 </div>
                             </div>
 
-                            <button class="bloggers-btn">Показать ещё</button>
+                            <a href="#" class="bloggers-btn">Показать ещё</a>
                             <div class="pagination">
                                 <a href="#" class="pagination-btn disabled" >Назад
                                     <svg class="pagination-btn-arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3131,83 +3180,85 @@
                                     <button class="btn-orange">Найти</button>
                                 </div>
                             </div>
-                            <div class="search-container">
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Мой аккаунт</p>
-                                        <input type="text" class="search-input" placeholder="Введите ник">
-                                    </div>
-                                    <div class="search-field">
-                                        <p class="search-name">Брали рекламу у</p>
-                                        <input type="text" class="search-input" placeholder="Введите ник блогера">
-                                    </div>
-                                </div>
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Формат рекламы</p>
-                                        <select class="search-select" required>
-                                            <option value="" disabled selected>Выберите из списка</option>
-                                            <option value="Сторис 15c">Сторис 15c</option>
-                                            <option value="Сторис 30c">Сторис 30c</option>
-                                            <option value="Сторис 45c">Сторис 45c</option>
-                                            <option value="Сторис 60c">Сторис 60c</option>
-                                            <option value="Сторис 75c">Сторис 75c</option>
-                                            <option value="Сторис 90c">Сторис 90c</option>
-                                            <option value="Фото-пост">Фото-пост</option>
-                                            <option value="Видео-пост">Видео-пост</option>
-                                            <option value="Сторис+пост">Сторис+пост</option>
-                                        </select>
-                                    </div>
-                                    <div class="search-field">
-                                        <p class="search-name">Статус заказа</p>
-                                        <select class="search-select" required>
-                                            <option value="" disabled>Выберите из списка</option>
-                                            <option value="Запросить" selected>Запросить</option>
-                                            <option value="Ожидаем ответ">Ожидаем ответ</option>
-                                            <option value="Не отвечает">Не отвечает</option>
-                                            <option value="Переговоры">Переговоры</option>
-                                            <option value="Заказана реклама">Заказана реклама</option>
-                                            <option value="Оставить отзыв">Оставить отзыв</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Заявлено охватов</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 500">
-                                            <input type="text" class="search-input-two" placeholder="до 999 999">
+                            <div class="search-item">
+                                <div class="search-container">
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Мой аккаунт</p>
+                                            <input type="text" class="search-input" placeholder="Введите ник">
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name">Брали рекламу у</p>
+                                            <input type="text" class="search-input" placeholder="Введите ник блогера">
                                         </div>
                                     </div>
-                                    <div class="search-field">
-                                        <p class="search-name">Цена рекламы в ₽</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 300">
-                                            <input type="text" class="search-input-two" placeholder="до 999 999">
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Формат рекламы</p>
+                                            <select class="search-select" required>
+                                                <option value="" disabled selected>Выберите из списка</option>
+                                                <option value="Сторис 15c">Сторис 15c</option>
+                                                <option value="Сторис 30c">Сторис 30c</option>
+                                                <option value="Сторис 45c">Сторис 45c</option>
+                                                <option value="Сторис 60c">Сторис 60c</option>
+                                                <option value="Сторис 75c">Сторис 75c</option>
+                                                <option value="Сторис 90c">Сторис 90c</option>
+                                                <option value="Фото-пост">Фото-пост</option>
+                                                <option value="Видео-пост">Видео-пост</option>
+                                                <option value="Сторис+пост">Сторис+пост</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name">Статус заказа</p>
+                                            <select class="search-select" required>
+                                                <option value="" disabled>Выберите из списка</option>
+                                                <option value="Запросить" selected>Запросить</option>
+                                                <option value="Ожидаем ответ">Ожидаем ответ</option>
+                                                <option value="Не отвечает">Не отвечает</option>
+                                                <option value="Переговоры">Переговоры</option>
+                                                <option value="Заказана реклама">Заказана реклама</option>
+                                                <option value="Оставить отзыв">Оставить отзыв</option>
+                                            </select>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Период отзывов</p>
-                                        <select class="search-select" required>
-                                            <option value="" disabled>Выберите из списка</option>
-                                            <option value="1 месяц" selected>1 месяц</option>
-                                            <option value="2 месяц">2 месяц</option>
-                                            <option value="3 месяц">3 месяц</option>
-                                        </select>
-                                    </div>
-                                    <div class="search-field">
-                                        <p class="search-name search-name-little">или выберите даты рекламы</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="Начало">
-                                            <input type="text" class="search-input-two" placeholder="Конец">
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Заявлено охватов</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 500">
+                                                <input type="text" class="search-input-two" placeholder="до 999 999">
+                                            </div>
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name">Цена рекламы в ₽</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 300">
+                                                <input type="text" class="search-input-two" placeholder="до 999 999">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="search-col last-child">
-                                    <button class="btn-orange">Найти</button>
-                                    <button class="btn-white">Сбросить</button>
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Период отзывов</p>
+                                            <select class="search-select" required>
+                                                <option value="" disabled>Выберите из списка</option>
+                                                <option value="1 месяц" selected>1 месяц</option>
+                                                <option value="2 месяц">2 месяц</option>
+                                                <option value="3 месяц">3 месяц</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name search-name-little">или выберите даты рекламы</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="Начало">
+                                                <input type="text" class="search-input-two" placeholder="Конец">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-col last-child">
+                                        <button class="btn-orange">Найти</button>
+                                        <button class="btn-white">Сбросить</button>
+                                    </div>
                                 </div>
                                 <footer class="footer">
     <div class="container">
@@ -3216,7 +3267,6 @@
     </div>
 </footer>
                             </div>
-
                         </div>
                         <div class="bloggers">
                             <div class="bloggers-top">
@@ -3296,6 +3346,21 @@
                                         </li>
                                     </ul>
                                     <div class="bloggers-bottom">
+                                        <div class="bloggers-delete-list">
+                                            <div class="bloggers-info">
+                                                <div class="bloggers-delete-ask active">
+                                                    <p class="bloggers-delete-item">Удалить из списка?</p>
+                                                    <button class="bloggers-delete-item delete-yes">Да</button>
+                                                    <button class="bloggers-delete-item delete-not">Нет</button>
+                                                </div>
+                                                <div class="bloggers-deleted">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <p class="bloggers-text">Блогер удален из вашего списка</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <button class="bloggers-bottom-btn show-filling-edit">Изменить</button>
                                         <button class="bloggers-bottom-btn show-feedback">Оставить отзыв</button>
                                         <button class="bloggers-bottom-btn show-delete">Удалить</button>
@@ -3317,6 +3382,21 @@
                                         </li>
                                     </ul>
                                     <div class="bloggers-bottom">
+                                        <div class="bloggers-delete-list">
+                                            <div class="bloggers-info">
+                                                <div class="bloggers-delete-ask active">
+                                                    <p class="bloggers-delete-item">Удалить из списка?</p>
+                                                    <button class="bloggers-delete-item delete-yes">Да</button>
+                                                    <button class="bloggers-delete-item delete-not">Нет</button>
+                                                </div>
+                                                <div class="bloggers-deleted">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <p class="bloggers-text">Блогер удален из вашего списка</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <button class="bloggers-bottom-btn show-filling-edit">Изменить</button>
                                         <button class="bloggers-bottom-btn show-feedback">Оставить отзыв</button>
                                         <button class="bloggers-bottom-btn show-delete">Удалить</button>
@@ -3359,6 +3439,21 @@
                                         </li>
                                     </ul>
                                     <div class="bloggers-bottom">
+                                        <div class="bloggers-delete-list">
+                                            <div class="bloggers-info">
+                                                <div class="bloggers-delete-ask active">
+                                                    <p class="bloggers-delete-item">Удалить из списка?</p>
+                                                    <button class="bloggers-delete-item delete-yes">Да</button>
+                                                    <button class="bloggers-delete-item delete-not">Нет</button>
+                                                </div>
+                                                <div class="bloggers-deleted">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <p class="bloggers-text">Блогер удален из вашего списка</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <button class="bloggers-bottom-btn show-filling-edit">Изменить</button>
                                         <button class="bloggers-bottom-btn show-feedback">Оставить отзыв</button>
                                         <button class="bloggers-bottom-btn show-delete">Удалить</button>
@@ -3380,6 +3475,21 @@
                                         </li>
                                     </ul>
                                     <div class="bloggers-bottom">
+                                        <div class="bloggers-delete-list">
+                                            <div class="bloggers-info">
+                                                <div class="bloggers-delete-ask active">
+                                                    <p class="bloggers-delete-item">Удалить из списка?</p>
+                                                    <button class="bloggers-delete-item delete-yes">Да</button>
+                                                    <button class="bloggers-delete-item delete-not">Нет</button>
+                                                </div>
+                                                <div class="bloggers-deleted">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <p class="bloggers-text">Блогер удален из вашего списка</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <button class="bloggers-bottom-btn show-filling-edit">Изменить</button>
                                         <button class="bloggers-bottom-btn show-feedback">Оставить отзыв</button>
                                         <button class="bloggers-bottom-btn show-delete">Удалить</button>
@@ -3544,8 +3654,7 @@
                                     </li>
                                 </ul>
                             </div>
-
-                            <button class="bloggers-btn">Показать ещё</button>
+                            <a href="#" class="bloggers-btn">Показать ещё</a>
                             <div class="pagination">
                                 <a href="#" class="pagination-btn disabled" >Назад
                                     <svg class="pagination-btn-arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3584,70 +3693,72 @@
                                     <button class="btn-orange">Найти</button>
                                 </div>
                             </div>
-                            <div class="search-container">
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Мой аккаунт</p>
-                                        <input type="text" class="search-input" placeholder="Введите ник">
-                                    </div>
-                                    <div class="search-field">
-                                        <p class="search-name">Брали рекламу у</p>
-                                        <input type="text" class="search-input" placeholder="Введите ник блогера">
-                                    </div>
-                                </div>
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Период отзывов</p>
-                                        <select class="search-select" required>
-                                            <option value="" disabled>Выберите из списка</option>
-                                            <option value="1 месяц" selected>1 месяц</option>
-                                            <option value="2 месяц">2 месяц</option>
-                                            <option value="3 месяц">3 месяц</option>
-                                        </select>
-                                    </div>
-                                    <div class="search-field">
-                                        <p class="search-name search-name-little">или выберите даты рекламы</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="Начало">
-                                            <input type="text" class="search-input-two" placeholder="Конец">
+                            <div class="search-item">
+                                <div class="search-container">
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Мой аккаунт</p>
+                                            <input type="text" class="search-input" placeholder="Введите ник">
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name">Брали рекламу у</p>
+                                            <input type="text" class="search-input" placeholder="Введите ник блогера">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name nowrap">Цена за подписчика в ₽</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 500">
-                                            <input type="text" class="search-input-two" placeholder="до 999 999">
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Период отзывов</p>
+                                            <select class="search-select" required>
+                                                <option value="" disabled>Выберите из списка</option>
+                                                <option value="1 месяц" selected>1 месяц</option>
+                                                <option value="2 месяц">2 месяц</option>
+                                                <option value="3 месяц">3 месяц</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name search-name-little">или выберите даты рекламы</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="Начало">
+                                                <input type="text" class="search-input-two" placeholder="Конец">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="search-field">
-                                        <p class="search-name">Цена рекламы в ₽</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 300">
-                                            <input type="text" class="search-input-two" placeholder="до 999 999">
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name nowrap">Цена за подписчика в ₽</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 500">
+                                                <input type="text" class="search-input-two" placeholder="до 999 999">
+                                            </div>
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name">Цена рекламы в ₽</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 300">
+                                                <input type="text" class="search-input-two" placeholder="до 999 999">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="search-col">
-                                    <div class="search-field">
-                                        <p class="search-name">Фактический охват</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 500">
-                                            <input type="text" class="search-input-two" placeholder="до 999 999">
+                                    <div class="search-col">
+                                        <div class="search-field">
+                                            <p class="search-name">Фактический охват</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 500">
+                                                <input type="text" class="search-input-two" placeholder="до 999 999">
+                                            </div>
+                                        </div>
+                                        <div class="search-field">
+                                            <p class="search-name">Приход подписчиков</p>
+                                            <div class="search-field-flex">
+                                                <input type="text" class="search-input-two" placeholder="от 300">
+                                                <input type="text" class="search-input-two" placeholder="до 999 999">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="search-field">
-                                        <p class="search-name">Приход подписчиков</p>
-                                        <div class="search-field-flex">
-                                            <input type="text" class="search-input-two" placeholder="от 300">
-                                            <input type="text" class="search-input-two" placeholder="до 999 999">
-                                        </div>
+                                    <div class="search-col last-child">
+                                        <button class="btn-orange">Найти</button>
+                                        <button class="btn-white">Сбросить</button>
                                     </div>
-                                </div>
-                                <div class="search-col last-child">
-                                    <button class="btn-orange">Найти</button>
-                                    <button class="btn-white">Сбросить</button>
                                 </div>
                                 <footer class="footer">
     <div class="container">
@@ -3656,7 +3767,6 @@
     </div>
 </footer>
                             </div>
-
                         </div>
                         <div class="bloggers bloggers-menu-story">
                             <div class="bloggers-top">
@@ -4165,8 +4275,7 @@
                                     </li>
                                 </ul>
                             </div>
-
-                            <button class="bloggers-btn">Показать ещё</button>
+                            <a href="#" class="bloggers-btn">Показать ещё</a>
                             <div class="pagination">
                                 <a href="#" class="pagination-btn disabled" >Назад
                                     <svg class="pagination-btn-arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">

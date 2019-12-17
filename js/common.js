@@ -102,8 +102,11 @@ $(document).ready(function () {
         $.scrollLock(true);
     });
     $(".form-next-rate").click(function (e) {
+        e.preventDefault();
         $('.popup').removeClass('active');
         $('.popup-rate').addClass('active');
+        $('.popup-top-mob').addClass('active');
+        $('.popup-top-mob .popup-top-title').text('Выберите тариф');
         $.scrollLock(true);
     });
 
@@ -177,11 +180,12 @@ $(document).ready(function () {
 
     //calculate
     $(".btn-calculate").click(function (e) {
+        $(".popup-top-mob .popup-top-title").text('Калькулятор подписчиков');
+        $(".popup-top-mob").addClass('active');
         $(".popup-calculate").addClass('active');
         $(".popup-calculate-item").removeClass('active');
         $(".popup-calculate-one").addClass('active');
         $(".popup-calculate-active").show();
-        $(".popup-calculate .popup-top-title").text("Калькулятор подписчиков");
         $.scrollLock(true);
         if (window.matchMedia("(max-width: 768px)").matches) {
             $(".btn-back").addClass('active');
@@ -192,7 +196,8 @@ $(document).ready(function () {
 
         $(".next-calculate-example").click(function (e) {
             e.preventDefault();
-            $(".popup-calculate .popup-top-title").text("Пример результатов расчетов");
+            $(".popup-top-mob .popup-top-title").text("Пример результатов расчетов");
+            $(".popup-top-mob").addClass('active');
             $(".popup-calculate-two").removeClass('active');
             $(".popup-calculate-active").hide();
         });
@@ -201,7 +206,7 @@ $(document).ready(function () {
             $(".popup-calculate-active").show();
             $(".popup-calculate-item, .popup-calculate-two").removeClass('active');
             $(".popup-calculate-one").addClass('active');
-            $(".popup-calculate .popup-top-title").text("Калькулятор подписчиков");
+            $(".popup-top-mob .popup-top-title").text("Калькулятор подписчиков");
         });
         $(".form-next-calculate_two").click(function (e) {
             e.preventDefault();
@@ -212,9 +217,10 @@ $(document).ready(function () {
         });
         $(".next-calculate-result, .popup-calculate-last").click(function (e) {
             e.preventDefault();
+            $(".popup-top-mob .popup-top-title").text("Результаты расчетов");
+            $(".popup-top-mob").addClass('active');
             $(".popup-calculate-item").removeClass('active');
             $(".popup-calculate-result").addClass('active');
-            $(".popup-calculate .popup-top-title").text("Результаты расчетов");
             $(".popup-calculate-active").hide();
         });
     } else {
@@ -239,6 +245,8 @@ $(document).ready(function () {
 
     $(".next-conversion").click(function (e) {
         e.preventDefault();
+        $(".popup-top-mob .popup-top-title").text('Расчет конверсии');
+        $(".popup-top-mob").addClass('active');
         $(".popup").removeClass('active');
         $(".popup-conversion").addClass('active');
         $.scrollLock(true);
@@ -286,27 +294,48 @@ $(document).ready(function () {
     });
 
     //delete list brogger
-    $(".show-delete").click(function (e) {
-        e.preventDefault();
-        $.scrollLock(true);
-        $(".popup-delete").addClass('active');
-        $(".btn-back").addClass('active');
-        $(".header-user").addClass('hide');
-        let blogger = $(this).closest(".bloggers-card").find(".blogger").text(),
-            list = $(this).closest(".bloggers-card, .bloggers-content");
-        $(".blogger-item").text(blogger);
-        $(".delete-list").click(function () {
-            list.remove();
-            $(".popup").removeClass('active');
-            $(".btn-back").removeClass('active');
-            $(".header-user").removeClass('hide');
-            $.scrollLock(false);
+    if (window.matchMedia("(max-width: 993px)").matches) {
+        $(".show-delete").click(function (e) {
+            e.preventDefault();
+            $(this).closest(".bloggers-bottom").find(".bloggers-deleted").removeClass('active');
+            $(this).closest(".bloggers-bottom").find(".bloggers-delete-list, .bloggers-delete-ask").addClass('active');
         });
+
+    } else {
+        $(".show-delete").click(function (e) {
+            e.preventDefault();
+            $.scrollLock(true);
+            $(".popup-delete").addClass('active');
+            $(".btn-back").addClass('active');
+            $(".header-user").addClass('hide');
+            let blogger = $(this).closest(".bloggers-card").find(".blogger").text(),
+                list = $(this).closest(".bloggers-card, .bloggers-content");
+            $(".blogger-item").text(blogger);
+            $(".delete-list").click(function () {
+                list.remove();
+                $(".popup").removeClass('active');
+                $(".btn-back").removeClass('active');
+                $(".header-user").removeClass('hide');
+                $.scrollLock(false);
+            });
+        });
+    }
+    $(".delete-yes").click(function (e) {
+        e.preventDefault();
+        $(this).closest(".bloggers-delete-list").addClass('bg-white');
+        $(this).closest(".bloggers-info").find(".bloggers-deleted").addClass('active');
+        $(this).closest(".bloggers-info").find(".bloggers-delete-ask").removeClass('active');
+    });
+    $(".delete-not").click(function (e) {
+        e.preventDefault();
+        $(this).closest(".bloggers-delete-list").removeClass('active');
     });
 
     $(".cabinet .second-block:nth-child(2) .bloggers-my-edit, .show-filling-edit").click(function (e) {
         e.preventDefault();
         $(".popup").removeClass('active');
+        $(".popup-top-mob .popup-top-title").text("Изменить информацию");
+        $(".popup-top-mob").addClass('active');
         $(".popup-filling-edit").addClass('active');
         $(".header-user").addClass('hide');
         $(".btn-back").addClass('active');
@@ -317,6 +346,8 @@ $(document).ready(function () {
     $(".add-blogger").click(function (e) {
         e.preventDefault();
         $(".popup").removeClass('active');
+        $(".popup-top-mob .popup-top-title").text("Заполнить информацию");
+        $(".popup-top-mob").addClass('active');
         $(".popup-filling").addClass('active');
         $.scrollLock(true);
         if (window.matchMedia("(max-width: 768px)").matches) {
@@ -335,6 +366,8 @@ $(document).ready(function () {
         e.preventDefault();
         $(".popup").removeClass('active');
         $(".popup-edit-info").addClass('active');
+        $(".popup-top-mob .popup-top-title").text("Изменить информацию");
+        $(".popup-top-mob").addClass('active');
         $(".header-user").addClass('hide');
         $(".btn-back").addClass('active');
         $.scrollLock(true);
@@ -352,9 +385,21 @@ $(document).ready(function () {
 
     //drop-down list: Customer account topic in Leave a comment on the blogger
     $(".popup-drop-item").click(function () {
-        $(this).toggleClass('active');
+        $(".popup-drop-input").toggleClass('active');
         $(".popup-drop-list").slideToggle(300);
         $(this).find(".popup-drop-arrow").toggleClass('active');
+    });
+
+    let checks= Array.prototype.slice.call(document.querySelectorAll('.popup-drop-list .checkbox')),
+        input = document.querySelector(".popup-drop-input");
+    checks.forEach(function (c) {
+        c.onclick = function () {
+            let a = [];
+            checks.forEach(function (b) {
+                b.checked && a.push(b.value)
+            });
+            input.value = a.join(', ');
+        }
     });
 
     $(".popup-white-text").click(function () {
@@ -363,18 +408,25 @@ $(document).ready(function () {
     $(".next-feedback-two").click(function (e) {
         e.preventDefault();
         $(".popup").removeClass('active');
-        $(".popup-feedback-two").addClass('active');
+        $(".popup-feedback-span").text('Шаг 2 из 2');
+        $(".popup-feedback-two, .popup-feedback-span").addClass('active');
         $.scrollLock(true);
     });
     $(".back-feedback").click(function () {
         $(".popup").removeClass('active');
         $(".popup-feedback").addClass('active');
+        $(".popup-top-mob .popup-top-title").text("Оставить отзыв на блогера");
+        $(".popup-feedback-span").text('Шаг 1 из 2');
+        $(".popup-top-mob, .popup-feedback-span").addClass('active');
     });
 
     $(".show-feedback").click(function (e) {
         e.preventDefault();
         $(".popup").removeClass('active');
         $(".popup-feedback").addClass('active');
+        $(".popup-top-mob .popup-top-title").text("Оставить отзыв на блогера");
+        $(".popup-feedback-span").text('Шаг 1 из 2');
+        $(".popup-top-mob, .popup-feedback-span").addClass('active');
         if (window.matchMedia("(max-width: 768px)").matches) {
             $(".btn-back").addClass('active');
             $(".header-user").addClass('hide');
@@ -412,6 +464,7 @@ $(document).ready(function () {
     });
     $(".btn-back").click(function (e) {
         e.preventDefault();
+        $(".popup-top-mob, .popup-feedback-span").removeClass('active');
         $(".header-user").removeClass('hide').removeClass('hide-main');
         $(".search, .btn-back, .popup, .first-tracker").removeClass('active').removeClass('active-main');
         $(".popup-calculate-copy").text("Скопировать текст");
@@ -435,6 +488,7 @@ $(document).ready(function () {
         $(".popup-conversion-drop").slideToggle(300);
     });
     $(".sent-review").click(function () {
+        $(".popup-top-mob, .popup-feedback-span").removeClass('active');
         $(".popup-sent").addClass("active");
         $.scrollLock(true);
     });
@@ -467,7 +521,7 @@ $(document).ready(function () {
     });
     $(".cancel-action").click(function (e) {
         e.preventDefault();
-        $(".bloggers-bottom-item").removeClass('active');
+        $(this).closest(".bloggers-bottom-item").removeClass('active');
     });
 
     //date
@@ -480,5 +534,56 @@ $(document).ready(function () {
     $("div, form").scroll(function() {
         $( ".datepicker" ).datepicker('hide');
     });
+
+    $(".bloggers-add .blue-text").click(function (e) {
+        e.preventDefault();
+        $(".second-block").removeClass('active');
+        $(".tabs-list").removeClass('active');
+        $(".second-block").eq(1).addClass('active');
+        $(".tabs-list").eq(1).addClass('active');
+    });
+
+    $(".next-rate-extend").click(function (e) {
+        $('.popup').removeClass('active');
+        $('.popup-top-mob').addClass('active');
+        $('.popup-top-mob .popup-top-title').text('Продлите доступ к трекеру');
+        $(".header-user").addClass('hide');
+        $(".btn-back").addClass('active');
+        $('.popup-rate-extend').addClass('active');
+        $.scrollLock(true);
+    });
+    let selected,
+        selected2;
+    $('.popup-calculate-select select').mousedown( function(){
+        if( $( this ).val() != selected ) {
+            selected = $( this ).val();
+            selected2=null;
+            $(".popup-calculate-select").addClass('active');
+        } else {
+            selected=null;
+            $(".popup-calculate-select").removeClass('active');
+        }
+    }).blur(function(){
+        if (selected2==selected) {
+            selected=null;
+            selected2=null;
+            $(".popup-calculate-select").removeClass('active');
+        }
+    }).mouseup(function(){
+        console.log( 'preoutu' );
+        if( $(this).val() != selected || $(this).val() == selected2 ) {
+            selected=null;
+            selected2=null;
+            $(".popup-calculate-select").removeClass('active');
+        }
+        else {
+            selected2=$( this ).val();
+            $(".popup-calculate-select").addClass('active');
+        }
+    });
+
+
+
+
 
 });

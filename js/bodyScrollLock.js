@@ -1,6 +1,4 @@
 
-
-
 $.scrollLock = ( function scrollLockClosure() {
 
     'use strict';
