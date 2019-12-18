@@ -1,7 +1,8 @@
 $(document).ready(function () {
+    //height header
+    let heightHeader = $(".header").height();
 
     //if height popup bigger window height
-
     if ($(".popup")) {
         let popup = $(this).find(".popup-window").closest(".popup");
         let container = $(this).find(".popup-window");
@@ -9,13 +10,6 @@ $(document).ready(function () {
             popup.addClass('top');
         }
     }
-
-    //fixed body
-    // if($(".popup").hasClass('active')){
-    //     $.scrollLock(true);
-    // } else {
-    //     $.scrollLock(false);
-    // }
 
     //popup sing-in
     $(".btn-sing-in").click(function () {
@@ -533,6 +527,7 @@ $(document).ready(function () {
 
     $("div, form").scroll(function() {
         $( ".datepicker" ).datepicker('hide');
+        $("input, textarea").blur();
     });
 
     $(".bloggers-add .blue-text").click(function (e) {
@@ -541,6 +536,7 @@ $(document).ready(function () {
         $(".tabs-list").removeClass('active');
         $(".second-block").eq(1).addClass('active');
         $(".tabs-list").eq(1).addClass('active');
+        $("html, body").animate({scrollTop: $(".second-block").eq(1).find(".bloggers").offset().top - (30 + heightHeader) + "px"},{duration:1E3});
     });
 
     $(".next-rate-extend").click(function (e) {
@@ -581,9 +577,5 @@ $(document).ready(function () {
             $(".popup-calculate-select").addClass('active');
         }
     });
-
-
-
-
 
 });
