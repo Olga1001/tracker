@@ -1850,19 +1850,19 @@
                                 <input type="text" class="form-input">
                             </div>
                             <div class="popup-filling-checkboxes">
-                                <label class="label">
+                                <label class="label label-tab">
                                     <input type="checkbox" class="checkbox">
                                     <span class="check"></span>
                                     <span class="check-text">ВП</span>
                                 </label>
-                                <label class="label disabled">
+                                <label class="label label-tab disabled">
                                     <input type="checkbox" class="checkbox" disabled>
                                     <span class="check"></span>
                                     <span class="check-text">Бартер</span>
                                 </label>
-                                <div class="form-item">
+                                <div class="form-item label-tab">
                                     <label class="label">
-                                        <input type="checkbox" class="checkbox" checked>
+                                        <input type="checkbox" class="checkbox">
                                         <span class="check"></span>
                                         <span class="check-text " >С доплатой</span>
                                     </label>
@@ -2044,7 +2044,7 @@
                             <div class="popup-filling-half">
                                 <div class="">
                                     <div class="search-field">
-                                        <p class="search-name">Оцените рекламу 10 <img src="img/star.svg" alt="star" class="star"></p>
+                                        <p class="search-name">Оцените рекламу <input type="text" class="amount" value="5"><img src="img/star.svg" alt="star" class="star"></p>
                                         <div class="search-range-col">
                                             <div class="search-range range"></div>
                                             <div class="search-range-row">
@@ -2263,87 +2263,85 @@
                                     <button class="btn-orange">Найти</button>
                                 </div>
                             </div>
-                            <div class="search-item">
-                                <div class="search-overflow">
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Блогер</p>
-                                            <input type="text" class="search-input" placeholder="Введите ник блогера">
+                            <div class="search-overflow">
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Блогер</p>
+                                        <input type="text" class="search-input" placeholder="Введите ник блогера">
+                                    </div>
+                                    <div class="search-field">
+                                        <p class="search-name nowrap">Цена за подписчика в ₽</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 1">
+                                            <input type="text" class="search-input-two" placeholder="до 50">
                                         </div>
-                                        <div class="search-field">
-                                            <p class="search-name nowrap">Цена за подписчика в ₽</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 1">
-                                                <input type="text" class="search-input-two" placeholder="до 50">
+                                    </div>
+                                </div>
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Пришло подписчиков</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 500">
+                                            <input type="text" class="search-input-two" placeholder="до 999 999">
+                                        </div>
+                                    </div>
+                                    <div class="search-field">
+                                        <p class="search-name nowrap">Цены из отзывов в ₽</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 300">
+                                            <input type="text" class="search-input-two" placeholder="до 999 999">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Всего отзывов</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 1">
+                                            <input type="text" class="search-input-two" placeholder="до 999">
+                                        </div>
+                                    </div>
+                                    <div class="search-field">
+                                        <p class="search-name">Средняя оценка от <input type="text" class="amount" value="5"><img src="img/star.svg" alt="star" class="star"></p>
+                                        <div class="search-range-col">
+                                            <div class="search-range range"></div>
+                                            <div class="search-range-row">
+                                                <div class="search-range-item">1</div>
+                                                <div class="search-range-item">5</div>
+                                                <div class="search-range-item">10</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Пришло подписчиков</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 500">
-                                                <input type="text" class="search-input-two" placeholder="до 999 999">
-                                            </div>
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name nowrap">Цены из отзывов в ₽</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 300">
-                                                <input type="text" class="search-input-two" placeholder="до 999 999">
-                                            </div>
+                                </div>
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Отзывы за период</p>
+                                        <select class="search-select" required>
+                                            <option value="" disabled>Выберите из списка</option>
+                                            <option value="1 месяц" selected>1 месяц</option>
+                                            <option value="2 месяц">2 месяц</option>
+                                            <option value="3 месяц">3 месяц</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-field">
+                                        <p class="search-name">Показать отзывы от</p>
+                                        <div class="search-field-flex">
+                                            <label class="label">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="check"></span>
+                                                <span class="check-text">Блогеров</span>
+                                            </label>
+                                            <label class="label">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="check"></span>
+                                                <span class="check-text">Коммерции</span>
+                                            </label>
                                         </div>
                                     </div>
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Всего отзывов</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 1">
-                                                <input type="text" class="search-input-two" placeholder="до 999">
-                                            </div>
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name">Средняя оценка от <input type="text" class="amount" value="5"><img src="img/star.svg" alt="star" class="star"></p>
-                                            <div class="search-range-col">
-                                                <div class="search-range range"></div>
-                                                <div class="search-range-row">
-                                                    <div class="search-range-item">1</div>
-                                                    <div class="search-range-item">5</div>
-                                                    <div class="search-range-item">10</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Отзывы за период</p>
-                                            <select class="search-select" required>
-                                                <option value="" disabled>Выберите из списка</option>
-                                                <option value="1 месяц" selected>1 месяц</option>
-                                                <option value="2 месяц">2 месяц</option>
-                                                <option value="3 месяц">3 месяц</option>
-                                            </select>
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name">Показать отзывы от</p>
-                                            <div class="search-field-flex">
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Блогеров</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Коммерции</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="search-col last-child">
-                                        <button class="btn-orange">Найти</button>
-                                        <button class="btn-white">Сбросить</button>
-                                    </div>
+                                </div>
+                                <div class="search-col last-child">
+                                    <button class="btn-orange">Найти</button>
+                                    <button class="btn-white">Сбросить</button>
                                 </div>
                                 <footer class="footer">
     <div class="container">
@@ -3190,85 +3188,83 @@
                                     <button class="btn-orange">Найти</button>
                                 </div>
                             </div>
-                            <div class="search-item">
-                                <div class="search-container">
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Мой аккаунт</p>
-                                            <input type="text" class="search-input" placeholder="Введите ник">
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name">Брали рекламу у</p>
-                                            <input type="text" class="search-input" placeholder="Введите ник блогера">
+                            <div class="search-container">
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Мой аккаунт</p>
+                                        <input type="text" class="search-input" placeholder="Введите ник">
+                                    </div>
+                                    <div class="search-field">
+                                        <p class="search-name">Брали рекламу у</p>
+                                        <input type="text" class="search-input" placeholder="Введите ник блогера">
+                                    </div>
+                                </div>
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Формат рекламы</p>
+                                        <select class="search-select" required>
+                                            <option value="" disabled selected>Выберите из списка</option>
+                                            <option value="Сторис 15c">Сторис 15c</option>
+                                            <option value="Сторис 30c">Сторис 30c</option>
+                                            <option value="Сторис 45c">Сторис 45c</option>
+                                            <option value="Сторис 60c">Сторис 60c</option>
+                                            <option value="Сторис 75c">Сторис 75c</option>
+                                            <option value="Сторис 90c">Сторис 90c</option>
+                                            <option value="Фото-пост">Фото-пост</option>
+                                            <option value="Видео-пост">Видео-пост</option>
+                                            <option value="Сторис+пост">Сторис+пост</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-field">
+                                        <p class="search-name">Статус заказа</p>
+                                        <select class="search-select" required>
+                                            <option value="" disabled>Выберите из списка</option>
+                                            <option value="Запросить" selected>Запросить</option>
+                                            <option value="Ожидаем ответ">Ожидаем ответ</option>
+                                            <option value="Не отвечает">Не отвечает</option>
+                                            <option value="Переговоры">Переговоры</option>
+                                            <option value="Заказана реклама">Заказана реклама</option>
+                                            <option value="Оставить отзыв">Оставить отзыв</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Заявлено охватов</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 500">
+                                            <input type="text" class="search-input-two" placeholder="до 999 999">
                                         </div>
                                     </div>
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Формат рекламы</p>
-                                            <select class="search-select" required>
-                                                <option value="" disabled selected>Выберите из списка</option>
-                                                <option value="Сторис 15c">Сторис 15c</option>
-                                                <option value="Сторис 30c">Сторис 30c</option>
-                                                <option value="Сторис 45c">Сторис 45c</option>
-                                                <option value="Сторис 60c">Сторис 60c</option>
-                                                <option value="Сторис 75c">Сторис 75c</option>
-                                                <option value="Сторис 90c">Сторис 90c</option>
-                                                <option value="Фото-пост">Фото-пост</option>
-                                                <option value="Видео-пост">Видео-пост</option>
-                                                <option value="Сторис+пост">Сторис+пост</option>
-                                            </select>
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name">Статус заказа</p>
-                                            <select class="search-select" required>
-                                                <option value="" disabled>Выберите из списка</option>
-                                                <option value="Запросить" selected>Запросить</option>
-                                                <option value="Ожидаем ответ">Ожидаем ответ</option>
-                                                <option value="Не отвечает">Не отвечает</option>
-                                                <option value="Переговоры">Переговоры</option>
-                                                <option value="Заказана реклама">Заказана реклама</option>
-                                                <option value="Оставить отзыв">Оставить отзыв</option>
-                                            </select>
+                                    <div class="search-field">
+                                        <p class="search-name">Цена рекламы в ₽</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 300">
+                                            <input type="text" class="search-input-two" placeholder="до 999 999">
                                         </div>
                                     </div>
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Заявлено охватов</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 500">
-                                                <input type="text" class="search-input-two" placeholder="до 999 999">
-                                            </div>
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name">Цена рекламы в ₽</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 300">
-                                                <input type="text" class="search-input-two" placeholder="до 999 999">
-                                            </div>
+                                </div>
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Период отзывов</p>
+                                        <select class="search-select" required>
+                                            <option value="" disabled>Выберите из списка</option>
+                                            <option value="1 месяц" selected>1 месяц</option>
+                                            <option value="2 месяц">2 месяц</option>
+                                            <option value="3 месяц">3 месяц</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-field">
+                                        <p class="search-name search-name-little">или выберите даты рекламы</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="Начало">
+                                            <input type="text" class="search-input-two" placeholder="Конец">
                                         </div>
                                     </div>
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Период отзывов</p>
-                                            <select class="search-select" required>
-                                                <option value="" disabled>Выберите из списка</option>
-                                                <option value="1 месяц" selected>1 месяц</option>
-                                                <option value="2 месяц">2 месяц</option>
-                                                <option value="3 месяц">3 месяц</option>
-                                            </select>
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name search-name-little">или выберите даты рекламы</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="Начало">
-                                                <input type="text" class="search-input-two" placeholder="Конец">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="search-col last-child">
-                                        <button class="btn-orange">Найти</button>
-                                        <button class="btn-white">Сбросить</button>
-                                    </div>
+                                </div>
+                                <div class="search-col last-child">
+                                    <button class="btn-orange">Найти</button>
+                                    <button class="btn-white">Сбросить</button>
                                 </div>
                                 <footer class="footer">
     <div class="container">
@@ -3703,72 +3699,70 @@
                                     <button class="btn-orange">Найти</button>
                                 </div>
                             </div>
-                            <div class="search-item">
-                                <div class="search-container">
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Мой аккаунт</p>
-                                            <input type="text" class="search-input" placeholder="Введите ник">
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name">Брали рекламу у</p>
-                                            <input type="text" class="search-input" placeholder="Введите ник блогера">
+                            <div class="search-container">
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Мой аккаунт</p>
+                                        <input type="text" class="search-input" placeholder="Введите ник">
+                                    </div>
+                                    <div class="search-field">
+                                        <p class="search-name">Брали рекламу у</p>
+                                        <input type="text" class="search-input" placeholder="Введите ник блогера">
+                                    </div>
+                                </div>
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Период отзывов</p>
+                                        <select class="search-select" required>
+                                            <option value="" disabled>Выберите из списка</option>
+                                            <option value="1 месяц" selected>1 месяц</option>
+                                            <option value="2 месяц">2 месяц</option>
+                                            <option value="3 месяц">3 месяц</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-field">
+                                        <p class="search-name search-name-little">или выберите даты рекламы</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="Начало">
+                                            <input type="text" class="search-input-two" placeholder="Конец">
                                         </div>
                                     </div>
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Период отзывов</p>
-                                            <select class="search-select" required>
-                                                <option value="" disabled>Выберите из списка</option>
-                                                <option value="1 месяц" selected>1 месяц</option>
-                                                <option value="2 месяц">2 месяц</option>
-                                                <option value="3 месяц">3 месяц</option>
-                                            </select>
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name search-name-little">или выберите даты рекламы</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="Начало">
-                                                <input type="text" class="search-input-two" placeholder="Конец">
-                                            </div>
+                                </div>
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name nowrap">Цена за подписчика в ₽</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 500">
+                                            <input type="text" class="search-input-two" placeholder="до 999 999">
                                         </div>
                                     </div>
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name nowrap">Цена за подписчика в ₽</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 500">
-                                                <input type="text" class="search-input-two" placeholder="до 999 999">
-                                            </div>
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name">Цена рекламы в ₽</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 300">
-                                                <input type="text" class="search-input-two" placeholder="до 999 999">
-                                            </div>
+                                    <div class="search-field">
+                                        <p class="search-name">Цена рекламы в ₽</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 300">
+                                            <input type="text" class="search-input-two" placeholder="до 999 999">
                                         </div>
                                     </div>
-                                    <div class="search-col">
-                                        <div class="search-field">
-                                            <p class="search-name">Фактический охват</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 500">
-                                                <input type="text" class="search-input-two" placeholder="до 999 999">
-                                            </div>
-                                        </div>
-                                        <div class="search-field">
-                                            <p class="search-name">Приход подписчиков</p>
-                                            <div class="search-field-flex">
-                                                <input type="text" class="search-input-two" placeholder="от 300">
-                                                <input type="text" class="search-input-two" placeholder="до 999 999">
-                                            </div>
+                                </div>
+                                <div class="search-col">
+                                    <div class="search-field">
+                                        <p class="search-name">Фактический охват</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 500">
+                                            <input type="text" class="search-input-two" placeholder="до 999 999">
                                         </div>
                                     </div>
-                                    <div class="search-col last-child">
-                                        <button class="btn-orange">Найти</button>
-                                        <button class="btn-white">Сбросить</button>
+                                    <div class="search-field">
+                                        <p class="search-name">Приход подписчиков</p>
+                                        <div class="search-field-flex">
+                                            <input type="text" class="search-input-two" placeholder="от 300">
+                                            <input type="text" class="search-input-two" placeholder="до 999 999">
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="search-col last-child">
+                                    <button class="btn-orange">Найти</button>
+                                    <button class="btn-white">Сбросить</button>
                                 </div>
                                 <footer class="footer">
     <div class="container">
