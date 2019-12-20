@@ -834,9 +834,9 @@
                         <div class="form-field">
                             <p class="form-name">Заполнить тестовые данные</p>
                             <div class="popup-calculate-flex">
-                                <button class="btn-checkbox" value="1">1</button>
-                               <button class="btn-checkbox" value="2">2</button>
-                               <button class="btn-checkbox" value="3">3</button>
+                                <button type="button" class="btn-checkbox" value="1">1</button>
+                                <button type="button" class="btn-checkbox" value="2">2</button>
+                                <button type="button" class="btn-checkbox" value="3">3</button>
                             </div>
                         </div>
                         <div class="form-field">
@@ -852,7 +852,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="text" class="form-input desk" placeholder="Например, 10000" >
+                            <input type="text" class="form-input desk" placeholder="Например, 10000">
                         </div>
                         <div class="form-field">
                             <div class="form-item">
@@ -865,7 +865,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="text" class="form-input desk" placeholder="Например, 30" >
+                            <input type="text" class="form-input desk" placeholder="Например, 30">
                         </div>
                         <div class="form-field">
                             <div class="form-item">
@@ -873,19 +873,23 @@
                                 <div class="popup-question">?
                                     <div class="tooltip">
                                         <div class="tooltip-container">
-                                            <p class="tooltip-text">Какой процент подписчиков отписывается от вашего аккаунта после рекламы на вас или гива</p>
+                                            <p class="tooltip-text">
+                                                Укажите среднюю цену за подписчика за последние 10 реклам вашего аккаунта у других блогеров. Если вы еще не заказывали рекламу, то укажите предполагаемую цену за подписчика (реальная цена может отличаться в разы от ваших ожиданий, будьте к этому готовы). Средняя цена по рынку на июль 2019 года — от 4 до 10 рублей за подписчика.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="popup-calculate-row">
                                 <input type="text" class="form-input popup-calculate-input desk" placeholder="Например, 5" >
-                                <select class="popup-calculate-select" required>
-                                    <option value="₽" selected>₽</option>
-                                    <option value="₽">$</option>
-                                    <option value="₽">₴</option>
-                                    <option value="₽">₸</option>
-                                </select>
+                                <div class="popup-calculate-select">
+                                    <select class="" required>
+                                        <option value="₽" selected>₽</option>
+                                        <option value="₽">$</option>
+                                        <option value="₽">₴</option>
+                                        <option value="₽">₸</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="form-field">
@@ -899,7 +903,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="text" class="form-input form-input-little desk" placeholder="Например, 15" >
+                            <input type="text" class="form-input form-input-little desk" placeholder="Например, 15">
                         </div>
                         <div class="form-field">
                             <p class="form-name">Конверсия из охватов в подписчика, %</p>
@@ -909,7 +913,7 @@
                                 <a href="#" class="blue-text next-conversion">Посчитайте <br> за меня</a>
                             </div>
                         </div>
-                        <button type="submit" class="btn-orange next-calculate-result">Показать результат</button>
+                        <button type="submit" class="btn-orange btn-gray next-calculate-result" disabled>Показать результат</button>
                     </form>
                 </div>
                 <div class="popup-calculate-half">
@@ -1775,7 +1779,7 @@
                             </div>
                         </div>
                         <div class="empty-content">
-                            <p class="empty-text">Пока ваша история отзывов пуста. Оставьте отзыв, чтобы начать историю 😉</p>
+                            <p class="empty-text">Пока ваша история отзывов пуста. <a href="" class="blue-text">Оставьте отзыв</a>, чтобы начать историю 😉</p>
                         </div>
                     </div>
                 </div>
