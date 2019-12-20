@@ -71,16 +71,13 @@
     </div>
 </header>
 <div class="cabinet">
-    <div class="popup-top popup-top-mob">
-    <p class="popup-top-title">Калькулятор подписчиков</p>
-    <p class="popup-feedback-span gray">Шаг 1 из 2</p>
-</div>
+    
 
 
 <div class="popup popup-rate">
     <div class="popup-window">
         <div class="popup-rate-container">
-            <div class="popup-top mob-hide-768">
+            <div class="popup-top">
                 <p class="popup-top-title">Выберите тариф</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -130,10 +127,10 @@
         </div>
     </div>
 </div>
-<div class="popup popup-rate-extend">
+<div class="popup popup-rate-extend ">
     <div class="popup-window">
         <div class="popup-rate-container">
-            <div class="popup-top mob-hide-768">
+            <div class="popup-top">
                 <p class="popup-top-title">Продлите доступ к трекеру</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -189,7 +186,7 @@
         </footer>
     </div>
 </div>
-<div class="popup popup-forgot">
+<div class="popup popup-forgot ">
     <div class="popup-window">
         <div class="popup-container">
             <div class="close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
@@ -288,10 +285,13 @@
     </div>
 </div>
 
-<div class="popup popup-calculate">
+<div class="popup popup-calculate ">
     <div class="popup-window">
         <div class="popup-calculate-container">
             <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
+            <div class="popup-top popup-top-hide">
+                <p class="popup-top-title">Калькулятор подписчиков</p>
+            </div>
             <div class="popup-row-half">
                 <div class="popup-calculate-half">
                     <form class="popup-calculate-active">
@@ -478,6 +478,7 @@
         </footer>
     </div>
 </div>
+
 <div class="popup popup-review ">
     <div class="popup-window">
         <div class="popup-review-container">
@@ -531,10 +532,10 @@
         </footer>
     </div>
 </div>
-<div class="popup popup-conversion">
+<div class="popup popup-conversion ">
     <div class="popup-window">
         <div class="popup-conversion-container">
-            <div class="popup-top mob-hide-768">
+            <div class="popup-top">
                 <p class="popup-top-title ">Расчет конверсии</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -1365,10 +1366,10 @@
 
 </div>
 
-<div class="popup popup-filling-edit">
+<div class="popup popup-filling-edit ">
     <div class="popup-window">
         <div class="popup-filling-container">
-            <div class="popup-top mob-hide-768">
+            <div class="popup-top">
                 <p class="popup-top-title">Изменить информацию</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -1477,10 +1478,10 @@
         </footer>
     </div>
 </div>
-<div class="popup popup-filling  ">
+<div class="popup popup-filling ">
     <div class="popup-window">
         <div class="popup-filling-container">
-            <div class="popup-top mob-hide-768">
+            <div class="popup-top">
                 <p class="popup-top-title">Заполнить информацию</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -1590,10 +1591,10 @@
     </div>
 </div>
 
-<div class="popup popup-edit-info">
+<div class="popup popup-edit-info ">
     <div class="popup-window">
         <div class="popup-filling-container">
-            <div class="popup-top mob-hide-768">
+            <div class="popup-top">
                 <p class="popup-top-title">Изменить информацию</p>
                 <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
             </div>
@@ -1801,6 +1802,10 @@
     <div class="popup-window">
         <form class="popup-feedback-container">
             <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            <div class="popup-top popup-top-mob ">
+                <p class="popup-top-title">Калькулятор подписчиков</p>
+                <p class="popup-feedback-span gray">Шаг 1 из 2</p>
+            </div>
             <div class="popup-window-container">
                 <div class="popup-feedback-overflow">
                     <div class="popup-feedback-padding">
@@ -1897,9 +1902,14 @@
     <div class="popup-window">
         <form class="popup-filling-container">
             <div class="popup-window-container">
+                <div class="popup-top popup-top-mob ">
+                    <p class="popup-top-title">Оставить отзыв на блогера</p>
+                    <p class="popup-feedback-span gray">Шаг 2 из 2</p>
+                </div>
                 <div class="popup-feedback-overflow">
                     <div class="popup-feedback-padding">
                         <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+
                         <h3 class="popup-feedback-title mob-hide-768">
                             Оставить отзыв на блогера
                             <span class="popup-feedback-span gray">Шаг 2 из 2</span>
@@ -2293,7 +2303,7 @@
                                             </div>
                                         </div>
                                         <div class="search-field">
-                                            <p class="search-name">Средняя оценка от 5 <img src="img/star.svg" alt="star" class="star"></p>
+                                            <p class="search-name">Средняя оценка от <input type="text" class="amount" value="5"><img src="img/star.svg" alt="star" class="star"></p>
                                             <div class="search-range-col">
                                                 <div class="search-range range"></div>
                                                 <div class="search-range-row">

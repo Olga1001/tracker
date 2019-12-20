@@ -99,8 +99,6 @@ $(document).ready(function () {
         e.preventDefault();
         $('.popup').removeClass('active');
         $('.popup-rate').addClass('active');
-        $('.popup-top-mob').addClass('active');
-        $('.popup-top-mob .popup-top-title').text('Выберите тариф');
         $.scrollLock(true);
     });
 
@@ -153,13 +151,24 @@ $(document).ready(function () {
     });
 
     //range in search bloggers
-    $(".range").slider({
-        range: "min",
-        value: 5,
+    // $(".range").slider({
+    //     range: "min",
+    //     value: 5,
+    //     min: 0,
+    //     max: 10,
+    //     step: 1,
+    // });
+    $( ".range" ).slider({
+        range: "max",
         min: 0,
         max: 10,
+        value: 5,
         step: 1,
+        slide: function( event, ui ) {
+            $( ".amount" ).val(ui.value );
+        }
     });
+    $( ".amount" ).val( $( ".range" ).slider( "value" ) );
     //active icons in list bloggers
     $(".bloggers-content-list, .bloggers-my-content").click(function () {
         $(this).toggleClass('active');
@@ -190,8 +199,7 @@ $(document).ready(function () {
 
         $(".next-calculate-example").click(function (e) {
             e.preventDefault();
-            $(".popup-top-mob .popup-top-title").text("Пример результатов расчетов");
-            $(".popup-top-mob").addClass('active');
+            $(this).closest(".popup-calculate").find(".popup-top-title").text("Пример результатов расчетов");
             $(".popup-calculate-two").removeClass('active');
             $(".popup-calculate-active").hide();
         });
@@ -211,8 +219,7 @@ $(document).ready(function () {
         });
         $(".next-calculate-result, .popup-calculate-last").click(function (e) {
             e.preventDefault();
-            $(".popup-top-mob .popup-top-title").text("Результаты расчетов");
-            $(".popup-top-mob").addClass('active');
+            $(this).closest(".popup-calculate").find(".popup-top-title").text("Результаты расчетов");
             $(".popup-calculate-item").removeClass('active');
             $(".popup-calculate-result").addClass('active');
             $(".popup-calculate-active").hide();
@@ -239,8 +246,7 @@ $(document).ready(function () {
 
     $(".next-conversion").click(function (e) {
         e.preventDefault();
-        $(".popup-top-mob .popup-top-title").text('Расчет конверсии');
-        $(".popup-top-mob").addClass('active');
+        $(this).closest(".popup-conversion").find(".popup-top-title").text('Расчет конверсии');
         $(".popup").removeClass('active');
         $(".popup-conversion").addClass('active');
         $.scrollLock(true);
@@ -328,8 +334,6 @@ $(document).ready(function () {
     $(".cabinet .second-block:nth-child(2) .bloggers-my-edit, .show-filling-edit").click(function (e) {
         e.preventDefault();
         $(".popup").removeClass('active');
-        $(".popup-top-mob .popup-top-title").text("Изменить информацию");
-        $(".popup-top-mob").addClass('active');
         $(".popup-filling-edit").addClass('active');
         $(".header-user").addClass('hide');
         $(".btn-back").addClass('active');
@@ -340,8 +344,6 @@ $(document).ready(function () {
     $(".add-blogger").click(function (e) {
         e.preventDefault();
         $(".popup").removeClass('active');
-        $(".popup-top-mob .popup-top-title").text("Заполнить информацию");
-        $(".popup-top-mob").addClass('active');
         $(".popup-filling").addClass('active');
         $.scrollLock(true);
         if (window.matchMedia("(max-width: 768px)").matches) {
@@ -360,8 +362,6 @@ $(document).ready(function () {
         e.preventDefault();
         $(".popup").removeClass('active');
         $(".popup-edit-info").addClass('active');
-        $(".popup-top-mob .popup-top-title").text("Изменить информацию");
-        $(".popup-top-mob").addClass('active');
         $(".header-user").addClass('hide');
         $(".btn-back").addClass('active');
         $.scrollLock(true);
@@ -372,8 +372,12 @@ $(document).ready(function () {
         $(this).addClass('active').siblings().removeClass('active');
         if ($(".popup-feedback-tab:nth-child(2)").hasClass('active')) {
             $(".popup-radio").addClass('active');
+            $(".label-tab").removeClass("disabled").find(".checkbox").attr("disabled", false)
+            $(".label-tab:nth-child(1)").addClass("disabled").find(".checkbox").attr("disabled", true);
         } else {
             $(".popup-radio").removeClass('active');
+            $(".label-tab").removeClass("disabled").find(".checkbox").attr("disabled", false);
+            $(".label-tab:nth-child(2)").addClass("disabled").find(".checkbox").attr("disabled", true);
         }
     });
 
@@ -402,8 +406,7 @@ $(document).ready(function () {
     $(".next-feedback-two").click(function (e) {
         e.preventDefault();
         $(".popup").removeClass('active');
-        $(".popup-feedback-span").text('Шаг 2 из 2');
-        $(".popup-feedback-two, .popup-feedback-span").addClass('active');
+        $(".popup-feedback-two").addClass('active');
         $.scrollLock(true);
     });
     $(".back-feedback").click(function () {
@@ -541,8 +544,6 @@ $(document).ready(function () {
 
     $(".next-rate-extend").click(function (e) {
         $('.popup').removeClass('active');
-        $('.popup-top-mob').addClass('active');
-        $('.popup-top-mob .popup-top-title').text('Продлите доступ к трекеру');
         $(".header-user").addClass('hide');
         $(".btn-back").addClass('active');
         $('.popup-rate-extend').addClass('active');
@@ -578,4 +579,29 @@ $(document).ready(function () {
         }
     });
 
+    let content = {
+        1: [10000, 30, 5, 15, 5],
+        2: [1000, 3, 5, 1, 5],
+        3: [10000, 30, 5, 15, 5]
+    }
+    let btnTestContent = document.querySelectorAll('.btn-checkbox');
+    btnTestContent.forEach(btn=>{
+        btn.addEventListener('click',()=>{
+            event.preventDefault();
+            btnTestContent.forEach(r=>{
+                r.classList.remove('active')
+            })
+            btn.classList.add('active');
+            let inp = document.querySelectorAll('.form-input');
+            let a = [];
+            inp.forEach(i=>{
+                if (i.classList.contains('desk')) {
+                    a.push(i)
+                }
+            })
+            a.forEach((inp, ind)=>{
+                inp.value = content[btn.value][ind]
+            })
+        })
+    })
 });
