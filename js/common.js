@@ -461,7 +461,7 @@ $(document).ready(function () {
         $(".popup-calculate-copy").text("Скопировать текст");
         $.scrollLock(false);
     });
-    $(".bloggers-drop-arrow").click(function (e) {
+    $(".bloggers-comments").click(function (e) {
         e.preventDefault();
         $(this).find(".bloggers-drop-img").toggleClass('active');
         $(this).closest(".bloggers-col").find(".bloggers-drop").slideToggle(300);
@@ -533,7 +533,7 @@ $(document).ready(function () {
         $(".tabs-list").removeClass('active');
         $(".second-block").eq(1).addClass('active');
         $(".tabs-list").eq(1).addClass('active');
-        $("html, body").animate({scrollTop: $(".second-block").eq(1).find(".bloggers").offset().top - (30 + heightHeader) + "px"},{duration:1E3});
+        $("html, body").scrollTop($(".second-block").eq(1).find(".bloggers").offset().top - (30 + heightHeader) + "px");
     });
 
     $(".next-rate-extend").click(function (e) {
