@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     //height header
     let heightHeader = $(".header").height();
 
@@ -10,30 +11,70 @@ $(document).ready(function () {
             popup.addClass('top');
         }
     }
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        $(".btn-calculate, .show-info-review, .show-info-blogger, .add-blogger, .show-feedback, .show-edit-info, .show-filling-edit, .btn-sing-in").click(function (e) {
+            e.preventDefault();
+            $("body").css("background", "#ffffff");
+            $("html, body").scrollTop($(".popup").offset().top);
+        });
+    } else {
+        $("body").css("background", "#F2F7FA");
+    }
 
     //popup sing-in
     $(".btn-sing-in").click(function () {
         $(".popup-logregistr").addClass('active');
         $(".popup-attention, .first-tracker").removeClass('active');
-
         $(".header-user").addClass('hide');
         $(".btn-back").addClass('active');
         $(".menu, .menu-col").removeClass("active");
-        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".main").hide();
+        } else {
+            $.scrollLock(true);
+        }
     });
     $(".main .bloggers-my-edit").click(function (e) {
         e.preventDefault();
         $(".popup-logregistr").addClass('active');
         $(".popup-attention").addClass('active');
-        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".main").hide();
+        } else {
+            $.scrollLock(true);
+        }
     });
     $(".popup-window div, .popup-window form").click(function (e) {
         e.stopPropagation();
     });
-
+    if (window.matchMedia("(min-width: 769px)").matches) {
+        $(".popup").click(function () {
+            $(".header").css("z-index", "10");
+            $.scrollLock(false);
+            $(".popup").removeClass('active');
+            $(this).closest(".bg-popup").removeClass('active');
+            $(".form-checkin").addClass('active');
+            setTimeout(function () {
+                $("div").removeClass('required');
+                $(".popup-tab").first().addClass('active').siblings().removeClass('active');
+                $(".form-checkin").addClass('active').siblings().removeClass('active');
+                $(".popup-container").find(".popup-forms-list").first().addClass('active').siblings().removeClass('active');
+                $(".form-repeat").removeClass('gray');
+                $(".form-repeat").closest(".form-padding").css("padding-bottom", "30px");
+                $(".form-repeat-block").slideUp();
+                $('.form-repeat-number').text("0");
+                $(".popup-calculate-copy").text("Скопировать текст");
+            }, 300);
+        });
+    }
     //close all
-    $(".close, .popup, .popup-close, .cancel, .btn-back").click(function () {
-        $.scrollLock(false);
+    $(".close, .popup-close, .cancel, .btn-back").click(function () {
+        $('body').css({"position":"relative", "background":"#F2F7FA"});
+        if (window.matchMedia("(min-width: 769px)").matches) {
+            $.scrollLock(false);
+        }
+        $(".cabinet, .empty, .main").show();
+        $(".header").css("z-index", "10");
         $(".popup").removeClass('active');
         $(this).closest(".bg-popup").removeClass('active');
         $(".form-checkin").addClass('active');
@@ -48,6 +89,8 @@ $(document).ready(function () {
             $('.form-repeat-number').text("0");
             $(".popup-calculate-copy").text("Скопировать текст");
         }, 300);
+
+
     });
 
     // switching login check in
@@ -107,6 +150,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(".form").removeClass('active');
         $(".form-checkin").addClass('active');
+
     });
 
     // password recovery
@@ -172,20 +216,24 @@ $(document).ready(function () {
         e.preventDefault();
         $(".popup-calculate-item").removeClass('active');
         $(".popup-calculate-two, .popup-calculate-example").addClass('active');
+        $("html, body").scrollTop($(".popup").offset().top);
     });
 
     //calculate
     $(".btn-calculate").click(function (e) {
-        $(".popup-top-mob .popup-top-title").text('Калькулятор подписчиков');
-        $(".popup-top-mob").addClass('active');
+        $(this).find(".popup-top .popup-top-title").text('Калькулятор подписчиков');
         $(".popup-calculate").addClass('active');
         $(".popup-calculate-item").removeClass('active');
         $(".popup-calculate-one").addClass('active');
         $(".popup-calculate-active").show();
-        $.scrollLock(true);
         if (window.matchMedia("(max-width: 768px)").matches) {
             $(".btn-back").addClass('active');
             $(".header-user").addClass('hide');
+            $(".cabinet, .empty, .main").hide();
+            $(".header").css("z-index", "10");
+        } else {
+            $.scrollLock(true);
+            $(".header").css("z-index", "8");
         }
     });
     if (window.matchMedia("(max-width: 768px)").matches) {
@@ -216,6 +264,7 @@ $(document).ready(function () {
             $(".popup-calculate-item").removeClass('active');
             $(".popup-calculate-result").addClass('active');
             $(".popup-calculate-active").hide();
+            $("html, body").scrollTop($(".popup").offset().top);
         });
     } else {
         $(".popup-example-back").click(function (e) {
@@ -242,6 +291,7 @@ $(document).ready(function () {
         $(this).closest(".popup-conversion").find(".popup-top-title").text('Расчет конверсии');
         $(".popup").removeClass('active');
         $(".popup-conversion").addClass('active');
+        $("html, body").scrollTop($(".popup").offset().top);
         $.scrollLock(true);
     });
     $(".popup-calculate-copy").click(function (e) {
@@ -274,7 +324,11 @@ $(document).ready(function () {
         $(".popup-info").addClass('active');
         $(".btn-back").addClass('active');
         $(".header-user").addClass('hide');
-        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".cabinet, .main").hide();
+        } else {
+            $.scrollLock(true);
+        }
     });
     $(".show-info-review").click(function (e) {
         e.preventDefault();
@@ -283,7 +337,11 @@ $(document).ready(function () {
         $(".popup-attention").addClass('active');
         $(".btn-back").addClass('active');
         $(".header-user").addClass('hide');
-        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".cabinet, .main").hide();
+        } else {
+            $.scrollLock(true);
+        }
     });
 
     //delete list brogger
@@ -330,7 +388,11 @@ $(document).ready(function () {
         $(".popup-filling-edit").addClass('active');
         $(".header-user").addClass('hide');
         $(".btn-back").addClass('active');
-        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".cabinet").hide();
+        } else {
+            $.scrollLock(true);
+        }
     });
 
     //add blogger
@@ -338,26 +400,35 @@ $(document).ready(function () {
         e.preventDefault();
         $(".popup").removeClass('active');
         $(".popup-filling").addClass('active');
-        $.scrollLock(true);
         if (window.matchMedia("(max-width: 768px)").matches) {
             $(".header-user").addClass('hide');
             $(".btn-back").addClass('active');
+            $(".cabinet, .empty").hide();
+        } else {
+            $.scrollLock(true);
         }
     });
     $(".main .add-blogger, .main .show-filling-edit").click(function (e) {
         e.preventDefault();
         $(".popup-logregistr").addClass('active');
         $(".popup-attention").addClass('active');
-        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".main").hide();
+        } else {
+            $.scrollLock(true);
+        }
     });
-
-    $(".cabinet .second-block:nth-child(3) .bloggers-my-edit, .show-edit-info").click(function (e) {
+    $(".cabinet .second-block:nth-child(3) .bloggers-my-edit, .cabinet .show-edit-info").click(function (e) {
         e.preventDefault();
         $(".popup").removeClass('active');
         $(".popup-edit-info").addClass('active');
         $(".header-user").addClass('hide');
         $(".btn-back").addClass('active');
-        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".cabinet").hide();
+        } else {
+            $.scrollLock(true);
+        }
     });
 
     //tabs in Leave a comment on the blogger
@@ -401,6 +472,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(".popup").removeClass('active');
         $(".popup-feedback-two").addClass('active');
+        $("html, body").scrollTop($(".popup").offset().top);
         $.scrollLock(true);
     });
     $(".back-feedback").click(function () {
@@ -409,6 +481,7 @@ $(document).ready(function () {
         $(".popup-top-mob .popup-top-title").text("Оставить отзыв на блогера");
         $(".popup-feedback-span").text('Шаг 1 из 2');
         $(".popup-top-mob, .popup-feedback-span").addClass('active');
+        $("html, body").scrollTop($(".popup").offset().top);
     });
 
     $(".show-feedback").click(function (e) {
@@ -421,14 +494,22 @@ $(document).ready(function () {
         if (window.matchMedia("(max-width: 768px)").matches) {
             $(".btn-back").addClass('active');
             $(".header-user").addClass('hide');
+            $(".cabinet, .empty").hide();
+            $(".header").css("z-index", "10");
+        } else {
+            $.scrollLock(true);
+            $(".header").css("z-index", "8");
         }
-        $.scrollLock(true);
     });
     $(".main .show-feedback").click(function (e) {
         e.preventDefault();
         $(".popup-logregistr").addClass('active');
         $(".popup-attention").addClass('active');
-        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".main").hide();
+        } else {
+            $.scrollLock(true);
+        }
     });
 
     $(".reference-hide").click(function (e) {
@@ -438,28 +519,53 @@ $(document).ready(function () {
     // mobile
 
     //filter
-    $(".cabinet .bloggers-filter-btn").click(function (e) {
+
+    $(".bloggers-filter-btn").click(function (e) {
         e.preventDefault();
         $(".header-user").addClass('hide-main');
         $(".btn-back").addClass('active-main');
-        $(this).closest(".second-block ").find(".search").addClass('active');
-        $.scrollLock(true);
+        $(".popup-search-top").addClass('active');
+        $(".cabinet").hide();
+        $(".bg-popup").removeClass('active');
+        if (window.matchMedia("(max-width: 993px)").matches) {
+            $("body").css("background", "#ffffff");
+            $("html, body").scrollTop($(".popup").offset().top);
+        }
     });
+    $(".filter-one").click(function (e) {
+        e.preventDefault();
+        $(".popup-search-one").addClass('active');
+    });
+    $(".filter-two").click(function (e) {
+        e.preventDefault();
+        $(".popup-search-two").addClass('active');
+    });
+    $(".filter-tree").click(function (e) {
+        e.preventDefault();
+        $(".popup-search-tree").addClass('active');
+    });
+
     $(".main .bloggers-filter-btn, .main .bloggers-bottom-btn").click(function (e) {
         e.preventDefault();
         $(".popup-logregistr").addClass('active');
         $(".popup-attention").addClass('active');
         $(".header-user").addClass('hide');
         $(".btn-back").addClass('active');
-        $.scrollLock(true);
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $(".main").hide();
+        } else {
+            $.scrollLock(true);
+        }
     });
     $(".btn-back").click(function (e) {
         e.preventDefault();
-        $(".popup-top-mob, .popup-feedback-span").removeClass('active');
+        $(".popup-top-mob, .popup-feedback-span, .popup-search-top").removeClass('active');
         $(".header-user").removeClass('hide').removeClass('hide-main');
-        $(".search, .btn-back, .popup, .first-tracker").removeClass('active').removeClass('active-main');
+        $(".search, .btn-back, .first-tracker").removeClass('active').removeClass('active-main');
+        $(".popup").removeClass('active');
+        $(".popup-search-one").removeClass('active');
         $(".popup-calculate-copy").text("Скопировать текст");
-        $.scrollLock(false);
+
     });
     $(".bloggers-comments").click(function (e) {
         e.preventDefault();
@@ -479,23 +585,36 @@ $(document).ready(function () {
         $(".popup-conversion-drop").slideToggle(300);
     });
     $(".sent-review").click(function () {
-        $(".popup-top-mob, .popup-feedback-span").removeClass('active');
+        $(".popup-top-mob, .popup-feedback-span, .popup-feedback-two, .popup-drop-arrow").removeClass('active');
         $(".popup-sent").addClass("active");
-        $.scrollLock(true);
+        $(".popup-drop-list").slideUp(300);
     });
     $(".first-link").click(function () {
         $(".first-tracker").addClass("active");
         $(".btn-back").addClass("active-main");
         $(".header-user").addClass("hide-main");
-        $.scrollLock(true);
+        if (window.matchMedia("(min-width: 769px)").matches) {
+            $.scrollLock(true);
+        } else {
+            $('body').css({"overflow-y":"scroll", "position":"fixed", "width":"100%", "left":"0"});
+        }
+
     });
     $(".header-burger").click(function () {
         $(".menu, .menu-col").addClass("active");
-        $.scrollLock(true);
+        if (window.matchMedia("(min-width: 769px)").matches) {
+            $.scrollLock(true);
+        } else {
+            $('body').css({"overflow-y":"scroll", "position":"fixed", "width":"100%", "left":"0"});
+        }
     });
     $(".menu-close").click(function () {
         $(".menu, .menu-col").removeClass("active");
-        $.scrollLock(false);
+        if (window.matchMedia("(min-width: 769px)").matches) {
+            $.scrollLock(false);
+        } else {
+            $('body').css({ "position":"relative"});
+        }
     });
 
     $(".add-list").click(function (e) {

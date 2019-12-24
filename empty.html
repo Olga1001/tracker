@@ -70,8 +70,7 @@
         </div>
     </div>
 </header>
-<div class="empty">
-    <div class="menu">
+<div class="menu">
     <div class="menu-close">
         <span class="menu-line menu-line-one"></span>
         <span class="menu-line menu-line-two"></span>
@@ -124,424 +123,406 @@
 
     </div>
 </div>
-    <div class="popup popup-filling ">
-        <div class="popup-window">
-            <div class="popup-filling-container">
-                <div class="popup-top">
-                    <p class="popup-top-title">Заполнить информацию</p>
-                    <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+<div class="popup popup-filling ">
+    <div class="popup-window">
+        <div class="popup-filling-container">
+            <div class="popup-top">
+                <p class="popup-top-title">Заполнить информацию</p>
+                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+            <form class="popup-filling-form">
+                <div class="popup-filling-half">
+                    <div class="form-field">
+                        <p class="form-name">Брали рекламу у блогера</p>
+                        <input type="text" class="form-input" placeholder="Введите ник">
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Мой аккаунт</p>
+                        <input type="text" class="form-input" placeholder="Введите ник">
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Дата рекламы</p>
+                        <input type="text" class="form-input datepicker" placeholder="ДД.ММ.ГГ.">
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Заявлено охватов</p>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="popup-filling-flex">
+                        <div class="form-field">
+                            <p class="form-name nowrap">Цена за рекламу в ₽</p>
+                            <input type="text" class="form-input" >
+                        </div>
+                        <div class="popup-filling-checkboxes">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="check-text">ВП</span>
+                            </label>
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" >
+                                <span class="check"></span>
+                                <span class="check-text">Бартер</span>
+                            </label>
+                            <div class="form-item">
+                                <label class="label disabled">
+                                    <input type="checkbox" class="checkbox" disabled>
+                                    <span class="check"></span>
+                                    <span class="check-text " >С доплатой</span>
+                                </label>
+                                <div class="popup-question">?
+                                    <div class="tooltip">
+                                        <div class="tooltip-container">
+                                            <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <form class="popup-filling-form">
+                <div class="popup-filling-half">
+                    <div class="">
+                        <div class="form-field">
+                            <p class="form-name">Формат рекламы</p>
+                            <select required>
+                                <option value="" disabled selected>Выберите из списка</option>
+                                <option value="Сторис 15c">Сторис 15c</option>
+                                <option value="Сторис 30c">Сторис 30c</option>
+                                <option value="Сторис 45c">Сторис 45c</option>
+                                <option value="Сторис 60c">Сторис 60c</option>
+                                <option value="Сторис 75c">Сторис 75c</option>
+                                <option value="Сторис 90c">Сторис 90c</option>
+                                <option value="Фото-пост">Фото-пост</option>
+                                <option value="Видео-пост">Видео-пост</option>
+                                <option value="Сторис+пост">Сторис+пост</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <p class="form-name">Статус заказа</p>
+                            <select required>
+                                <option value="" disabled selected>Выберите из списка</option>
+                                <option value="Запросить">Запросить</option>
+                                <option value="Ожидаем ответ">Ожидаем ответ</option>
+                                <option value="Не отвечает">Не отвечает</option>
+                                <option value="Переговоры">Переговоры</option>
+                                <option value="Заказана реклама">Заказана реклама</option>
+                                <option value="Оставить отзыв">Оставить отзыв</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <p class="form-name">Комментарий</p>
+                            <textarea class="form-textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="popup-filling-btns">
+                            <button class="btn-white">Отмена</button>
+                            <button type="submit" class="btn-orange">Сохранить и закрыть</button>
+                        </div>
+                        <a href="#" class="blue-text">Сохранить и заполнить данные для другого заказчика</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="popup popup-feedback ">
+    <div class="popup-window">
+        <form class="popup-feedback-container">
+            <div class="popup-top popup-top-mob">
+                <p class="popup-top-title">Оставить отзыв на блогера
+                    <span class="popup-feedback-span gray">Шаг 1 из 2</span>
+                </p>
+            </div>
+            <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+            <div class="popup-feedback-overflow">
+                <div class="popup-feedback-padding">
+                    <h3 class="popup-feedback-title mob-hide-768">
+                        Оставить отзыв на блогера
+                        <span class="popup-feedback-span gray">Шаг 1 из 2</span>
+                    </h3>
+                    <p class="form-name">Вы блогер или у вас коммерческий аккаунт (например, магазин)?</p>
+
+                    <ul class="popup-feedback-tabs">
+                        <li class="popup-feedback-tab active">Блогер</li>
+                        <li class="popup-feedback-tab">Коммерческий</li>
+                    </ul>
+                    <div class="form-field">
+                        <p class="form-name">Ссылка на мой аккаунт</p>
+                        <input type="text" class="form-input" placeholder="Введите ник" value="alexandramitroshina" required="">
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Реклама была у блогера</p>
+                        <input type="text" class="form-input" placeholder="Введите ник" value="nastasia_guba" required="">
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Дата выхода рекламы</p>
+                        <input type="text" class="form-input datepicker" required="">
+                    </div>
+                    <div class="form-field popup-radio">
+                        <p class="form-name">Реклама окупилась</p>
+                        <div class="popup-feedback-flex">
+                            <label class="popup-feedback-label">
+                                <input type="radio" class="checkbox" name="name">
+                                <span class="popup-feedback-check">Да</span>
+                            </label>
+                            <label class="popup-feedback-label">
+                                <input type="radio" class="checkbox" name="name">
+                                <span class="popup-feedback-check">Нет</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="popup-filling-flex">
+                        <div class="form-field">
+                            <p class="form-name nowrap">Цена за рекламу в ₽</p>
+                            <input type="text" class="form-input" required="" >
+                        </div>
+                        <div class="popup-filling-checkboxes">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="check-text">ВП</span>
+                            </label>
+                            <label class="label disabled">
+                                <input type="checkbox" class="checkbox" disabled>
+                                <span class="check"></span>
+                                <span class="check-text">Бартер</span>
+                            </label>
+                            <div class="form-item">
+                                <label class="label">
+                                    <input type="checkbox" class="checkbox" checked>
+                                    <span class="check"></span>
+                                    <span class="check-text " >С доплатой</span>
+                                </label>
+                                <div class="popup-question">?
+                                    <div class="tooltip">
+                                        <div class="tooltip-container">
+                                            <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <p class="form-name">Приход подписчиков</p>
+                        <input type="text" class="form-input" required="">
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div class="form-bottom-between">
+                        <button class="btn-white cancel">Отмена</button>
+                        <button type="submit" class="btn-orange next-feedback-two">Далее</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="popup popup-feedback-two ">
+    <div class="popup-window">
+        <form class="popup-filling-container">
+            <div class="popup-top popup-top-mob">
+                <p class="popup-top-title">Оставить отзыв на блогера
+                    <span class="popup-feedback-span gray">Шаг 2 из 2</span>
+                </p>
+            </div>
+            <div class="popup-feedback-overflow">
+                <div class="popup-feedback-padding">
+                    <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
+                    <h3 class="popup-feedback-title mob-hide-768">
+                        Оставить отзыв на блогера
+                        <span class="popup-feedback-span gray">Шаг 2 из 2</span>
+                    </h3>
+                    <div class="popup-feedback-row">
                         <div class="popup-filling-half">
                             <div class="form-field">
-                                <p class="form-name">Брали рекламу у блогера</p>
-                                <input type="text" class="form-input" placeholder="Введите ник">
+                                <p class="form-name">Формат рекламы</p>
+                                <div class="popup-feedback-formats">
+                                    <label class="popup-feedback-format">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="popup-feedback-item">Сторис</span>
+                                    </label>
+                                    <label class="popup-feedback-format">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="popup-feedback-item">Фото-пост</span>
+                                    </label>
+                                    <label class="popup-feedback-format">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="popup-feedback-item">Видео-пост</span>
+                                    </label>
+                                    <label class="popup-feedback-format">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="popup-feedback-item">Сторис + пост</span>
+                                    </label>
+                                </div>
                             </div>
                             <div class="form-field">
-                                <p class="form-name">Мой аккаунт</p>
-                                <input type="text" class="form-input" placeholder="Введите ник">
+                                <p class="form-name">Тема аккаунта заказчика</p>
+                                <ul class="popup-drop">
+                                    <li class="popup-drop-item"><input type="text" placeholder="Выберите из списка" class="popup-drop-input"><img src="img/arrow-select.svg"  alt="arrow select" class="popup-drop-arrow"></li>
+                                    <li class="popup-drop-list">
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Бизнес">
+                                            <span class="check"></span>
+                                            <span class="check-text">Бизнес</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Бьюти">
+                                            <span class="check"></span>
+                                            <span class="check-text">Бьюти</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Дом, интерьер и ремонт">
+                                            <span class="check"></span>
+                                            <span class="check-text">Дом, интерьер и ремонт</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Жизнь заграницей">
+                                            <span class="check"></span>
+                                            <span class="check-text">Жизнь заграницей</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="ЗОЖ">
+                                            <span class="check"></span>
+                                            <span class="check-text">ЗОЖ</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Здоровье">
+                                            <span class="check"></span>
+                                            <span class="check-text">Здоровье</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Изучение языков">
+                                            <span class="check"></span>
+                                            <span class="check-text">Изучение языков</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Книги">
+                                            <span class="check"></span>
+                                            <span class="check-text">Книги</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Лайфстайл">
+                                            <span class="check"></span>
+                                            <span class="check-text">Лайфстайл</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Лайфхаки">
+                                            <span class="check"></span>
+                                            <span class="check-text">Лайфхаки</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Мамы">
+                                            <span class="check"></span>
+                                            <span class="check-text">Мамы</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Мода, стиль и шоппинг">
+                                            <span class="check"></span>
+                                            <span class="check-text">Мода, стиль и шоппинг</span>
+                                        </label><label class="label">
+                                        <input type="checkbox" class="checkbox" value="Мотивация">
+                                        <span class="check"></span>
+                                        <span class="check-text">Мотивация</span>
+                                    </label><label class="label">
+                                        <input type="checkbox" class="checkbox" value="Наука">
+                                        <span class="check"></span>
+                                        <span class="check-text">Наука</span>
+                                    </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Нет отзывов">
+                                            <span class="check"></span>
+                                            <span class="check-text">Нет отзывов</span>
+                                        </label>
+                                        <label class="label">
+                                            <input type="checkbox" class="checkbox" value="Обработка фото">
+                                            <span class="check"></span>
+                                            <span class="check-text">Обработка фото</span>
+                                        </label>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="form-field">
-                                <p class="form-name">Дата рекламы</p>
-                                <input type="text" class="form-input datepicker" placeholder="ДД.ММ.ГГ.">
+                                <p class="form-name">Скриншоты переходов</p>
+                                <div class="popup-screen">
+                                    <button class="btn-blue btn-screen">Загрузить скриншоты</button>
+                                    <p class="gray">Файлы не выбраны</p>
+                                </div>
                             </div>
                             <div class="form-field">
-                                <p class="form-name">Заявлено охватов</p>
+                                <p class="form-name">Фактический охват</p>
+                                <span class="popup-gray">необязательное поле</span>
                                 <input type="text" class="form-input">
                             </div>
-                            <div class="popup-filling-flex">
-                                <div class="form-field">
-                                    <p class="form-name nowrap">Цена за рекламу в ₽</p>
-                                    <input type="text" class="form-input" >
-                                </div>
-                                <div class="popup-filling-checkboxes">
-                                    <label class="label">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="check"></span>
-                                        <span class="check-text">ВП</span>
-                                    </label>
-                                    <label class="label">
-                                        <input type="checkbox" class="checkbox" >
-                                        <span class="check"></span>
-                                        <span class="check-text">Бартер</span>
-                                    </label>
-                                    <div class="form-item">
-                                        <label class="label disabled">
-                                            <input type="checkbox" class="checkbox" disabled>
-                                            <span class="check"></span>
-                                            <span class="check-text " >С доплатой</span>
-                                        </label>
-                                        <div class="popup-question">?
-                                            <div class="tooltip">
-                                                <div class="tooltip-container">
-                                                    <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="form-field">
+                                <p class="form-name">Число переходов по рекламе</p>
+                                <span class="popup-gray">необязательное поле</span>
+                                <input type="text" class="form-input">
                             </div>
                         </div>
                         <div class="popup-filling-half">
                             <div class="">
-                                <div class="form-field">
-                                    <p class="form-name">Формат рекламы</p>
-                                    <select required>
-                                        <option value="" disabled selected>Выберите из списка</option>
-                                        <option value="Сторис 15c">Сторис 15c</option>
-                                        <option value="Сторис 30c">Сторис 30c</option>
-                                        <option value="Сторис 45c">Сторис 45c</option>
-                                        <option value="Сторис 60c">Сторис 60c</option>
-                                        <option value="Сторис 75c">Сторис 75c</option>
-                                        <option value="Сторис 90c">Сторис 90c</option>
-                                        <option value="Фото-пост">Фото-пост</option>
-                                        <option value="Видео-пост">Видео-пост</option>
-                                        <option value="Сторис+пост">Сторис+пост</option>
-                                    </select>
+                                <div class="search-field">
+                                    <p class="search-name">Оцените рекламу 10 <img src="img/star.svg" alt="star" class="star"></p>
+                                    <div class="search-range-col">
+                                        <div class="search-range range"></div>
+                                        <div class="search-range-row">
+                                            <div class="search-range-item">1</div>
+                                            <div class="search-range-item">5</div>
+                                            <div class="search-range-item">10</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-field">
-                                    <p class="form-name">Статус заказа</p>
-                                    <select required>
-                                        <option value="" disabled selected>Выберите из списка</option>
-                                        <option value="Запросить">Запросить</option>
-                                        <option value="Ожидаем ответ">Ожидаем ответ</option>
-                                        <option value="Не отвечает">Не отвечает</option>
-                                        <option value="Переговоры">Переговоры</option>
-                                        <option value="Заказана реклама">Заказана реклама</option>
-                                        <option value="Оставить отзыв">Оставить отзыв</option>
-                                    </select>
+                                    <div class="popup-white">
+                                        <p class="form-name popup-white-text">Написать текст отзыва</p>
+                                        <div class="popup-white-drop">
+                                            <span class="popup-gray">необязательное поле</span>
+                                            <textarea class="popup-textarea"></textarea>
+                                            <span class="popup-gray popup-white-count">0/300</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-field">
-                                    <p class="form-name">Комментарий</p>
-                                    <textarea class="form-textarea"></textarea>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="popup-filling-btns">
-                                    <button class="btn-white">Отмена</button>
-                                    <button type="submit" class="btn-orange">Сохранить и закрыть</button>
-                                </div>
-                                <a href="#" class="blue-text">Сохранить и заполнить данные для другого заказчика</a>
-                            </div>
-                        </div>
-                    </form>
-            </div>
-            <footer class="footer">
-                <div class="container">
-                    <a href="#" class="footer-link">Написать в техподдержку</a>
-                    <a href="#" class="footer-link">Пользовательское соглашение</a>
-                </div>
-            </footer>
-        </div>
-    </div>
-    <div class="popup popup-feedback ">
-        <div class="popup-window">
-            <form class="popup-feedback-container">
-                <div class="popup-top popup-top-mob">
-                    <p class="popup-top-title">Оставить отзыв на блогера
-                        <span class="popup-feedback-span gray">Шаг 1 из 2</span>
-                    </p>
-                </div>
-                <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
-                <div class="popup-feedback-overflow">
-                        <div class="popup-feedback-padding">
-                            <h3 class="popup-feedback-title mob-hide-768">
-                                Оставить отзыв на блогера
-                                <span class="popup-feedback-span gray">Шаг 1 из 2</span>
-                            </h3>
-                            <p class="form-name">Вы блогер или у вас коммерческий аккаунт (например, магазин)?</p>
-
-                            <ul class="popup-feedback-tabs">
-                                <li class="popup-feedback-tab active">Блогер</li>
-                                <li class="popup-feedback-tab">Коммерческий</li>
-                            </ul>
-                            <div class="form-field">
-                                <p class="form-name">Ссылка на мой аккаунт</p>
-                                <input type="text" class="form-input" placeholder="Введите ник" value="alexandramitroshina" required="">
-                            </div>
-                            <div class="form-field">
-                                <p class="form-name">Реклама была у блогера</p>
-                                <input type="text" class="form-input" placeholder="Введите ник" value="nastasia_guba" required="">
-                            </div>
-                            <div class="form-field">
-                                <p class="form-name">Дата выхода рекламы</p>
-                                <input type="text" class="form-input datepicker" required="">
-                            </div>
-                            <div class="form-field popup-radio">
-                                <p class="form-name">Реклама окупилась</p>
-                                <div class="popup-feedback-flex">
-                                    <label class="popup-feedback-label">
-                                        <input type="radio" class="checkbox" name="name">
-                                        <span class="popup-feedback-check">Да</span>
-                                    </label>
-                                    <label class="popup-feedback-label">
-                                        <input type="radio" class="checkbox" name="name">
-                                        <span class="popup-feedback-check">Нет</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="popup-filling-flex">
-                                <div class="form-field">
-                                    <p class="form-name nowrap">Цена за рекламу в ₽</p>
-                                    <input type="text" class="form-input" required="" >
-                                </div>
-                                <div class="popup-filling-checkboxes">
-                                    <label class="label">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="check"></span>
-                                        <span class="check-text">ВП</span>
-                                    </label>
-                                    <label class="label disabled">
-                                        <input type="checkbox" class="checkbox" disabled>
-                                        <span class="check"></span>
-                                        <span class="check-text">Бартер</span>
-                                    </label>
-                                    <div class="form-item">
-                                        <label class="label">
-                                            <input type="checkbox" class="checkbox" checked>
+                                <div class="form-politics mob-hide-768">
+                                    <div class="form-politics-flex">
+                                        <label class="form-label" >
+                                            <input type="checkbox" class="checkbox" required>
                                             <span class="check"></span>
-                                            <span class="check-text " >С доплатой</span>
                                         </label>
-                                        <div class="popup-question">?
-                                            <div class="tooltip">
-                                                <div class="tooltip-container">
-                                                    <p class="tooltip-text">Взаимопиар/Бартер с доплатой —  обмен рекламой с доплатой одного из участников</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p class="form-politics-text">
+                                            Я соглашаюсь с <a href="" class="form-politics-link">Правилами публикации отзывов</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-field">
-                                <p class="form-name">Приход подписчиков</p>
-                                <input type="text" class="form-input" required="">
-                            </div>
-                        </div>
-                        <div class="form-bottom">
-                            <div class="form-bottom-between">
-                                <button class="btn-white cancel">Отмена</button>
-                                <button type="submit" class="btn-orange next-feedback-two">Далее</button>
-                            </div>
-                        </div>
-                    </div>
-            </form>
-            <footer class="footer">
-                <div class="container">
-                    <a href="#" class="footer-link">Написать в техподдержку</a>
-                    <a href="#" class="footer-link">Пользовательское соглашение</a>
-                </div>
-            </footer>
-        </div>
-    </div>
-    <div class="popup popup-feedback-two ">
-        <div class="popup-window">
-            <form class="popup-filling-container">
-                <div class="popup-top popup-top-mob">
-                    <p class="popup-top-title">Оставить отзыв на блогера
-                        <span class="popup-feedback-span gray">Шаг 2 из 2</span>
-                    </p>
-                </div>
-                 <div class="popup-feedback-overflow">
-                        <div class="popup-feedback-padding">
-                            <div class="popup-close"><img src="img/close.svg" alt="close" class="popup-close-icon"></div>
-                            <h3 class="popup-feedback-title mob-hide-768">
-                                Оставить отзыв на блогера
-                                <span class="popup-feedback-span gray">Шаг 2 из 2</span>
-                            </h3>
-                            <div class="popup-feedback-row">
-                                <div class="popup-filling-half">
-                                    <div class="form-field">
-                                        <p class="form-name">Формат рекламы</p>
-                                        <div class="popup-feedback-formats">
-                                            <label class="popup-feedback-format">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="popup-feedback-item">Сторис</span>
-                                            </label>
-                                            <label class="popup-feedback-format">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="popup-feedback-item">Фото-пост</span>
-                                            </label>
-                                            <label class="popup-feedback-format">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="popup-feedback-item">Видео-пост</span>
-                                            </label>
-                                            <label class="popup-feedback-format">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="popup-feedback-item">Сторис + пост</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-field">
-                                        <p class="form-name">Тема аккаунта заказчика</p>
-                                        <ul class="popup-drop">
-                                            <li class="popup-drop-item"><input type="text" placeholder="Выберите из списка" class="popup-drop-input"><img src="img/arrow-select.svg"  alt="arrow select" class="popup-drop-arrow"></li>
-                                            <li class="popup-drop-list">
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Бизнес">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Бизнес</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Бьюти">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Бьюти</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Дом, интерьер и ремонт">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Дом, интерьер и ремонт</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Жизнь заграницей">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Жизнь заграницей</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="ЗОЖ">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">ЗОЖ</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Здоровье">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Здоровье</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Изучение языков">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Изучение языков</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Книги">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Книги</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Лайфстайл">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Лайфстайл</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Лайфхаки">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Лайфхаки</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Мамы">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Мамы</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Мода, стиль и шоппинг">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Мода, стиль и шоппинг</span>
-                                                </label><label class="label">
-                                                <input type="checkbox" class="checkbox" value="Мотивация">
-                                                <span class="check"></span>
-                                                <span class="check-text">Мотивация</span>
-                                            </label><label class="label">
-                                                <input type="checkbox" class="checkbox" value="Наука">
-                                                <span class="check"></span>
-                                                <span class="check-text">Наука</span>
-                                            </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Нет отзывов">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Нет отзывов</span>
-                                                </label>
-                                                <label class="label">
-                                                    <input type="checkbox" class="checkbox" value="Обработка фото">
-                                                    <span class="check"></span>
-                                                    <span class="check-text">Обработка фото</span>
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="form-field">
-                                        <p class="form-name">Скриншоты переходов</p>
-                                        <div class="popup-screen">
-                                            <button class="btn-blue btn-screen">Загрузить скриншоты</button>
-                                            <p class="gray">Файлы не выбраны</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-field">
-                                        <p class="form-name">Фактический охват</p>
-                                        <span class="popup-gray">необязательное поле</span>
-                                        <input type="text" class="form-input">
-                                    </div>
-                                    <div class="form-field">
-                                        <p class="form-name">Число переходов по рекламе</p>
-                                        <span class="popup-gray">необязательное поле</span>
-                                        <input type="text" class="form-input">
-                                    </div>
-                                </div>
-                                <div class="popup-filling-half">
-                                    <div class="">
-                                        <div class="search-field">
-                                            <p class="search-name">Оцените рекламу 10 <img src="img/star.svg" alt="star" class="star"></p>
-                                            <div class="search-range-col">
-                                                <div class="search-range range"></div>
-                                                <div class="search-range-row">
-                                                    <div class="search-range-item">1</div>
-                                                    <div class="search-range-item">5</div>
-                                                    <div class="search-range-item">10</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-field">
-                                            <div class="popup-white">
-                                                <p class="form-name popup-white-text">Написать текст отзыва</p>
-                                                <div class="popup-white-drop">
-                                                    <span class="popup-gray">необязательное поле</span>
-                                                    <textarea class="popup-textarea"></textarea>
-                                                    <span class="popup-gray popup-white-count">0/300</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-politics mob-hide-768">
-                                            <div class="form-politics-flex">
-                                                <label class="form-label" >
-                                                    <input type="checkbox" class="checkbox" required>
-                                                    <span class="check"></span>
-                                                </label>
-                                                <p class="form-politics-text">
-                                                    Я соглашаюсь с <a href="" class="form-politics-link">Правилами публикации отзывов</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                </div>
+                        </div>
 
-                            </div>
-                        </div>
-                        <div class="popup-feedback-end">
-                            <button class="btn-white back-feedback">Назад</button>
-                            <button type="submit" class="btn-orange sent-review">Отправить отзыв</button>
-                        </div>
                     </div>
-            </form>
-            <footer class="footer">
-                <div class="container">
-                    <a href="#" class="footer-link">Написать в техподдержку</a>
-                    <a href="#" class="footer-link">Пользовательское соглашение</a>
                 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="popup popup-sent">
-        <div class="popup-window">
-            <div class="popup-sent-container">
-                <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
-                <img src="img/payment-check.svg" alt="sent" class="popup-icon">
-                <h2 class="popup-sent-title">Отзыв отправлен на модерацию</h2>
-                <button class="btn-white">Оставить ещё один отзыв</button>
-                <a href="#" class="blue-text">В мой список блогеров</a>
-                <a href="#" class="blue-text">Моя история отзывов</a>
+                <div class="popup-feedback-end">
+                    <button class="btn-white back-feedback">Назад</button>
+                    <button type="submit" class="btn-orange sent-review">Отправить отзыв</button>
+                </div>
             </div>
+        </form>
+    </div>
+</div>
+<div class="popup popup-sent">
+    <div class="popup-window">
+        <div class="popup-sent-container">
+            <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
+            <img src="img/payment-check.svg" alt="sent" class="popup-icon">
+            <h2 class="popup-sent-title">Отзыв отправлен на модерацию</h2>
+            <button class="btn-white">Оставить ещё один отзыв</button>
+            <a href="#" class="blue-text">В мой список блогеров</a>
+            <a href="#" class="blue-text">Моя история отзывов</a>
         </div>
     </div>
-    <div class="popup popup-logregistr">
+</div>
+<div class="popup popup-logregistr">
     <div class="popup-window">
         <div class="popup-attention">
             <img src="img/attention.svg" alt="attention" class="popup-attention-img">
@@ -649,12 +630,6 @@
 
                 </ul>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <a href="#" class="footer-link">Написать в техподдержку</a>
-                <a href="#" class="footer-link">Пользовательское соглашение</a>
-            </div>
-        </footer>
     </div>
 </div>
 <div class="popup popup-rate ">
@@ -708,12 +683,6 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <a href="#" class="footer-link">Написать в техподдержку</a>
-                <a href="#" class="footer-link">Пользовательское соглашение</a>
-            </div>
-        </footer>
     </div>
 </div>
 <div class="popup popup-forgot ">
@@ -807,17 +776,7 @@
             </form>
 
         </div>
-        <footer class="footer">
-            <div class="container">
-                <a href="#" class="footer-link">Написать в техподдержку</a>
-                <a href="#" class="footer-link">Пользовательское соглашение</a>
-            </div>
-        </footer>
     </div>
-</div>
-
-<div class="popup-top popup-top-mob">
-    <p class="popup-top-title">Калькулятор подписчиков</p>
 </div>
 
 <div class="popup popup-calculate">
@@ -1011,12 +970,6 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <a href="#" class="footer-link">Написать в техподдержку</a>
-                <a href="#" class="footer-link">Пользовательское соглашение</a>
-            </div>
-        </footer>
     </div>
 </div>
 <div class="popup popup-conversion ">
@@ -1057,12 +1010,6 @@
                     </div>
                 </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <a href="#" class="footer-link">Написать в техподдержку</a>
-                <a href="#" class="footer-link">Пользовательское соглашение</a>
-            </div>
-        </footer>
     </div>
 </div>
 <div class="popup popup-review ">
@@ -1486,12 +1433,6 @@
                             </svg>
                         </a>
                     </div>
-                    <footer class="footer">
-                        <div class="container">
-                            <a href="#" class="footer-link">Написать в техподдержку</a>
-                            <a href="#" class="footer-link">Пользовательское соглашение</a>
-                        </div>
-                    </footer>
                 </div>
             </div>
         </div>
@@ -1596,12 +1537,6 @@
                 </form>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <a href="#" class="footer-link">Написать в техподдержку</a>
-                <a href="#" class="footer-link">Пользовательское соглашение</a>
-            </div>
-        </footer>
     </div>
 </div>
 <div class="popup popup-edit">
@@ -1696,17 +1631,13 @@
 
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <a href="#" class="footer-link">Написать в техподдержку</a>
-                <a href="#" class="footer-link">Пользовательское соглашение</a>
-            </div>
-        </footer>
     </div>
 </div>
 
 
 
+
+<div class="empty">
 
     <section class="second">
         <div class="container">
@@ -1779,20 +1710,21 @@
                             </div>
                         </div>
                         <div class="empty-content">
-                            <p class="empty-text">Пока ваша история отзывов пуста. <a href="" class="blue-text">Оставьте отзыв</a>, чтобы начать историю 😉</p>
+                            <p class="empty-text">Пока ваша история отзывов пуста. <a href="" class="blue-text show-feedback">Оставьте отзыв</a>, чтобы начать историю 😉</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
+
+</div>
+<footer class="footer">
     <div class="container">
         <a href="#" class="footer-link">Написать в техподдержку</a>
         <a href="#" class="footer-link">Пользовательское соглашение</a>
     </div>
 </footer>
-</div>
 
 
 

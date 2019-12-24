@@ -1,6 +1,6 @@
 
 $.scrollLock = ( function scrollLockClosure() {
-
+    if (window.matchMedia("(min-width: 769px)").matches) {
     'use strict';
 
     var $html      = $( 'html' ),
@@ -123,4 +123,6 @@ $.scrollLock = ( function scrollLockClosure() {
             }
         }
     };
+    }
 }() );
+
