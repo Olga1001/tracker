@@ -30,8 +30,10 @@ $(document).ready(function () {
         $(".menu, .menu-col").removeClass("active");
         if (window.matchMedia("(max-width: 768px)").matches) {
             $(".main").hide();
+            $('body').css({"overflow-y":"scroll", "position":"initial", "width":"100%", "left":"0"});
         } else {
             $.scrollLock(true);
+            $('body').css({"overflow-y":"scroll", "position":"fixed", "width":"100%", "left":"0"});
         }
     });
     $(".main .bloggers-my-edit").click(function (e) {
