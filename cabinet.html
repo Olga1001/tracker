@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<div class="header-height"></div>
 <header class="header">
     <div class="header-container">
         <div class="header-left">
@@ -49,7 +50,6 @@
         </div>
         <div class="header-right">
             <div class="header-mob">
-                <a href="#" class="header-mob-basket"><img src="img/basket.svg" alt="basket" class="header-mob-icon"></a>
                 <div class="header-burger">
                     <span class="header-burger-line header-burger-top"></span>
                     <span class="header-burger-line header-burger-mid"></span>
@@ -606,6 +606,10 @@
                                     <p class="popup-card-name gray">Формат рекламы</p>
                                     <p class="popup-card-item ">Сторис</p>
                                 </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Товар или услуга</p>
+                                    <p class="popup-card-item ">Парфюм</p>
+                                </div>
                             </div>
                             <div class="popup-review-row">
                                 <p class="popup-review-gray gray">Текст отзыва</p>
@@ -646,6 +650,10 @@
                                 <div class="popup-card-row">
                                     <p class="popup-card-name gray">Формат рекламы</p>
                                     <p class="popup-card-item ">Сторис</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Тема аккаунта</p>
+                                    <p class="popup-card-item ">Лайфстайл</p>
                                 </div>
                             </div>
                             <div class="popup-review-row">
@@ -983,6 +991,10 @@
                                     <p class="popup-card-name gray">Формат рекламы</p>
                                     <p class="popup-card-item ">Сторис</p>
                                 </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Товар или услуга</p>
+                                    <p class="popup-card-item ">Парфюм</p>
+                                </div>
                             </div>
                             <div class="popup-review-row">
                                 <p class="popup-review-gray gray">Текст отзыва</p>
@@ -1023,6 +1035,10 @@
                                 <div class="popup-card-row">
                                     <p class="popup-card-name gray">Формат рекламы</p>
                                     <p class="popup-card-item ">Сторис</p>
+                                </div>
+                                <div class="popup-card-row">
+                                    <p class="popup-card-name gray">Тема аккаунта</p>
+                                    <p class="popup-card-item ">Лайфстайл, Лайфстайл</p>
                                 </div>
                             </div>
                             <div class="popup-review-row">
@@ -1763,7 +1779,7 @@
                         </div>
                         <div class="form-field ">
                             <p class="form-name">Дата выхода рекламы</p>
-                            <input type="text" class="form-input datepicker">
+                            <input type="text" class="form-input datepicker" readonly>
                         </div>
                         <div class="form-field popup-radio">
                             <p class="form-name">Реклама окупилась</p>
@@ -1784,13 +1800,13 @@
                                 <input type="text" class="form-input">
                             </div>
                             <div class="popup-filling-checkboxes">
-                                <label class="label label-tab">
+                                <label class="label label-tab change-two active">
                                     <input type="checkbox" class="checkbox">
                                     <span class="check"></span>
                                     <span class="check-text">ВП</span>
                                 </label>
-                                <label class="label label-tab disabled">
-                                    <input type="checkbox" class="checkbox" disabled>
+                                <label class="label label-tab change-one">
+                                    <input type="checkbox" class="checkbox">
                                     <span class="check"></span>
                                     <span class="check-text">Бартер</span>
                                 </label>
@@ -2287,57 +2303,7 @@
         </div>
     </div>
 </div>
-<div class="bg-popup">
-     <div class="header-container">
-         <div class="bg-popup-row">
-             <div class="bg-popup-left">
-                 <img src="img/payment-check.svg" alt="payment accepted" class="bg-popup-icon">
-                 <p class="payment-title">Оплата принята</p>
-             </div>
-             <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
-         </div>
-     </div>
-</div>
-<div class="bg-popup">
-    <div class="header-container">
-        <div class="bg-popup-row">
-            <div class="bg-popup-left">
-                <img src="img/discounts.svg" alt="payment accepted" class="bg-popup-icon">
-                <div class="bg-popup-col">
-                    <a href="#" class="blue-text">Скидка 30% на доступ к трекеру</a>
-                    <p class="gray">Воспользуйтесь скидкой до 23.09.19</p>
-                </div>
-            </div>
-            <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
-        </div>
-    </div>
-</div>
-<div class="bg-popup">
-    <div class="header-container">
-        <div class="bg-popup-row">
-            <div class="bg-popup-left">
-                <div class="bg-popup-col">
-                    <p class="bg-popup-text">Доступ к трекеру истек 23.09.19</p>
-                    <a href="#" class="blue-text next-rate-extend">Нажмите, чтобы возобновить</a>
-                </div>
-            </div>
-            <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
-        </div>
-    </div>
-</div>
-<div class="bg-popup">
-    <div class="header-container">
-        <div class="bg-popup-row">
-            <div class="bg-popup-left">
-                <div class="bg-popup-col">
-                    <a href="#" class="blue-text bg-popup-title next-rate-extend">Продлите доступ к трекеру</a>
-                    <p class="gray">Воспользуйтесь скидкой до 23.09.19</p>
-                </div>
-            </div>
-            <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
-        </div>
-    </div>
-</div>
+
 <div class="menu">
     <div class="menu-close">
         <span class="menu-line menu-line-one"></span>
@@ -2391,7 +2357,60 @@
 
     </div>
 </div>
+
+
 <div class="cabinet">
+    <div class="bg-popup active">
+        <div class="header-container">
+            <div class="bg-popup-row">
+                <div class="bg-popup-left">
+                    <img src="img/payment-check.svg" alt="payment accepted" class="bg-popup-icon">
+                    <p class="payment-title">Оплата принята</p>
+                </div>
+                <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-popup active">
+        <div class="header-container">
+            <div class="bg-popup-row">
+                <div class="bg-popup-left">
+                    <img src="img/discounts.svg" alt="payment accepted" class="bg-popup-icon">
+                    <div class="bg-popup-col">
+                        <a href="#" class="blue-text">Скидка 30% на доступ к трекеру</a>
+                        <p class="gray">Воспользуйтесь скидкой до 23.09.19</p>
+                    </div>
+                </div>
+                <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-popup active">
+        <div class="header-container">
+            <div class="bg-popup-row">
+                <div class="bg-popup-left">
+                    <div class="bg-popup-col">
+                        <p class="bg-popup-text">Доступ к трекеру истек 23.09.19</p>
+                        <a href="#" class="blue-text next-rate-extend">Нажмите, чтобы возобновить</a>
+                    </div>
+                </div>
+                <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-popup active">
+        <div class="header-container">
+            <div class="bg-popup-row">
+                <div class="bg-popup-left">
+                    <div class="bg-popup-col">
+                        <a href="#" class="blue-text bg-popup-title next-rate-extend">Продлите доступ к трекеру</a>
+                        <p class="gray">Воспользуйтесь скидкой до 23.09.19</p>
+                    </div>
+                </div>
+                <div class="popup-close"><img src="img/close-light.svg" alt="close" class="popup-close-icon"></div>
+            </div>
+        </div>
+    </div>
     <section class="second">
             <div class="container">
                 <div class="second-top">
@@ -4486,7 +4505,6 @@
                 </div>
             </div>
     </section>
-
 
 </div>
 <footer class="footer">

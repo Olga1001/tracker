@@ -72,7 +72,11 @@ $(document).ready(function () {
         if (window.matchMedia("(min-width: 769px)").matches) {
             $.scrollLock(false);
         }
-
+        if (window.matchMedia("(min-width: 769px)").matches) {
+            $(".header").css("z-index","8");
+        } else {
+            $(".header").css("z-index","10");
+        }
         $(".cabinet, .empty, .main").show();
         $(".popup").removeClass('active');
         $(this).closest(".bg-popup").removeClass('active');
@@ -198,7 +202,7 @@ $(document).ready(function () {
         range: "min",
         min: 1,
         max: 10,
-        value: 5,
+        value: 10,
         step: 1,
         slide: function( event, ui ) {
             $( ".amount" ).val(ui.value);
@@ -313,6 +317,7 @@ $(document).ready(function () {
     $(".show-review").click(function (e) {
         e.preventDefault();
         $(".popup-review").addClass('active');
+        $(".popup-logregistr, .popup-attention").addClass('active');
         $.scrollLock(true);
     });
     //show popup info and review bloggers
@@ -321,6 +326,7 @@ $(document).ready(function () {
         $(".popup-info").addClass('active');
         $(".btn-back").addClass('active');
         $(".header-user").addClass('hide');
+        $(".popup-logregistr, .popup-attention").addClass('active');
         if (window.matchMedia("(max-width: 768px)").matches) {
             $(".cabinet, .main").hide();
         } else {
@@ -430,16 +436,15 @@ $(document).ready(function () {
 
     //tabs in Leave a comment on the blogger
     $(".popup-feedback-tab").click(function () {
-        $(".checkbox").prop('checked', false);
         $(this).addClass('active').siblings().removeClass('active');
         if ($(".popup-feedback-tab:nth-child(2)").hasClass('active')) {
             $(".popup-radio").addClass('active');
-            $(".label-tab").removeClass("disabled").find(".checkbox").attr("disabled", false)
-            $(".label-tab:nth-child(1)").addClass("disabled").find(".checkbox").attr("disabled", true);
+            $(".change-one").addClass("active");
+            $(".change-two").removeClass("active");
         } else {
             $(".popup-radio").removeClass('active');
-            $(".label-tab").removeClass("disabled").find(".checkbox").attr("disabled", false);
-            $(".label-tab:nth-child(2)").addClass("disabled").find(".checkbox").attr("disabled", true);
+            $(".change-two").addClass("active");
+            $(".change-one").removeClass("active");
         }
     });
 
@@ -518,6 +523,7 @@ $(document).ready(function () {
     //filter
 
     $(".bloggers-filter-btn").click(function (e) {
+
         e.preventDefault();
         $(".header-user").addClass('hide-main');
         $(".btn-back").addClass('active-main');
@@ -525,6 +531,7 @@ $(document).ready(function () {
         $(".cabinet").hide();
         $(".bg-popup").removeClass('active');
         if (window.matchMedia("(max-width: 993px)").matches) {
+            $(".header").css("z-index","10");
             $("body").css("background", "#ffffff");
             $("html, body").scrollTop($(".popup").offset().top);
         }
@@ -562,7 +569,11 @@ $(document).ready(function () {
         $(".popup").removeClass('active');
         $(".popup-search-one").removeClass('active');
         $(".popup-calculate-copy").text("Скопировать текст");
-
+        if (window.matchMedia("(min-width: 769px)").matches) {
+            $(".header").css("z-index","8");
+        } else {
+            $(".header").css("z-index","10");
+        }
     });
     $(".bloggers-comments").click(function (e) {
         e.preventDefault();
@@ -636,7 +647,9 @@ $(document).ready(function () {
         dateFormat: 'dd.mm.yy D',
         minDate: new Date($('#hiddendelivdate').val()),
         dayNamesShort: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"], // For formatting
+
     });
+
 
     $("div, form").scroll(function() {
         $( ".datepicker" ).datepicker('hide');
